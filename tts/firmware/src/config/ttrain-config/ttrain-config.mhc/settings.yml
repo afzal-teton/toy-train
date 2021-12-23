@@ -1,0 +1,14 @@
+configName: ttrain-config
+folderName: rnd
+format_version: v1.0
+frameworkPath: ../../harmony
+processor: ATSAMD21G18A
+projectName: rnd
+settings:
+  PackageFilter: core_apps_sam_ha1;usb_apps_host;csp_apps_sam_c20_c21;csp_apps_sam_d10;usb_apps_multi_controller;csp_apps_sam_l10_l11;csp;csp_apps_sam_9x60;core_apps_sam_c20_c21;mc_apps_sam_e7x_s7x_v7x;usb_apps_device;bsp;gfx_apps_pic32mz_ef;mc_apps_sam_rh71;touch;gfx;core_apps_sam_e70_s70_v70_v71;core_apps_sam_l22;core;csp_apps_sam_rh71;audio;csp_apps_sam_d21_da1;core_apps_sam_rh71;quick_docs;core_apps_sam_l21;mc_apps_sam_c2x;csp_apps_sam_g55;csp_apps_sam_d20;x2c;csp_apps_sam_ha1;usb;core_apps_sam_d21_da1;core_apps_pic32cm_mc00;classb_sam_e5x_d5x;csp_apps_sam_d11;core_apps_sam_9x60;core_apps_sam_g55;gfx_apps_pic32mz_da;core_apps_sam_a5d2;motor_control;core_apps_sam_l10_l11;core_apps_sam_d20;mc_apps_sam_d5x_e5x;csp_apps_sam_e70_s70_v70_v71;usb_apps_dual_role;dev_packs;csp_apps_sam_l21;bt;csp_apps_sam_d5x_e5x;core_apps_sam_d5x_e5x;csp_apps_sam_a5d2;csp_apps_sam_l22
+  FORCE_OPTIMIZATION: 'false'
+  GENERATE_BACKUP: 'true'
+  TRUSTZONE: 'false'
+  CMSISPath: ./dev_packs/arm/CMSIS/5.8.0
+  MERGE_STRATEGY: USER_ALL
+  DFPPath: ./dev_packs/Microchip/SAMD21_DFP/3.4.116/samd21a/atdf/ATSAMD21G18A.atdf
