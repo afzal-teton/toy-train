@@ -34,5 +34,5 @@ MP_AS_DIR="/home/afzal/work-zone/MPlab-x/gcc/gcc-64/arm-gnu-toolchain-6.3.1.508-
 MP_LD_DIR="/home/afzal/work-zone/MPlab-x/gcc/gcc-64/arm-gnu-toolchain-6.3.1.508-linux.any.x86_64/arm-none-eabi/bin"
 MP_AR_DIR="/home/afzal/work-zone/MPlab-x/gcc/gcc-64/arm-gnu-toolchain-6.3.1.508-linux.any.x86_64/arm-none-eabi/bin"
 # MP_BC_DIR is not defined
-DFP_DIR=/opt/microchip/mplabx/v5.50/packs/Microchip/SAMD21_DFP/3.4.116
 CMSIS_DIR=/opt/microchip/mplabx/v5.50/packs/arm/CMSIS/5.4.0
+DFP_DIR=/opt/microchip/mplabx/v5.50/packs/Microchip/SAMD21_DFP/3.4.116

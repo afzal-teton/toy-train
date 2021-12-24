@@ -117,6 +117,18 @@
 #define pd_green_Get()               (((PORT_REGS->GROUP[0].PORT_IN >> 15U)) & 0x01U)
 #define pd_green_PIN                  PORT_PIN_PA15
 
+/*** Macros for green_led_pwm pin ***/
+#define green_led_pwm_Get()               (((PORT_REGS->GROUP[0].PORT_IN >> 16U)) & 0x01U)
+#define green_led_pwm_PIN                  PORT_PIN_PA16
+
+/*** Macros for red_led_pwm pin ***/
+#define red_led_pwm_Get()               (((PORT_REGS->GROUP[0].PORT_IN >> 17U)) & 0x01U)
+#define red_led_pwm_PIN                  PORT_PIN_PA17
+
+/*** Macros for blue_led_pwm pin ***/
+#define blue_led_pwm_Get()               (((PORT_REGS->GROUP[0].PORT_IN >> 18U)) & 0x01U)
+#define blue_led_pwm_PIN                  PORT_PIN_PA18
+
 /*** Macros for pd_red pin ***/
 #define pd_red_Set()               (PORT_REGS->GROUP[0].PORT_OUTSET = ((uint32_t)1U << 21U))
 #define pd_red_Clear()             (PORT_REGS->GROUP[0].PORT_OUTCLR = ((uint32_t)1U << 21U))

@@ -88,5 +88,12 @@ children:
       children:
       - type: Dynamic
         attributes: {id: evsys, value: 'false'}
+  - type: Boolean
+    attributes: {id: USER_TC3_EVU_READY}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: tc3, value: 'false'}
 - type: ElementPosition
   attributes: {x: '160', y: '20', id: evsys}

@@ -63,7 +63,9 @@ void APP_ADCCallback(uintptr_t context){
 
 
 
-
+uint8_t pwmValue = 0;
+//uint8_t pwmValue_red = 0;
+//uint8_t pwmValue_green = 0;
 
 
 int main ( void )
@@ -72,9 +74,31 @@ int main ( void )
     SYS_Initialize ( NULL );
     SYSTICK_TimerCallbackSet(&systickCallback, (uintptr_t) NULL);
     SYSTICK_TimerStart();
+    
+    TCC2_PWMStart();
+    TCC0_PWMStart();
+    
+    
+
+    TC3_CompareStart();
+  
     while ( true )
     {
-        //SYSTICK_DelayMs(500);
+        
+        if(pwmValue < 255u){
+            pwmValue++;
+        }
+        else{
+            pwmValue = 0 ;
+        }
+        TC3_Compare8bitMatch0Set( pwmValue);
+        TCC2_PWM16bitDutySet(TCC2_CHANNEL0, pwmValue*8);
+        TCC2_PWM16bitDutySet(TCC2_CHANNEL1, pwmValue*8);
+        TCC0_PWM24bitDutySet(TCC0_CHANNEL3, pwmValue*8);
+        TCC0_PWM24bitDutySet(TCC0_CHANNEL2, 0*8);
+          
+        
+        SYSTICK_DelayMs(10);
         switch(measureHallSensorValue()){
             case(HALL_SENSE_FORWRD):
                 //SERCOM0_USART_Write("hall test res : 1 \n", 19);

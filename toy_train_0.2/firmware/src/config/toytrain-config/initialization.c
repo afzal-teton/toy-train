@@ -137,11 +137,17 @@ void SYS_Initialize ( void* data )
 
     SERCOM2_USART_Initialize();
 
+    TCC2_PWMInitialize();
+
     EVSYS_Initialize();
 
     SERCOM0_USART_Initialize();
 
+    TCC0_PWMInitialize();
+
 	SYSTICK_TimerInitialize();
+    TC3_CompareInitialize();
+
 
 
 

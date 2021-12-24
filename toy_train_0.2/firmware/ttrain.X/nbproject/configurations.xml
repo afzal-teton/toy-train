@@ -39,6 +39,15 @@
             <logicalFolder name="f6" displayName="systick" projectFiles="true">
               <itemPath>../src/config/toytrain-config/peripheral/systick/plib_systick.h</itemPath>
             </logicalFolder>
+            <logicalFolder name="f9" displayName="tc" projectFiles="true">
+              <itemPath>../src/config/toytrain-config/peripheral/tc/plib_tc_common.h</itemPath>
+              <itemPath>../src/config/toytrain-config/peripheral/tc/plib_tc3.h</itemPath>
+            </logicalFolder>
+            <logicalFolder name="f8" displayName="tcc" projectFiles="true">
+              <itemPath>../src/config/toytrain-config/peripheral/tcc/plib_tcc2.h</itemPath>
+              <itemPath>../src/config/toytrain-config/peripheral/tcc/plib_tcc_common.h</itemPath>
+              <itemPath>../src/config/toytrain-config/peripheral/tcc/plib_tcc0.h</itemPath>
+            </logicalFolder>
           </logicalFolder>
           <itemPath>../src/config/toytrain-config/device.h</itemPath>
           <itemPath>../src/config/toytrain-config/device_cache.h</itemPath>
@@ -184,6 +193,13 @@
             <logicalFolder name="f6" displayName="systick" projectFiles="true">
               <itemPath>../src/config/toytrain-config/peripheral/systick/plib_systick.c</itemPath>
             </logicalFolder>
+            <logicalFolder name="f9" displayName="tc" projectFiles="true">
+              <itemPath>../src/config/toytrain-config/peripheral/tc/plib_tc3.c</itemPath>
+            </logicalFolder>
+            <logicalFolder name="f8" displayName="tcc" projectFiles="true">
+              <itemPath>../src/config/toytrain-config/peripheral/tcc/plib_tcc2.c</itemPath>
+              <itemPath>../src/config/toytrain-config/peripheral/tcc/plib_tcc0.c</itemPath>
+            </logicalFolder>
           </logicalFolder>
           <logicalFolder name="f2" displayName="stdio" projectFiles="true">
             <itemPath>/home/afzal/work-zone/MPlab-x/gcc/gcc-config/gcc_monitor.c</itemPath>
@@ -203,11 +219,14 @@
       <logicalFolder name="f1" displayName="toytrain-config.mhc" projectFiles="true">
         <itemPath>../src/config/toytrain-config/toytrain-config.mhc/dfp.yml</itemPath>
         <itemPath>../src/config/toytrain-config/toytrain-config.mhc/nvmctrl.yml</itemPath>
+        <itemPath>../src/config/toytrain-config/toytrain-config.mhc/tcc2.yml</itemPath>
         <itemPath>../src/config/toytrain-config/toytrain-config.mhc/cmsis.yml</itemPath>
         <itemPath>../src/config/toytrain-config/toytrain-config.mhc/sercom2.yml</itemPath>
         <itemPath>../src/config/toytrain-config/toytrain-config.mhc/GraphSettings.yml</itemPath>
         <itemPath>../src/config/toytrain-config/toytrain-config.mhc/project.yml</itemPath>
+        <itemPath>../src/config/toytrain-config/toytrain-config.mhc/tc3.yml</itemPath>
         <itemPath>../src/config/toytrain-config/toytrain-config.mhc/sercom0.yml</itemPath>
+        <itemPath>../src/config/toytrain-config/toytrain-config.mhc/tcc0.yml</itemPath>
         <itemPath>../src/config/toytrain-config/toytrain-config.mhc/core.yml</itemPath>
         <itemPath>../src/config/toytrain-config/toytrain-config.mhc/settings.yml</itemPath>
         <itemPath>../src/config/toytrain-config/toytrain-config.mhc/evsys.yml</itemPath>
@@ -234,8 +253,8 @@
         <platform>2</platform>
       </toolsSet>
       <packs>
-        <pack name="SAMD21_DFP" vendor="Microchip" version="3.4.116"/>
         <pack name="CMSIS" vendor="ARM" version="5.4.0"/>
+        <pack name="SAMD21_DFP" vendor="Microchip" version="3.4.116"/>
       </packs>
       <ScriptingSettings>
       </ScriptingSettings>
