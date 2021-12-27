@@ -71,7 +71,7 @@ uint8_t generateColor(){
         }
         lastColor = YELLOW;
     }
-    else if(pdColor.green > 3*pdColor.red && 2*pdColor.blue < pdColor.green)
+    else if(pdColor.green > 3*pdColor.red && 2*pdColor.blue < pdColor.green && pdColor.white < 400)
     {
         if(lastColor == GREEN)
         {

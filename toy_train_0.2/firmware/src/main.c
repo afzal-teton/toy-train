@@ -129,7 +129,7 @@ int main ( void ){
 //        SERCOM0_USART_Write(dbg_adc_str_value, sizeof(dbg_adc_str_value));
 
         
- /*       hallSensorRes = measureHallSensorValue();
+        hallSensorRes = measureHallSensorValue();
         switch(hallSensorRes){
             case(HALL_SENSE_FORWRD):
                // SERCOM0_USART_Write("hall test res : 1 \n", 19);
@@ -137,10 +137,10 @@ int main ( void ){
                     hallSensor.previousStatus = HALL_SENSE_FORWRD;
                 }
                 else if(motor.speed_flag == MOTOR_SPEED_NULL){
-                    motorControl(MOTOR_FORWARD, MOTOR_SPEED_MIN);       //SERCOM0_USART_Write("forward : 1 \n", 13);
+                    motorControl(MOTOR_FORWARD, MOTOR_SPEED_MIN);        //SERCOM0_USART_Write("forward : 1 \n", 13);
                 }
                 else if(motor.direction_flag == MOTOR_REVERSE){
-                    stopMotor();
+                    stopMotor();  
                 }
                 break;
             case(HALL_SENSE_REVERSE):
@@ -152,23 +152,23 @@ int main ( void ){
                     motorControl(MOTOR_REVERSE,MOTOR_SPEED_MIN);       //SERCOM0_USART_Write("reverse : 1 \n", 13);
                 }
                 else if(motor.direction_flag == MOTOR_FORWARD){
-                    stopMotor();
+                    stopMotor();    
                 }
                 break;
             case(HALL_SENSE_STOP):
                // SERCOM0_USART_Write("hall test res : 3 \n", 19);
                 if(motor.speed_flag != MOTOR_SPEED_NULL){
-                    stopMotor();                                      // SERCOM0_USART_Write("stop : 1 \n", 10);
+                    stopMotor();                                   // SERCOM0_USART_Write("stop : 1 \n", 10);
                 }
                 break;
             default:
                 //SERCOM0_USART_Write("hall test res : -1 \n", 19);
                 break;
         }
-    */    
-        PDColorRes = PDColourRead();
-        if(PDColorRes){
-            RGBsetColor(PDColorRes);
+       
+ //       PDColorRes = PDColourRead();
+//        if(PDColorRes){
+            //RGBsetColor(PDColorRes);
 //             SYSTICK_DelayMs(100);
 //            memset(dbg_buffer, 0, sizeof(dbg_buffer));
 //            memset(dbg_str_red, '\0', sizeof(dbg_str_red));
@@ -191,11 +191,11 @@ int main ( void ){
 //            strcat(dbg_buffer, dbg_str_ambient); strcat(dbg_buffer,"\n"); 
 //            SERCOM0_USART_Write(dbg_buffer, sizeof(dbg_buffer)); 
 //             SYSTICK_DelayMs(100);
-        }
+ //       }
        
     
-    /*  
-        
+     
+        PDColorRes = PDColourRead();
         if(PDColorRes){
             if(PDColorRes == NO_COLOR){
                 if(PDNoColorCount++ > 50){
@@ -256,8 +256,7 @@ int main ( void ){
 //                }
                 //TODO :: RING THE BELL AT 1S INTERVAL .. 
             }
-        }    
-     */   
+        }     
     }
 
     /* Execution should not come here during normal operation */
