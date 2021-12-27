@@ -14,14 +14,23 @@
 #define OFF              0
 
 
-#define HALL_SENSOR_IDLE_TIME    200
-#define HALL_SENSOR_INERTIA      200
+#define HALL_SENSOR_IDLE_TIME                               200
+#define HALL_SENSOR_INERTIA                                 200
+#define PHOTO_DIODE_INTERVAL_FROM_LAST_READ_10MS            10000
 
-    
+#define CAR_WASH_WAIT_TIME                                  5000
+
+
+
+
+
+extern volatile uint16_t adcValue ;   
 extern volatile uint8_t global_hallReasultWaitCounter ;
 extern volatile uint8_t global_hallSensorInertiaCounter ;
+extern volatile uint16_t global_photoDiodeLastReadInterval ;
+extern volatile uint16_t global_carWashWaitTime ;
     
-void testFunc();    
+   
     
 
 

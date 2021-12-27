@@ -19,9 +19,9 @@
 
 
 
-void initRgbLedPin(uint8_t redPin, uint8_t greenPin, uint8_t bluePin);
+void initRGBPeripheral();
 void RGBcolorWrite (uint8_t red, uint8_t green, uint8_t blue);
-void setColor(uint8_t color);
+void RGBsetColor(uint8_t color);
 
 
 #endif	/* RGBLED_H */

@@ -123,7 +123,7 @@ children:
       - type: String
         attributes: {id: text}
         children:
-        - {type: Value, value: '**** PWM Frequency is 2928 Hz ****'}
+        - {type: Value, value: '**** PWM Frequency is 2939 Hz ****'}
   - type: Integer
     attributes: {id: TCC_MODULE_FREQUENCY}
     children:
@@ -137,7 +137,7 @@ children:
     - type: Values
       children:
       - type: User
-        attributes: {value: '2048'}
+        attributes: {value: '2040'}
   - type: Long
     attributes: {id: TCC_TIMER_PERIOD}
     children:

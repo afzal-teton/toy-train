@@ -33,8 +33,9 @@ extern HallSensor hallSensor;
 
 extern void initHallSensor( uint8_t direction, uint8_t speed);
 extern uint8_t  measureHallSensorValue();
-extern void setIitialTime();
-extern void setHallSensorReadDelay(unsigned long delayTime);
+extern void setHallSensorReadDelay();
+extern void setHallNoReasultInterval();
+ 
 
 
 

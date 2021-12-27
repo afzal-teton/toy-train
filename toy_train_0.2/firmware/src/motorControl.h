@@ -35,7 +35,7 @@ extern uint8_t getMotorDirection();
 extern uint8_t getMotorSpeed();
 
 
-extern void motorInit(uint8_t forward, uint8_t beverse);
+extern void initMotorPeripheral();
 extern void motorDirection(int8_t direction);
 extern void motorSpeed (uint8_t speed);
 extern void motorControl(int8_t direction, uint8_t speed);

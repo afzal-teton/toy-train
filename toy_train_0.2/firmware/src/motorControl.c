@@ -1,13 +1,13 @@
 #include "motorControl.h"
+#include "definitions.h"
 
 Motor motor ;
 
 
-void motorInit(uint8_t forward, uint8_t beverse){
-//  motor.fowrard_pin = direction; 
-//  motor.reverse_pin = speed;
-//  motor.direction_flag = FORWARD;
-//  motor.speed_flag = 0;
+void initMotorPeripheral(){
+    TCC0_PWMStart();
+    TCC0_PWM24bitDutySet(TCC0_CHANNEL3, 0);
+    TCC0_PWM24bitDutySet(TCC0_CHANNEL2, 0);
 }
 
 void motorDirection(int8_t direction){
@@ -46,20 +46,20 @@ void accelerateMotor(){
   if (motor.direction_flag == MOTOR_FORWARD){
     switch (motor.speed_flag){
       case (MOTOR_SPEED_MID):
-        control(motor.direction_flag, MOTOR_SPEED_MAX);
+        motorControl(motor.direction_flag, MOTOR_SPEED_MAX);
       break;
       case(MOTOR_SPEED_MIN):
-        control(motor.direction_flag, MOTOR_SPEED_MID);
+        motorControl(motor.direction_flag, MOTOR_SPEED_MID);
       break;
       case(0):
-        control(motor.direction_flag, MOTOR_SPEED_MIN);
+        motorControl(motor.direction_flag, MOTOR_SPEED_MIN);
       break;
         default:
       break;
     }
   }
   else{
-    control(MOTOR_FORWARD, MOTOR_SPEED_MIN);
+    motorControl(MOTOR_FORWARD, MOTOR_SPEED_MIN);
   }
 }
 

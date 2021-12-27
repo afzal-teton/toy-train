@@ -76,10 +76,10 @@ void TCC0_PWMInitialize(void)
  	 	 | TCC_WAVE_SWAP2_Msk;
 
     /* Configure duty cycle values */
-    TCC0_REGS->TCC_CC[0] = 28U;
-    TCC0_REGS->TCC_CC[1] = 64U;
+    TCC0_REGS->TCC_CC[0] = 0U;
+    TCC0_REGS->TCC_CC[1] = 0U;
     TCC0_REGS->TCC_CC[2] = 0U;
-    TCC0_REGS->TCC_CC[3] = 66U;
+    TCC0_REGS->TCC_CC[3] = 0U;
     TCC0_REGS->TCC_PER = 2040U;
 
 

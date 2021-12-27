@@ -6,13 +6,13 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: E45D1648EFC10229D7BE94DB19221FF7
-- generatedChecksum: CB8A0F259C5E688B14FCC50BD410FBB0
+- generatedChecksum: 49701951F1AD712C3C30C052C9DC9499
   logicalPath: config/toytrain-config
   name: initialization.c
   physicalPath: ''
   security: NON_SECURE
   type: SOURCE
-  userChecksum: CB8A0F259C5E688B14FCC50BD410FBB0
+  userChecksum: 49701951F1AD712C3C30C052C9DC9499
 - generatedChecksum: 1459B02DE4E32D9629543F6B5C3FC103
   logicalPath: config/toytrain-config
   name: interrupts.c
@@ -34,13 +34,20 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: null
-- generatedChecksum: 47B3C65CF8739A6E08B96BCB68247F35
+- generatedChecksum: EBD22E7C946F7420A5AD7D04C384C7A9
+  logicalPath: config/toytrain-config/peripheral/adc
+  name: plib_adc.c
+  physicalPath: peripheral/adc
+  security: NON_SECURE
+  type: SOURCE
+  userChecksum: EBD22E7C946F7420A5AD7D04C384C7A9
+- generatedChecksum: 324A40F194F6E1E49BDCBAEA497FA28E
   logicalPath: config/toytrain-config/peripheral/clock
   name: plib_clock.c
   physicalPath: peripheral/clock
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 47B3C65CF8739A6E08B96BCB68247F35
+  userChecksum: 324A40F194F6E1E49BDCBAEA497FA28E
 - generatedChecksum: C3ECDED3D6301DB0DE622293ED615D21
   logicalPath: config/toytrain-config/peripheral/evsys
   name: plib_evsys.c
@@ -62,13 +69,13 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: 8E76B0609233122F5E1694614CEC13B1
-- generatedChecksum: 8F1510B149AF14F33EB21A993B03B514
+- generatedChecksum: CA42670763CCE27B757A15DD0BDE858C
   logicalPath: config/toytrain-config/peripheral/port
   name: plib_port.c
   physicalPath: peripheral/port
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 8F1510B149AF14F33EB21A993B03B514
+  userChecksum: CA42670763CCE27B757A15DD0BDE858C
 - generatedChecksum: 7A6C634DCCFB72A50CE74B1F05C8C147
   logicalPath: config/toytrain-config/peripheral/sercom/usart
   name: plib_sercom0_usart.c
@@ -90,21 +97,21 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: 27966322031823120629750C006A867E
-- generatedChecksum: 4A661FFE16F52DB2C2B470D4A9F8C5C5
+- generatedChecksum: 328F87A3B2112FE007A36C00AD28ADDA
   logicalPath: config/toytrain-config/peripheral/tc
   name: plib_tc3.c
   physicalPath: peripheral/tc
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 4A661FFE16F52DB2C2B470D4A9F8C5C5
-- generatedChecksum: AD8771B99CCBBA691C4E24AD3AA04F5D
+  userChecksum: 328F87A3B2112FE007A36C00AD28ADDA
+- generatedChecksum: CAB7EABC4F5FCCF5EDAED5F2169C5433
   logicalPath: config/toytrain-config/peripheral/tcc
   name: plib_tcc0.c
   physicalPath: peripheral/tcc
   security: NON_SECURE
   type: SOURCE
-  userChecksum: AD8771B99CCBBA691C4E24AD3AA04F5D
-- generatedChecksum: 45FB5FFE0170194CCF84B595A5C0F9AC
+  userChecksum: CAB7EABC4F5FCCF5EDAED5F2169C5433
+- generatedChecksum: FF18DA9993A19785D7FAE447674960FA
   logicalPath: config/toytrain-config/peripheral/tcc
   name: plib_tcc2.c
   physicalPath: peripheral/tcc
@@ -230,13 +237,13 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: 2AD9700A41DC94A60C663A17CEDB2703
-- generatedChecksum: AE9B297252F6A3DA6E5B451D5FB8DD0E
+- generatedChecksum: 6FFB83762C908A799971424EFBFB611C
   logicalPath: config/toytrain-config
   name: definitions.h
   physicalPath: ''
   security: NON_SECURE
   type: HEADER
-  userChecksum: AE9B297252F6A3DA6E5B451D5FB8DD0E
+  userChecksum: 6FFB83762C908A799971424EFBFB611C
 - generatedChecksum: 7200FE37B300952D70C11DFE5DA3D6B7
   logicalPath: config/toytrain-config
   name: device.h
@@ -419,6 +426,20 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: B43B1C083FF9FEB9054B6EA52E742154
+- generatedChecksum: E1EBCFB84A88D86D910775A333EB0D50
+  logicalPath: config/toytrain-config/peripheral/adc
+  name: plib_adc.h
+  physicalPath: peripheral/adc
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: E1EBCFB84A88D86D910775A333EB0D50
+- generatedChecksum: 8A304BB3ADE3A89AD85D8DE4B7FC76B9
+  logicalPath: config/toytrain-config/peripheral/adc
+  name: plib_adc_common.h
+  physicalPath: peripheral/adc
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: 8A304BB3ADE3A89AD85D8DE4B7FC76B9
 - generatedChecksum: D9883C70E96468DEE4D7B4669D1C837B
   logicalPath: config/toytrain-config/peripheral/clock
   name: plib_clock.h
@@ -447,13 +468,13 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: AE3541D9EB0BC86EE90AC03EA3E1339F
-- generatedChecksum: E541A2918DB858780719179551224DE7
+- generatedChecksum: FB9721712A73A9C2A80CEBB94ABBE64C
   logicalPath: config/toytrain-config/peripheral/port
   name: plib_port.h
   physicalPath: peripheral/port
   security: NON_SECURE
   type: HEADER
-  userChecksum: E541A2918DB858780719179551224DE7
+  userChecksum: FB9721712A73A9C2A80CEBB94ABBE64C
 - generatedChecksum: 9E847139EB4A35248CEAA3CF830D18DD
   logicalPath: config/toytrain-config/peripheral/sercom/usart
   name: plib_sercom0_usart.h
@@ -771,35 +792,5 @@ files:
   userChecksum: 9311D40BCB46694419846F81034D32FD
 format_version: v1.0
 libraries: []
-settings:
-- append: true
-  category: C32
-  delimiter: ;
-  key: extra-include-directories
-  security: NON_SECURE
-  value: ../src;../src/config/toytrain-config;../src/packs/ATSAMD21G18A_DFP;../src/packs/CMSIS/CMSIS/Core/Include;../src/packs/CMSIS/
-- append: false
-  category: C32-LD
-  delimiter: ''
-  key: heap-size
-  security: NON_SECURE
-  value: '512'
-- append: false
-  category: C32-LD
-  delimiter: ''
-  key: no-device-startup-code
-  security: NON_SECURE
-  value: 'true'
-- append: true
-  category: C32-LD
-  delimiter: ;=
-  key: preprocessor-macros
-  security: NON_SECURE
-  value: ''
-- append: true
-  category: C32CPP
-  delimiter: ;
-  key: extra-include-directories
-  security: NON_SECURE
-  value: ../src;../src/config/toytrain-config;../src/packs/ATSAMD21G18A_DFP;../src/packs/CMSIS/CMSIS/Core/Include;../src/packs/CMSIS/
+settings: []
 sourcePaths: []

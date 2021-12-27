@@ -65,6 +65,10 @@
 // *****************************************************************************
 // *****************************************************************************
 
+/*** Macros for pd_adc_in pin ***/
+#define pd_adc_in_Get()               (((PORT_REGS->GROUP[1].PORT_IN >> 8U)) & 0x01U)
+#define pd_adc_in_PIN                  PORT_PIN_PB08
+
 /*** Macros for hall_dir_sense_pin pin ***/
 #define hall_dir_sense_pin_Set()               (PORT_REGS->GROUP[1].PORT_OUTSET = ((uint32_t)1U << 9U))
 #define hall_dir_sense_pin_Clear()             (PORT_REGS->GROUP[1].PORT_OUTCLR = ((uint32_t)1U << 9U))

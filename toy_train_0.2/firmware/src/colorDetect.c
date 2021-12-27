@@ -1,55 +1,45 @@
 #include "colorDetect.h"
 #include "AppGlobals.h"
-
+#include "definitions.h"
 
 uint8_t lastColor = 0; 
-uint8_t readCount = 0;
-uint32_t lastMillis = 0;
 uint32_t colorCount = 0;
 
-uint16_t red = 0;         
-uint16_t green = 0;       
-uint16_t blue = 0;   
-uint16_t ambient = 0;
-uint16_t white = 0;
+//uint16_t red = 0;         
+//uint16_t green = 0;       
+//uint16_t blue = 0;   
+//uint16_t ambient = 0;
+//uint16_t white = 0;
+
+
+PDColor pdColor ;
 
 //------------------- Initialize Color Sensor starts ------------------//
-void initColorDetection(uint8_t redPin, uint8_t greenPin, uint8_t bluePin, uint8_t pdPin)
-{
-//    pinMode(redPin,OUTPUT);
-//    pinMode(greenPin,OUTPUT);
-//    pinMode(bluePin,OUTPUT);
-//    pinMode(pdPin,INPUT);
-//
-//    redLed = redPin;
-//    greenLed = greenPin;
-//    blueLed = bluePin;
-//    photoDiode = pdPin;
-//
-//    colorWrite(OFF, OFF, OFF);
+void PDInit(){
+
 }
 //------------------- Initialize Color Sensor ends ------------------//
 
 //------------------- Color Sensing function starts ------------------//
-void colorWrite (uint8_t red, uint8_t green, uint8_t blue){
-//  digitalWrite(redLed, red);
-//  digitalWrite(greenLed, green);
-//  digitalWrite(blueLed, blue);
+void PDColorWrite (uint8_t red, uint8_t green, uint8_t blue){
+    red ?   pd_red_Clear()  : pd_red_Set();
+    blue ?  pd_blue_Clear() : pd_blue_Set() ;
+    green ? pd_green_Clear() : pd_green_Set() ;
 }
 
-uint8_t getColor(){
-    red = ambient > red ? 0 : (red - ambient);
-    green = ambient > green ? 0 : (green - ambient);
-    blue = ambient > blue ? 0 : (blue - ambient);
-    white = ambient > white ? 0 : (white - ambient);
-    red = (red*100)/white;
-    green = (green*100)/white;
-    blue = (blue*100)/white;
-    if(white < 40)
+uint8_t generateColor(){
+    pdColor.red = pdColor.ambient > pdColor.red ? 0 : (pdColor.red - pdColor.ambient);
+    pdColor.green = pdColor.ambient > pdColor.green ? 0 : (pdColor.green - pdColor.ambient);
+    pdColor.blue = pdColor.ambient > pdColor.blue ? 0 : (pdColor.blue - pdColor.ambient);
+    pdColor.white = pdColor.ambient > pdColor.white ? 0 : (pdColor.white - pdColor.ambient);
+    pdColor.red = (pdColor.red*100)/pdColor.white;
+    pdColor.green = (pdColor.green*100)/pdColor.white;
+    pdColor.blue = (pdColor.blue*100)/pdColor.white;
+    if(pdColor.white < 200)
     {
         return NO_COLOR;
     }
-    else if(green < red && 2*blue < red )
+    else if(pdColor.green < pdColor.red && 2*pdColor.blue < pdColor.red )
     {
         if(lastColor == RED)
         {
@@ -65,7 +55,7 @@ uint8_t getColor(){
         }
         lastColor = RED;
     }
-    else if(2*blue < red && 3*blue < green && white > 100)
+    else if(2*pdColor.blue < pdColor.red && 3*pdColor.blue < pdColor.green && pdColor.white > 400)
     {        
         if(lastColor == YELLOW)
         {
@@ -81,7 +71,7 @@ uint8_t getColor(){
         }
         lastColor = YELLOW;
     }
-    else if(green > 3*red && 2*blue < green && white < 80)
+    else if(pdColor.green > 3*pdColor.red && 2*pdColor.blue < pdColor.green)
     {
         if(lastColor == GREEN)
         {
@@ -97,7 +87,7 @@ uint8_t getColor(){
         }
         lastColor = GREEN;
     }
-    else if(blue > 2*red && 4*blue > 2*green)
+    else if(pdColor.blue > 2*pdColor.red && 4*pdColor.blue > 2*pdColor.green)
     {
         if(lastColor == BLUE)
         {
@@ -113,7 +103,7 @@ uint8_t getColor(){
         }
         lastColor = BLUE;
     }
-    else if(2*blue > red && blue < 2*red && green < 4*red && white > 200)
+    else if(2*pdColor.blue > pdColor.red && pdColor.blue < 2*pdColor.red && pdColor.green < 4*pdColor.red && pdColor.white > 600)
     {
         if(lastColor == WHITE)
         {
@@ -132,46 +122,46 @@ uint8_t getColor(){
     return NO_COLOR;
 }
 
-uint8_t reading()
-{
-    if(100)
-    {
+uint8_t PDColourRead(){
+    static readCount = 0 ;
+    static pdLastRead = 0;
+    if(global_photoDiodeLastReadInterval >= PHOTO_DIODE_INTERVAL_FROM_LAST_READ_10MS){
         readCount = 0;
-        lastMillis = 0;
     }
-    if(1)
-    {
-        lastMillis = 0;
-        switch(readCount)
-        {
+    if(global_photoDiodeLastReadInterval != pdLastRead){
+        pdLastRead = global_photoDiodeLastReadInterval;
+        switch(readCount){
             case(0):
-                colorWrite(OFF, OFF, OFF);
-            break;
+                PDColorWrite(OFF, OFF, OFF);
+                break;
             case(1):
-                //ambient = analogRead(photoDiode);
-                colorWrite(ON, OFF, OFF);
-            break;
+                pdColor.ambient = adcValue ;
+                PDColorWrite(ON, OFF, OFF);
+                break;
             case(2):
-                //red = analogRead(photoDiode);
-                colorWrite(OFF, ON, OFF);
-            break;
+                pdColor.red = adcValue;
+                PDColorWrite(OFF, ON, OFF);
+                break;
             case(3):
-                //green = analogRead(photoDiode);
-                colorWrite(OFF, OFF, ON);
-            break;
+                pdColor.green = adcValue;
+                PDColorWrite(OFF, OFF, ON);
+                break;
             case(4):
-                //blue = analogRead(photoDiode);
-                colorWrite(ON, ON, ON);
-            break;
+                pdColor.blue = adcValue;
+                PDColorWrite(ON, ON, ON);
+                break;
             case(5):
-                //white = analogRead(photoDiode);
-                colorWrite(OFF, OFF, OFF);
-                readCount = 1;
-                return getColor();
-            break;
+                pdColor.white = adcValue;
+                PDColorWrite(OFF, OFF, OFF);
+                break;
             default:
-                colorWrite(ON, ON, ON);
+                PDColorWrite(OFF, OFF, OFF);
             break;
+        }
+        if(readCount == 5){
+            global_photoDiodeLastReadInterval = 0 ;
+            readCount = 0;
+            return generateColor();
         }
         readCount++;
     }

@@ -39,7 +39,7 @@ uint8_t  measureHallSensorValue(){
     }
     return 0;
 }
-void setHallSensorReadDelay(unsigned long delayTime){
+void setHallSensorReadDelay(){
     global_hallSensorInertiaCounter = HALL_SENSOR_INERTIA ;
 }
 void setHallNoReasultInterval(){

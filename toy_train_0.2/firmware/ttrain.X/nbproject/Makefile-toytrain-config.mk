@@ -57,17 +57,17 @@ OBJECTDIR=build/${CND_CONF}/${IMAGE_TYPE}
 DISTDIR=dist/${CND_CONF}/${IMAGE_TYPE}
 
 # Source Files Quoted if spaced
-SOURCEFILES_QUOTED_IF_SPACED=../src/config/toytrain-config/peripheral/nvmctrl/plib_nvmctrl.c ../src/config/toytrain-config/peripheral/evsys/plib_evsys.c ../src/main.c ../src/config/toytrain-config/initialization.c ../src/config/toytrain-config/interrupts.c ../src/config/toytrain-config/exceptions.c ../src/config/toytrain-config/peripheral/port/plib_port.c ../src/config/toytrain-config/peripheral/clock/plib_clock.c ../src/config/toytrain-config/peripheral/nvic/plib_nvic.c ../src/config/toytrain-config/peripheral/systick/plib_systick.c ../src/config/toytrain-config/libc_syscalls.c /home/afzal/work-zone/MPlab-x/gcc/gcc-config/startup_gcc.c /home/afzal/work-zone/MPlab-x/gcc/gcc-config/gcc_monitor.c ../src/config/toytrain-config/peripheral/sercom/usart/plib_sercom2_usart.c ../src/config/toytrain-config/peripheral/sercom/usart/plib_sercom0_usart.c /home/afzal/work-zone/MPlab-x/projects/toy_train_0.2/firmware/src/AppGlobals.c /home/afzal/work-zone/MPlab-x/projects/toy_train_0.2/firmware/src/colorDetect.c /home/afzal/work-zone/MPlab-x/projects/toy_train_0.2/firmware/src/hallSensor.c /home/afzal/work-zone/MPlab-x/projects/toy_train_0.2/firmware/src/motorControl.c /home/afzal/work-zone/MPlab-x/projects/toy_train_0.2/firmware/src/rgbLed.c ../src/config/toytrain-config/peripheral/tcc/plib_tcc2.c ../src/config/toytrain-config/peripheral/tcc/plib_tcc0.c ../src/config/toytrain-config/peripheral/tc/plib_tc3.c
+SOURCEFILES_QUOTED_IF_SPACED=/home/afzal/work-zone/MPlab-x/projects/toy_train_0.2/firmware/src/AppGlobals.c /home/afzal/work-zone/MPlab-x/projects/toy_train_0.2/firmware/src/colorDetect.c /home/afzal/work-zone/MPlab-x/projects/toy_train_0.2/firmware/src/hallSensor.c /home/afzal/work-zone/MPlab-x/projects/toy_train_0.2/firmware/src/motorControl.c /home/afzal/work-zone/MPlab-x/projects/toy_train_0.2/firmware/src/rgbLed.c ../src/config/toytrain-config/peripheral/adc/plib_adc.c ../src/config/toytrain-config/peripheral/clock/plib_clock.c ../src/config/toytrain-config/peripheral/evsys/plib_evsys.c ../src/config/toytrain-config/peripheral/nvic/plib_nvic.c ../src/config/toytrain-config/peripheral/nvmctrl/plib_nvmctrl.c ../src/config/toytrain-config/peripheral/port/plib_port.c ../src/config/toytrain-config/peripheral/sercom/usart/plib_sercom2_usart.c ../src/config/toytrain-config/peripheral/sercom/usart/plib_sercom0_usart.c ../src/config/toytrain-config/peripheral/systick/plib_systick.c ../src/config/toytrain-config/peripheral/tc/plib_tc3.c ../src/config/toytrain-config/peripheral/tcc/plib_tcc2.c ../src/config/toytrain-config/peripheral/tcc/plib_tcc0.c /home/afzal/work-zone/MPlab-x/gcc/gcc-config/gcc_monitor.c ../src/config/toytrain-config/initialization.c ../src/config/toytrain-config/interrupts.c ../src/config/toytrain-config/exceptions.c ../src/config/toytrain-config/libc_syscalls.c /home/afzal/work-zone/MPlab-x/gcc/gcc-config/startup_gcc.c ../src/main.c
 
 # Object Files Quoted if spaced
-OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/_ext/2068134214/plib_nvmctrl.o ${OBJECTDIR}/_ext/1936712154/plib_evsys.o ${OBJECTDIR}/_ext/1360937237/main.o ${OBJECTDIR}/_ext/1672823694/initialization.o ${OBJECTDIR}/_ext/1672823694/interrupts.o ${OBJECTDIR}/_ext/1672823694/exceptions.o ${OBJECTDIR}/_ext/1863268969/plib_port.o ${OBJECTDIR}/_ext/1938861640/plib_clock.o ${OBJECTDIR}/_ext/1863322120/plib_nvic.o ${OBJECTDIR}/_ext/1833659116/plib_systick.o ${OBJECTDIR}/_ext/1672823694/libc_syscalls.o ${OBJECTDIR}/_ext/1675061921/startup_gcc.o ${OBJECTDIR}/_ext/1675061921/gcc_monitor.o ${OBJECTDIR}/_ext/332908461/plib_sercom2_usart.o ${OBJECTDIR}/_ext/332908461/plib_sercom0_usart.o ${OBJECTDIR}/_ext/1239984807/AppGlobals.o ${OBJECTDIR}/_ext/1239984807/colorDetect.o ${OBJECTDIR}/_ext/1239984807/hallSensor.o ${OBJECTDIR}/_ext/1239984807/motorControl.o ${OBJECTDIR}/_ext/1239984807/rgbLed.o ${OBJECTDIR}/_ext/752838658/plib_tcc2.o ${OBJECTDIR}/_ext/752838658/plib_tcc0.o ${OBJECTDIR}/_ext/1963947771/plib_tc3.o
-POSSIBLE_DEPFILES=${OBJECTDIR}/_ext/2068134214/plib_nvmctrl.o.d ${OBJECTDIR}/_ext/1936712154/plib_evsys.o.d ${OBJECTDIR}/_ext/1360937237/main.o.d ${OBJECTDIR}/_ext/1672823694/initialization.o.d ${OBJECTDIR}/_ext/1672823694/interrupts.o.d ${OBJECTDIR}/_ext/1672823694/exceptions.o.d ${OBJECTDIR}/_ext/1863268969/plib_port.o.d ${OBJECTDIR}/_ext/1938861640/plib_clock.o.d ${OBJECTDIR}/_ext/1863322120/plib_nvic.o.d ${OBJECTDIR}/_ext/1833659116/plib_systick.o.d ${OBJECTDIR}/_ext/1672823694/libc_syscalls.o.d ${OBJECTDIR}/_ext/1675061921/startup_gcc.o.d ${OBJECTDIR}/_ext/1675061921/gcc_monitor.o.d ${OBJECTDIR}/_ext/332908461/plib_sercom2_usart.o.d ${OBJECTDIR}/_ext/332908461/plib_sercom0_usart.o.d ${OBJECTDIR}/_ext/1239984807/AppGlobals.o.d ${OBJECTDIR}/_ext/1239984807/colorDetect.o.d ${OBJECTDIR}/_ext/1239984807/hallSensor.o.d ${OBJECTDIR}/_ext/1239984807/motorControl.o.d ${OBJECTDIR}/_ext/1239984807/rgbLed.o.d ${OBJECTDIR}/_ext/752838658/plib_tcc2.o.d ${OBJECTDIR}/_ext/752838658/plib_tcc0.o.d ${OBJECTDIR}/_ext/1963947771/plib_tc3.o.d
+OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/_ext/1239984807/AppGlobals.o ${OBJECTDIR}/_ext/1239984807/colorDetect.o ${OBJECTDIR}/_ext/1239984807/hallSensor.o ${OBJECTDIR}/_ext/1239984807/motorControl.o ${OBJECTDIR}/_ext/1239984807/rgbLed.o ${OBJECTDIR}/_ext/752856886/plib_adc.o ${OBJECTDIR}/_ext/1938861640/plib_clock.o ${OBJECTDIR}/_ext/1936712154/plib_evsys.o ${OBJECTDIR}/_ext/1863322120/plib_nvic.o ${OBJECTDIR}/_ext/2068134214/plib_nvmctrl.o ${OBJECTDIR}/_ext/1863268969/plib_port.o ${OBJECTDIR}/_ext/332908461/plib_sercom2_usart.o ${OBJECTDIR}/_ext/332908461/plib_sercom0_usart.o ${OBJECTDIR}/_ext/1833659116/plib_systick.o ${OBJECTDIR}/_ext/1963947771/plib_tc3.o ${OBJECTDIR}/_ext/752838658/plib_tcc2.o ${OBJECTDIR}/_ext/752838658/plib_tcc0.o ${OBJECTDIR}/_ext/1675061921/gcc_monitor.o ${OBJECTDIR}/_ext/1672823694/initialization.o ${OBJECTDIR}/_ext/1672823694/interrupts.o ${OBJECTDIR}/_ext/1672823694/exceptions.o ${OBJECTDIR}/_ext/1672823694/libc_syscalls.o ${OBJECTDIR}/_ext/1675061921/startup_gcc.o ${OBJECTDIR}/_ext/1360937237/main.o
+POSSIBLE_DEPFILES=${OBJECTDIR}/_ext/1239984807/AppGlobals.o.d ${OBJECTDIR}/_ext/1239984807/colorDetect.o.d ${OBJECTDIR}/_ext/1239984807/hallSensor.o.d ${OBJECTDIR}/_ext/1239984807/motorControl.o.d ${OBJECTDIR}/_ext/1239984807/rgbLed.o.d ${OBJECTDIR}/_ext/752856886/plib_adc.o.d ${OBJECTDIR}/_ext/1938861640/plib_clock.o.d ${OBJECTDIR}/_ext/1936712154/plib_evsys.o.d ${OBJECTDIR}/_ext/1863322120/plib_nvic.o.d ${OBJECTDIR}/_ext/2068134214/plib_nvmctrl.o.d ${OBJECTDIR}/_ext/1863268969/plib_port.o.d ${OBJECTDIR}/_ext/332908461/plib_sercom2_usart.o.d ${OBJECTDIR}/_ext/332908461/plib_sercom0_usart.o.d ${OBJECTDIR}/_ext/1833659116/plib_systick.o.d ${OBJECTDIR}/_ext/1963947771/plib_tc3.o.d ${OBJECTDIR}/_ext/752838658/plib_tcc2.o.d ${OBJECTDIR}/_ext/752838658/plib_tcc0.o.d ${OBJECTDIR}/_ext/1675061921/gcc_monitor.o.d ${OBJECTDIR}/_ext/1672823694/initialization.o.d ${OBJECTDIR}/_ext/1672823694/interrupts.o.d ${OBJECTDIR}/_ext/1672823694/exceptions.o.d ${OBJECTDIR}/_ext/1672823694/libc_syscalls.o.d ${OBJECTDIR}/_ext/1675061921/startup_gcc.o.d ${OBJECTDIR}/_ext/1360937237/main.o.d
 
 # Object Files
-OBJECTFILES=${OBJECTDIR}/_ext/2068134214/plib_nvmctrl.o ${OBJECTDIR}/_ext/1936712154/plib_evsys.o ${OBJECTDIR}/_ext/1360937237/main.o ${OBJECTDIR}/_ext/1672823694/initialization.o ${OBJECTDIR}/_ext/1672823694/interrupts.o ${OBJECTDIR}/_ext/1672823694/exceptions.o ${OBJECTDIR}/_ext/1863268969/plib_port.o ${OBJECTDIR}/_ext/1938861640/plib_clock.o ${OBJECTDIR}/_ext/1863322120/plib_nvic.o ${OBJECTDIR}/_ext/1833659116/plib_systick.o ${OBJECTDIR}/_ext/1672823694/libc_syscalls.o ${OBJECTDIR}/_ext/1675061921/startup_gcc.o ${OBJECTDIR}/_ext/1675061921/gcc_monitor.o ${OBJECTDIR}/_ext/332908461/plib_sercom2_usart.o ${OBJECTDIR}/_ext/332908461/plib_sercom0_usart.o ${OBJECTDIR}/_ext/1239984807/AppGlobals.o ${OBJECTDIR}/_ext/1239984807/colorDetect.o ${OBJECTDIR}/_ext/1239984807/hallSensor.o ${OBJECTDIR}/_ext/1239984807/motorControl.o ${OBJECTDIR}/_ext/1239984807/rgbLed.o ${OBJECTDIR}/_ext/752838658/plib_tcc2.o ${OBJECTDIR}/_ext/752838658/plib_tcc0.o ${OBJECTDIR}/_ext/1963947771/plib_tc3.o
+OBJECTFILES=${OBJECTDIR}/_ext/1239984807/AppGlobals.o ${OBJECTDIR}/_ext/1239984807/colorDetect.o ${OBJECTDIR}/_ext/1239984807/hallSensor.o ${OBJECTDIR}/_ext/1239984807/motorControl.o ${OBJECTDIR}/_ext/1239984807/rgbLed.o ${OBJECTDIR}/_ext/752856886/plib_adc.o ${OBJECTDIR}/_ext/1938861640/plib_clock.o ${OBJECTDIR}/_ext/1936712154/plib_evsys.o ${OBJECTDIR}/_ext/1863322120/plib_nvic.o ${OBJECTDIR}/_ext/2068134214/plib_nvmctrl.o ${OBJECTDIR}/_ext/1863268969/plib_port.o ${OBJECTDIR}/_ext/332908461/plib_sercom2_usart.o ${OBJECTDIR}/_ext/332908461/plib_sercom0_usart.o ${OBJECTDIR}/_ext/1833659116/plib_systick.o ${OBJECTDIR}/_ext/1963947771/plib_tc3.o ${OBJECTDIR}/_ext/752838658/plib_tcc2.o ${OBJECTDIR}/_ext/752838658/plib_tcc0.o ${OBJECTDIR}/_ext/1675061921/gcc_monitor.o ${OBJECTDIR}/_ext/1672823694/initialization.o ${OBJECTDIR}/_ext/1672823694/interrupts.o ${OBJECTDIR}/_ext/1672823694/exceptions.o ${OBJECTDIR}/_ext/1672823694/libc_syscalls.o ${OBJECTDIR}/_ext/1675061921/startup_gcc.o ${OBJECTDIR}/_ext/1360937237/main.o
 
 # Source Files
-SOURCEFILES=../src/config/toytrain-config/peripheral/nvmctrl/plib_nvmctrl.c ../src/config/toytrain-config/peripheral/evsys/plib_evsys.c ../src/main.c ../src/config/toytrain-config/initialization.c ../src/config/toytrain-config/interrupts.c ../src/config/toytrain-config/exceptions.c ../src/config/toytrain-config/peripheral/port/plib_port.c ../src/config/toytrain-config/peripheral/clock/plib_clock.c ../src/config/toytrain-config/peripheral/nvic/plib_nvic.c ../src/config/toytrain-config/peripheral/systick/plib_systick.c ../src/config/toytrain-config/libc_syscalls.c /home/afzal/work-zone/MPlab-x/gcc/gcc-config/startup_gcc.c /home/afzal/work-zone/MPlab-x/gcc/gcc-config/gcc_monitor.c ../src/config/toytrain-config/peripheral/sercom/usart/plib_sercom2_usart.c ../src/config/toytrain-config/peripheral/sercom/usart/plib_sercom0_usart.c /home/afzal/work-zone/MPlab-x/projects/toy_train_0.2/firmware/src/AppGlobals.c /home/afzal/work-zone/MPlab-x/projects/toy_train_0.2/firmware/src/colorDetect.c /home/afzal/work-zone/MPlab-x/projects/toy_train_0.2/firmware/src/hallSensor.c /home/afzal/work-zone/MPlab-x/projects/toy_train_0.2/firmware/src/motorControl.c /home/afzal/work-zone/MPlab-x/projects/toy_train_0.2/firmware/src/rgbLed.c ../src/config/toytrain-config/peripheral/tcc/plib_tcc2.c ../src/config/toytrain-config/peripheral/tcc/plib_tcc0.c ../src/config/toytrain-config/peripheral/tc/plib_tc3.c
+SOURCEFILES=/home/afzal/work-zone/MPlab-x/projects/toy_train_0.2/firmware/src/AppGlobals.c /home/afzal/work-zone/MPlab-x/projects/toy_train_0.2/firmware/src/colorDetect.c /home/afzal/work-zone/MPlab-x/projects/toy_train_0.2/firmware/src/hallSensor.c /home/afzal/work-zone/MPlab-x/projects/toy_train_0.2/firmware/src/motorControl.c /home/afzal/work-zone/MPlab-x/projects/toy_train_0.2/firmware/src/rgbLed.c ../src/config/toytrain-config/peripheral/adc/plib_adc.c ../src/config/toytrain-config/peripheral/clock/plib_clock.c ../src/config/toytrain-config/peripheral/evsys/plib_evsys.c ../src/config/toytrain-config/peripheral/nvic/plib_nvic.c ../src/config/toytrain-config/peripheral/nvmctrl/plib_nvmctrl.c ../src/config/toytrain-config/peripheral/port/plib_port.c ../src/config/toytrain-config/peripheral/sercom/usart/plib_sercom2_usart.c ../src/config/toytrain-config/peripheral/sercom/usart/plib_sercom0_usart.c ../src/config/toytrain-config/peripheral/systick/plib_systick.c ../src/config/toytrain-config/peripheral/tc/plib_tc3.c ../src/config/toytrain-config/peripheral/tcc/plib_tcc2.c ../src/config/toytrain-config/peripheral/tcc/plib_tcc0.c /home/afzal/work-zone/MPlab-x/gcc/gcc-config/gcc_monitor.c ../src/config/toytrain-config/initialization.c ../src/config/toytrain-config/interrupts.c ../src/config/toytrain-config/exceptions.c ../src/config/toytrain-config/libc_syscalls.c /home/afzal/work-zone/MPlab-x/gcc/gcc-config/startup_gcc.c ../src/main.c
 
 # Pack Options 
 PACK_COMMON_OPTIONS=-I "${DFP_DIR}/samd21a/include"  -I "${CMSIS_DIR}/CMSIS/Core/Include"
@@ -109,96 +109,6 @@ endif
 # ------------------------------------------------------------------------------------
 # Rules for buildStep: compile
 ifeq ($(TYPE_IMAGE), DEBUG_RUN)
-${OBJECTDIR}/_ext/2068134214/plib_nvmctrl.o: ../src/config/toytrain-config/peripheral/nvmctrl/plib_nvmctrl.c  .generated_files/flags/toytrain-config/9c23bed60f2e64b7b440f96a1fcd15c31443adeb .generated_files/flags/toytrain-config/ac02ed1e24fe11f0598702808dd8873bd1b1e619
-	@${MKDIR} "${OBJECTDIR}/_ext/2068134214" 
-	@${RM} ${OBJECTDIR}/_ext/2068134214/plib_nvmctrl.o.d 
-	@${RM} ${OBJECTDIR}/_ext/2068134214/plib_nvmctrl.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE) -mcpu=cortex-m0plus -g -D__DEBUG  -gdwarf-2  -x c -c -D__$(MP_PROCESSOR_OPTION)__  -mthumb ${PACK_COMMON_OPTIONS}  -Os -ffunction-sections -mlong-calls -I "../src/config/toytrain-config" -I "../src/packs/ATSAMD21G18A_DFP" -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/2068134214/plib_nvmctrl.o.d" -o ${OBJECTDIR}/_ext/2068134214/plib_nvmctrl.o ../src/config/toytrain-config/peripheral/nvmctrl/plib_nvmctrl.c  -DXPRJ_toytrain-config=$(CND_CONF)  $(COMPARISON_BUILD) 
-	
-${OBJECTDIR}/_ext/1936712154/plib_evsys.o: ../src/config/toytrain-config/peripheral/evsys/plib_evsys.c  .generated_files/flags/toytrain-config/34a2e11db5afb8ee6a0aee982012b73271316b97 .generated_files/flags/toytrain-config/ac02ed1e24fe11f0598702808dd8873bd1b1e619
-	@${MKDIR} "${OBJECTDIR}/_ext/1936712154" 
-	@${RM} ${OBJECTDIR}/_ext/1936712154/plib_evsys.o.d 
-	@${RM} ${OBJECTDIR}/_ext/1936712154/plib_evsys.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE) -mcpu=cortex-m0plus -g -D__DEBUG  -gdwarf-2  -x c -c -D__$(MP_PROCESSOR_OPTION)__  -mthumb ${PACK_COMMON_OPTIONS}  -Os -ffunction-sections -mlong-calls -I "../src/config/toytrain-config" -I "../src/packs/ATSAMD21G18A_DFP" -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/1936712154/plib_evsys.o.d" -o ${OBJECTDIR}/_ext/1936712154/plib_evsys.o ../src/config/toytrain-config/peripheral/evsys/plib_evsys.c  -DXPRJ_toytrain-config=$(CND_CONF)  $(COMPARISON_BUILD) 
-	
-${OBJECTDIR}/_ext/1360937237/main.o: ../src/main.c  .generated_files/flags/toytrain-config/1b7a1cd6bc21522f8dd2d49d7e44eb5c2893a836 .generated_files/flags/toytrain-config/ac02ed1e24fe11f0598702808dd8873bd1b1e619
-	@${MKDIR} "${OBJECTDIR}/_ext/1360937237" 
-	@${RM} ${OBJECTDIR}/_ext/1360937237/main.o.d 
-	@${RM} ${OBJECTDIR}/_ext/1360937237/main.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE) -mcpu=cortex-m0plus -g -D__DEBUG  -gdwarf-2  -x c -c -D__$(MP_PROCESSOR_OPTION)__  -mthumb ${PACK_COMMON_OPTIONS}  -Os -ffunction-sections -mlong-calls -I "../src/config/toytrain-config" -I "../src/packs/ATSAMD21G18A_DFP" -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/1360937237/main.o.d" -o ${OBJECTDIR}/_ext/1360937237/main.o ../src/main.c  -DXPRJ_toytrain-config=$(CND_CONF)  $(COMPARISON_BUILD) 
-	
-${OBJECTDIR}/_ext/1672823694/initialization.o: ../src/config/toytrain-config/initialization.c  .generated_files/flags/toytrain-config/562eb9342d3642a3343558dfaa12395348aeebb2 .generated_files/flags/toytrain-config/ac02ed1e24fe11f0598702808dd8873bd1b1e619
-	@${MKDIR} "${OBJECTDIR}/_ext/1672823694" 
-	@${RM} ${OBJECTDIR}/_ext/1672823694/initialization.o.d 
-	@${RM} ${OBJECTDIR}/_ext/1672823694/initialization.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE) -mcpu=cortex-m0plus -g -D__DEBUG  -gdwarf-2  -x c -c -D__$(MP_PROCESSOR_OPTION)__  -mthumb ${PACK_COMMON_OPTIONS}  -Os -ffunction-sections -mlong-calls -I "../src/config/toytrain-config" -I "../src/packs/ATSAMD21G18A_DFP" -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/1672823694/initialization.o.d" -o ${OBJECTDIR}/_ext/1672823694/initialization.o ../src/config/toytrain-config/initialization.c  -DXPRJ_toytrain-config=$(CND_CONF)  $(COMPARISON_BUILD) 
-	
-${OBJECTDIR}/_ext/1672823694/interrupts.o: ../src/config/toytrain-config/interrupts.c  .generated_files/flags/toytrain-config/99ae0a4a84ade85438e4016d463dce9161789569 .generated_files/flags/toytrain-config/ac02ed1e24fe11f0598702808dd8873bd1b1e619
-	@${MKDIR} "${OBJECTDIR}/_ext/1672823694" 
-	@${RM} ${OBJECTDIR}/_ext/1672823694/interrupts.o.d 
-	@${RM} ${OBJECTDIR}/_ext/1672823694/interrupts.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE) -mcpu=cortex-m0plus -g -D__DEBUG  -gdwarf-2  -x c -c -D__$(MP_PROCESSOR_OPTION)__  -mthumb ${PACK_COMMON_OPTIONS}  -Os -ffunction-sections -mlong-calls -I "../src/config/toytrain-config" -I "../src/packs/ATSAMD21G18A_DFP" -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/1672823694/interrupts.o.d" -o ${OBJECTDIR}/_ext/1672823694/interrupts.o ../src/config/toytrain-config/interrupts.c  -DXPRJ_toytrain-config=$(CND_CONF)  $(COMPARISON_BUILD) 
-	
-${OBJECTDIR}/_ext/1672823694/exceptions.o: ../src/config/toytrain-config/exceptions.c  .generated_files/flags/toytrain-config/c49e11cf9b987ca39d6756ba421af893c681cecd .generated_files/flags/toytrain-config/ac02ed1e24fe11f0598702808dd8873bd1b1e619
-	@${MKDIR} "${OBJECTDIR}/_ext/1672823694" 
-	@${RM} ${OBJECTDIR}/_ext/1672823694/exceptions.o.d 
-	@${RM} ${OBJECTDIR}/_ext/1672823694/exceptions.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE) -mcpu=cortex-m0plus -g -D__DEBUG  -gdwarf-2  -x c -c -D__$(MP_PROCESSOR_OPTION)__  -mthumb ${PACK_COMMON_OPTIONS}  -Os -ffunction-sections -mlong-calls -I "../src/config/toytrain-config" -I "../src/packs/ATSAMD21G18A_DFP" -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/1672823694/exceptions.o.d" -o ${OBJECTDIR}/_ext/1672823694/exceptions.o ../src/config/toytrain-config/exceptions.c  -DXPRJ_toytrain-config=$(CND_CONF)  $(COMPARISON_BUILD) 
-	
-${OBJECTDIR}/_ext/1863268969/plib_port.o: ../src/config/toytrain-config/peripheral/port/plib_port.c  .generated_files/flags/toytrain-config/2aff49631965e9b80c6dcabe38a7c680e0840f2f .generated_files/flags/toytrain-config/ac02ed1e24fe11f0598702808dd8873bd1b1e619
-	@${MKDIR} "${OBJECTDIR}/_ext/1863268969" 
-	@${RM} ${OBJECTDIR}/_ext/1863268969/plib_port.o.d 
-	@${RM} ${OBJECTDIR}/_ext/1863268969/plib_port.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE) -mcpu=cortex-m0plus -g -D__DEBUG  -gdwarf-2  -x c -c -D__$(MP_PROCESSOR_OPTION)__  -mthumb ${PACK_COMMON_OPTIONS}  -Os -ffunction-sections -mlong-calls -I "../src/config/toytrain-config" -I "../src/packs/ATSAMD21G18A_DFP" -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/1863268969/plib_port.o.d" -o ${OBJECTDIR}/_ext/1863268969/plib_port.o ../src/config/toytrain-config/peripheral/port/plib_port.c  -DXPRJ_toytrain-config=$(CND_CONF)  $(COMPARISON_BUILD) 
-	
-${OBJECTDIR}/_ext/1938861640/plib_clock.o: ../src/config/toytrain-config/peripheral/clock/plib_clock.c  .generated_files/flags/toytrain-config/82bbc8d56b8ea6e1ac90e02c9a40b7951c9c2c09 .generated_files/flags/toytrain-config/ac02ed1e24fe11f0598702808dd8873bd1b1e619
-	@${MKDIR} "${OBJECTDIR}/_ext/1938861640" 
-	@${RM} ${OBJECTDIR}/_ext/1938861640/plib_clock.o.d 
-	@${RM} ${OBJECTDIR}/_ext/1938861640/plib_clock.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE) -mcpu=cortex-m0plus -g -D__DEBUG  -gdwarf-2  -x c -c -D__$(MP_PROCESSOR_OPTION)__  -mthumb ${PACK_COMMON_OPTIONS}  -Os -ffunction-sections -mlong-calls -I "../src/config/toytrain-config" -I "../src/packs/ATSAMD21G18A_DFP" -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/1938861640/plib_clock.o.d" -o ${OBJECTDIR}/_ext/1938861640/plib_clock.o ../src/config/toytrain-config/peripheral/clock/plib_clock.c  -DXPRJ_toytrain-config=$(CND_CONF)  $(COMPARISON_BUILD) 
-	
-${OBJECTDIR}/_ext/1863322120/plib_nvic.o: ../src/config/toytrain-config/peripheral/nvic/plib_nvic.c  .generated_files/flags/toytrain-config/7698f1e1a5103e53c475a13e7bf4e66aba5c66ec .generated_files/flags/toytrain-config/ac02ed1e24fe11f0598702808dd8873bd1b1e619
-	@${MKDIR} "${OBJECTDIR}/_ext/1863322120" 
-	@${RM} ${OBJECTDIR}/_ext/1863322120/plib_nvic.o.d 
-	@${RM} ${OBJECTDIR}/_ext/1863322120/plib_nvic.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE) -mcpu=cortex-m0plus -g -D__DEBUG  -gdwarf-2  -x c -c -D__$(MP_PROCESSOR_OPTION)__  -mthumb ${PACK_COMMON_OPTIONS}  -Os -ffunction-sections -mlong-calls -I "../src/config/toytrain-config" -I "../src/packs/ATSAMD21G18A_DFP" -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/1863322120/plib_nvic.o.d" -o ${OBJECTDIR}/_ext/1863322120/plib_nvic.o ../src/config/toytrain-config/peripheral/nvic/plib_nvic.c  -DXPRJ_toytrain-config=$(CND_CONF)  $(COMPARISON_BUILD) 
-	
-${OBJECTDIR}/_ext/1833659116/plib_systick.o: ../src/config/toytrain-config/peripheral/systick/plib_systick.c  .generated_files/flags/toytrain-config/a4533c6176de8b09cb21c35ec1e6de0ea8e2ddb .generated_files/flags/toytrain-config/ac02ed1e24fe11f0598702808dd8873bd1b1e619
-	@${MKDIR} "${OBJECTDIR}/_ext/1833659116" 
-	@${RM} ${OBJECTDIR}/_ext/1833659116/plib_systick.o.d 
-	@${RM} ${OBJECTDIR}/_ext/1833659116/plib_systick.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE) -mcpu=cortex-m0plus -g -D__DEBUG  -gdwarf-2  -x c -c -D__$(MP_PROCESSOR_OPTION)__  -mthumb ${PACK_COMMON_OPTIONS}  -Os -ffunction-sections -mlong-calls -I "../src/config/toytrain-config" -I "../src/packs/ATSAMD21G18A_DFP" -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/1833659116/plib_systick.o.d" -o ${OBJECTDIR}/_ext/1833659116/plib_systick.o ../src/config/toytrain-config/peripheral/systick/plib_systick.c  -DXPRJ_toytrain-config=$(CND_CONF)  $(COMPARISON_BUILD) 
-	
-${OBJECTDIR}/_ext/1672823694/libc_syscalls.o: ../src/config/toytrain-config/libc_syscalls.c  .generated_files/flags/toytrain-config/6ffd16df61cc71345c1415fa52b7a0ea30c5f14f .generated_files/flags/toytrain-config/ac02ed1e24fe11f0598702808dd8873bd1b1e619
-	@${MKDIR} "${OBJECTDIR}/_ext/1672823694" 
-	@${RM} ${OBJECTDIR}/_ext/1672823694/libc_syscalls.o.d 
-	@${RM} ${OBJECTDIR}/_ext/1672823694/libc_syscalls.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE) -mcpu=cortex-m0plus -g -D__DEBUG  -gdwarf-2  -x c -c -D__$(MP_PROCESSOR_OPTION)__  -mthumb ${PACK_COMMON_OPTIONS}  -Os -ffunction-sections -mlong-calls -I "../src/config/toytrain-config" -I "../src/packs/ATSAMD21G18A_DFP" -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/1672823694/libc_syscalls.o.d" -o ${OBJECTDIR}/_ext/1672823694/libc_syscalls.o ../src/config/toytrain-config/libc_syscalls.c  -DXPRJ_toytrain-config=$(CND_CONF)  $(COMPARISON_BUILD) 
-	
-${OBJECTDIR}/_ext/1675061921/startup_gcc.o: /home/afzal/work-zone/MPlab-x/gcc/gcc-config/startup_gcc.c  .generated_files/flags/toytrain-config/2b97fb767b0a6db4b876174ce130f23d96f2e6a3 .generated_files/flags/toytrain-config/ac02ed1e24fe11f0598702808dd8873bd1b1e619
-	@${MKDIR} "${OBJECTDIR}/_ext/1675061921" 
-	@${RM} ${OBJECTDIR}/_ext/1675061921/startup_gcc.o.d 
-	@${RM} ${OBJECTDIR}/_ext/1675061921/startup_gcc.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE) -mcpu=cortex-m0plus -g -D__DEBUG  -gdwarf-2  -x c -c -D__$(MP_PROCESSOR_OPTION)__  -mthumb ${PACK_COMMON_OPTIONS}  -Os -ffunction-sections -mlong-calls -I "../src/config/toytrain-config" -I "../src/packs/ATSAMD21G18A_DFP" -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/1675061921/startup_gcc.o.d" -o ${OBJECTDIR}/_ext/1675061921/startup_gcc.o /home/afzal/work-zone/MPlab-x/gcc/gcc-config/startup_gcc.c  -DXPRJ_toytrain-config=$(CND_CONF)  $(COMPARISON_BUILD) 
-	
-${OBJECTDIR}/_ext/1675061921/gcc_monitor.o: /home/afzal/work-zone/MPlab-x/gcc/gcc-config/gcc_monitor.c  .generated_files/flags/toytrain-config/ee78c08d722959e7a7a2317552e5eddfa4533d6a .generated_files/flags/toytrain-config/ac02ed1e24fe11f0598702808dd8873bd1b1e619
-	@${MKDIR} "${OBJECTDIR}/_ext/1675061921" 
-	@${RM} ${OBJECTDIR}/_ext/1675061921/gcc_monitor.o.d 
-	@${RM} ${OBJECTDIR}/_ext/1675061921/gcc_monitor.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE) -mcpu=cortex-m0plus -g -D__DEBUG  -gdwarf-2  -x c -c -D__$(MP_PROCESSOR_OPTION)__  -mthumb ${PACK_COMMON_OPTIONS}  -Os -ffunction-sections -mlong-calls -I "../src/config/toytrain-config" -I "../src/packs/ATSAMD21G18A_DFP" -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/1675061921/gcc_monitor.o.d" -o ${OBJECTDIR}/_ext/1675061921/gcc_monitor.o /home/afzal/work-zone/MPlab-x/gcc/gcc-config/gcc_monitor.c  -DXPRJ_toytrain-config=$(CND_CONF)  $(COMPARISON_BUILD) 
-	
-${OBJECTDIR}/_ext/332908461/plib_sercom2_usart.o: ../src/config/toytrain-config/peripheral/sercom/usart/plib_sercom2_usart.c  .generated_files/flags/toytrain-config/200b41a169adaad0acb3c4ed4eb4fb9cec9c038e .generated_files/flags/toytrain-config/ac02ed1e24fe11f0598702808dd8873bd1b1e619
-	@${MKDIR} "${OBJECTDIR}/_ext/332908461" 
-	@${RM} ${OBJECTDIR}/_ext/332908461/plib_sercom2_usart.o.d 
-	@${RM} ${OBJECTDIR}/_ext/332908461/plib_sercom2_usart.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE) -mcpu=cortex-m0plus -g -D__DEBUG  -gdwarf-2  -x c -c -D__$(MP_PROCESSOR_OPTION)__  -mthumb ${PACK_COMMON_OPTIONS}  -Os -ffunction-sections -mlong-calls -I "../src/config/toytrain-config" -I "../src/packs/ATSAMD21G18A_DFP" -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/332908461/plib_sercom2_usart.o.d" -o ${OBJECTDIR}/_ext/332908461/plib_sercom2_usart.o ../src/config/toytrain-config/peripheral/sercom/usart/plib_sercom2_usart.c  -DXPRJ_toytrain-config=$(CND_CONF)  $(COMPARISON_BUILD) 
-	
-${OBJECTDIR}/_ext/332908461/plib_sercom0_usart.o: ../src/config/toytrain-config/peripheral/sercom/usart/plib_sercom0_usart.c  .generated_files/flags/toytrain-config/48d4fb7644269a72750175a8cbed8dfad43f11eb .generated_files/flags/toytrain-config/ac02ed1e24fe11f0598702808dd8873bd1b1e619
-	@${MKDIR} "${OBJECTDIR}/_ext/332908461" 
-	@${RM} ${OBJECTDIR}/_ext/332908461/plib_sercom0_usart.o.d 
-	@${RM} ${OBJECTDIR}/_ext/332908461/plib_sercom0_usart.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE) -mcpu=cortex-m0plus -g -D__DEBUG  -gdwarf-2  -x c -c -D__$(MP_PROCESSOR_OPTION)__  -mthumb ${PACK_COMMON_OPTIONS}  -Os -ffunction-sections -mlong-calls -I "../src/config/toytrain-config" -I "../src/packs/ATSAMD21G18A_DFP" -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/332908461/plib_sercom0_usart.o.d" -o ${OBJECTDIR}/_ext/332908461/plib_sercom0_usart.o ../src/config/toytrain-config/peripheral/sercom/usart/plib_sercom0_usart.c  -DXPRJ_toytrain-config=$(CND_CONF)  $(COMPARISON_BUILD) 
-	
 ${OBJECTDIR}/_ext/1239984807/AppGlobals.o: /home/afzal/work-zone/MPlab-x/projects/toy_train_0.2/firmware/src/AppGlobals.c  .generated_files/flags/toytrain-config/78535a4fa62523115435ec166607a704a0e779bb .generated_files/flags/toytrain-config/ac02ed1e24fe11f0598702808dd8873bd1b1e619
 	@${MKDIR} "${OBJECTDIR}/_ext/1239984807" 
 	@${RM} ${OBJECTDIR}/_ext/1239984807/AppGlobals.o.d 
@@ -229,6 +139,66 @@ ${OBJECTDIR}/_ext/1239984807/rgbLed.o: /home/afzal/work-zone/MPlab-x/projects/to
 	@${RM} ${OBJECTDIR}/_ext/1239984807/rgbLed.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE) -mcpu=cortex-m0plus -g -D__DEBUG  -gdwarf-2  -x c -c -D__$(MP_PROCESSOR_OPTION)__  -mthumb ${PACK_COMMON_OPTIONS}  -Os -ffunction-sections -mlong-calls -I "../src/config/toytrain-config" -I "../src/packs/ATSAMD21G18A_DFP" -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/1239984807/rgbLed.o.d" -o ${OBJECTDIR}/_ext/1239984807/rgbLed.o /home/afzal/work-zone/MPlab-x/projects/toy_train_0.2/firmware/src/rgbLed.c  -DXPRJ_toytrain-config=$(CND_CONF)  $(COMPARISON_BUILD) 
 	
+${OBJECTDIR}/_ext/752856886/plib_adc.o: ../src/config/toytrain-config/peripheral/adc/plib_adc.c  .generated_files/flags/toytrain-config/ade0edbf29b6a34faadaf9e992bed5e5cd7d5f03 .generated_files/flags/toytrain-config/ac02ed1e24fe11f0598702808dd8873bd1b1e619
+	@${MKDIR} "${OBJECTDIR}/_ext/752856886" 
+	@${RM} ${OBJECTDIR}/_ext/752856886/plib_adc.o.d 
+	@${RM} ${OBJECTDIR}/_ext/752856886/plib_adc.o 
+	${MP_CC}  $(MP_EXTRA_CC_PRE) -mcpu=cortex-m0plus -g -D__DEBUG  -gdwarf-2  -x c -c -D__$(MP_PROCESSOR_OPTION)__  -mthumb ${PACK_COMMON_OPTIONS}  -Os -ffunction-sections -mlong-calls -I "../src/config/toytrain-config" -I "../src/packs/ATSAMD21G18A_DFP" -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/752856886/plib_adc.o.d" -o ${OBJECTDIR}/_ext/752856886/plib_adc.o ../src/config/toytrain-config/peripheral/adc/plib_adc.c  -DXPRJ_toytrain-config=$(CND_CONF)  $(COMPARISON_BUILD) 
+	
+${OBJECTDIR}/_ext/1938861640/plib_clock.o: ../src/config/toytrain-config/peripheral/clock/plib_clock.c  .generated_files/flags/toytrain-config/82bbc8d56b8ea6e1ac90e02c9a40b7951c9c2c09 .generated_files/flags/toytrain-config/ac02ed1e24fe11f0598702808dd8873bd1b1e619
+	@${MKDIR} "${OBJECTDIR}/_ext/1938861640" 
+	@${RM} ${OBJECTDIR}/_ext/1938861640/plib_clock.o.d 
+	@${RM} ${OBJECTDIR}/_ext/1938861640/plib_clock.o 
+	${MP_CC}  $(MP_EXTRA_CC_PRE) -mcpu=cortex-m0plus -g -D__DEBUG  -gdwarf-2  -x c -c -D__$(MP_PROCESSOR_OPTION)__  -mthumb ${PACK_COMMON_OPTIONS}  -Os -ffunction-sections -mlong-calls -I "../src/config/toytrain-config" -I "../src/packs/ATSAMD21G18A_DFP" -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/1938861640/plib_clock.o.d" -o ${OBJECTDIR}/_ext/1938861640/plib_clock.o ../src/config/toytrain-config/peripheral/clock/plib_clock.c  -DXPRJ_toytrain-config=$(CND_CONF)  $(COMPARISON_BUILD) 
+	
+${OBJECTDIR}/_ext/1936712154/plib_evsys.o: ../src/config/toytrain-config/peripheral/evsys/plib_evsys.c  .generated_files/flags/toytrain-config/34a2e11db5afb8ee6a0aee982012b73271316b97 .generated_files/flags/toytrain-config/ac02ed1e24fe11f0598702808dd8873bd1b1e619
+	@${MKDIR} "${OBJECTDIR}/_ext/1936712154" 
+	@${RM} ${OBJECTDIR}/_ext/1936712154/plib_evsys.o.d 
+	@${RM} ${OBJECTDIR}/_ext/1936712154/plib_evsys.o 
+	${MP_CC}  $(MP_EXTRA_CC_PRE) -mcpu=cortex-m0plus -g -D__DEBUG  -gdwarf-2  -x c -c -D__$(MP_PROCESSOR_OPTION)__  -mthumb ${PACK_COMMON_OPTIONS}  -Os -ffunction-sections -mlong-calls -I "../src/config/toytrain-config" -I "../src/packs/ATSAMD21G18A_DFP" -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/1936712154/plib_evsys.o.d" -o ${OBJECTDIR}/_ext/1936712154/plib_evsys.o ../src/config/toytrain-config/peripheral/evsys/plib_evsys.c  -DXPRJ_toytrain-config=$(CND_CONF)  $(COMPARISON_BUILD) 
+	
+${OBJECTDIR}/_ext/1863322120/plib_nvic.o: ../src/config/toytrain-config/peripheral/nvic/plib_nvic.c  .generated_files/flags/toytrain-config/7698f1e1a5103e53c475a13e7bf4e66aba5c66ec .generated_files/flags/toytrain-config/ac02ed1e24fe11f0598702808dd8873bd1b1e619
+	@${MKDIR} "${OBJECTDIR}/_ext/1863322120" 
+	@${RM} ${OBJECTDIR}/_ext/1863322120/plib_nvic.o.d 
+	@${RM} ${OBJECTDIR}/_ext/1863322120/plib_nvic.o 
+	${MP_CC}  $(MP_EXTRA_CC_PRE) -mcpu=cortex-m0plus -g -D__DEBUG  -gdwarf-2  -x c -c -D__$(MP_PROCESSOR_OPTION)__  -mthumb ${PACK_COMMON_OPTIONS}  -Os -ffunction-sections -mlong-calls -I "../src/config/toytrain-config" -I "../src/packs/ATSAMD21G18A_DFP" -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/1863322120/plib_nvic.o.d" -o ${OBJECTDIR}/_ext/1863322120/plib_nvic.o ../src/config/toytrain-config/peripheral/nvic/plib_nvic.c  -DXPRJ_toytrain-config=$(CND_CONF)  $(COMPARISON_BUILD) 
+	
+${OBJECTDIR}/_ext/2068134214/plib_nvmctrl.o: ../src/config/toytrain-config/peripheral/nvmctrl/plib_nvmctrl.c  .generated_files/flags/toytrain-config/9c23bed60f2e64b7b440f96a1fcd15c31443adeb .generated_files/flags/toytrain-config/ac02ed1e24fe11f0598702808dd8873bd1b1e619
+	@${MKDIR} "${OBJECTDIR}/_ext/2068134214" 
+	@${RM} ${OBJECTDIR}/_ext/2068134214/plib_nvmctrl.o.d 
+	@${RM} ${OBJECTDIR}/_ext/2068134214/plib_nvmctrl.o 
+	${MP_CC}  $(MP_EXTRA_CC_PRE) -mcpu=cortex-m0plus -g -D__DEBUG  -gdwarf-2  -x c -c -D__$(MP_PROCESSOR_OPTION)__  -mthumb ${PACK_COMMON_OPTIONS}  -Os -ffunction-sections -mlong-calls -I "../src/config/toytrain-config" -I "../src/packs/ATSAMD21G18A_DFP" -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/2068134214/plib_nvmctrl.o.d" -o ${OBJECTDIR}/_ext/2068134214/plib_nvmctrl.o ../src/config/toytrain-config/peripheral/nvmctrl/plib_nvmctrl.c  -DXPRJ_toytrain-config=$(CND_CONF)  $(COMPARISON_BUILD) 
+	
+${OBJECTDIR}/_ext/1863268969/plib_port.o: ../src/config/toytrain-config/peripheral/port/plib_port.c  .generated_files/flags/toytrain-config/2aff49631965e9b80c6dcabe38a7c680e0840f2f .generated_files/flags/toytrain-config/ac02ed1e24fe11f0598702808dd8873bd1b1e619
+	@${MKDIR} "${OBJECTDIR}/_ext/1863268969" 
+	@${RM} ${OBJECTDIR}/_ext/1863268969/plib_port.o.d 
+	@${RM} ${OBJECTDIR}/_ext/1863268969/plib_port.o 
+	${MP_CC}  $(MP_EXTRA_CC_PRE) -mcpu=cortex-m0plus -g -D__DEBUG  -gdwarf-2  -x c -c -D__$(MP_PROCESSOR_OPTION)__  -mthumb ${PACK_COMMON_OPTIONS}  -Os -ffunction-sections -mlong-calls -I "../src/config/toytrain-config" -I "../src/packs/ATSAMD21G18A_DFP" -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/1863268969/plib_port.o.d" -o ${OBJECTDIR}/_ext/1863268969/plib_port.o ../src/config/toytrain-config/peripheral/port/plib_port.c  -DXPRJ_toytrain-config=$(CND_CONF)  $(COMPARISON_BUILD) 
+	
+${OBJECTDIR}/_ext/332908461/plib_sercom2_usart.o: ../src/config/toytrain-config/peripheral/sercom/usart/plib_sercom2_usart.c  .generated_files/flags/toytrain-config/200b41a169adaad0acb3c4ed4eb4fb9cec9c038e .generated_files/flags/toytrain-config/ac02ed1e24fe11f0598702808dd8873bd1b1e619
+	@${MKDIR} "${OBJECTDIR}/_ext/332908461" 
+	@${RM} ${OBJECTDIR}/_ext/332908461/plib_sercom2_usart.o.d 
+	@${RM} ${OBJECTDIR}/_ext/332908461/plib_sercom2_usart.o 
+	${MP_CC}  $(MP_EXTRA_CC_PRE) -mcpu=cortex-m0plus -g -D__DEBUG  -gdwarf-2  -x c -c -D__$(MP_PROCESSOR_OPTION)__  -mthumb ${PACK_COMMON_OPTIONS}  -Os -ffunction-sections -mlong-calls -I "../src/config/toytrain-config" -I "../src/packs/ATSAMD21G18A_DFP" -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/332908461/plib_sercom2_usart.o.d" -o ${OBJECTDIR}/_ext/332908461/plib_sercom2_usart.o ../src/config/toytrain-config/peripheral/sercom/usart/plib_sercom2_usart.c  -DXPRJ_toytrain-config=$(CND_CONF)  $(COMPARISON_BUILD) 
+	
+${OBJECTDIR}/_ext/332908461/plib_sercom0_usart.o: ../src/config/toytrain-config/peripheral/sercom/usart/plib_sercom0_usart.c  .generated_files/flags/toytrain-config/48d4fb7644269a72750175a8cbed8dfad43f11eb .generated_files/flags/toytrain-config/ac02ed1e24fe11f0598702808dd8873bd1b1e619
+	@${MKDIR} "${OBJECTDIR}/_ext/332908461" 
+	@${RM} ${OBJECTDIR}/_ext/332908461/plib_sercom0_usart.o.d 
+	@${RM} ${OBJECTDIR}/_ext/332908461/plib_sercom0_usart.o 
+	${MP_CC}  $(MP_EXTRA_CC_PRE) -mcpu=cortex-m0plus -g -D__DEBUG  -gdwarf-2  -x c -c -D__$(MP_PROCESSOR_OPTION)__  -mthumb ${PACK_COMMON_OPTIONS}  -Os -ffunction-sections -mlong-calls -I "../src/config/toytrain-config" -I "../src/packs/ATSAMD21G18A_DFP" -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/332908461/plib_sercom0_usart.o.d" -o ${OBJECTDIR}/_ext/332908461/plib_sercom0_usart.o ../src/config/toytrain-config/peripheral/sercom/usart/plib_sercom0_usart.c  -DXPRJ_toytrain-config=$(CND_CONF)  $(COMPARISON_BUILD) 
+	
+${OBJECTDIR}/_ext/1833659116/plib_systick.o: ../src/config/toytrain-config/peripheral/systick/plib_systick.c  .generated_files/flags/toytrain-config/a4533c6176de8b09cb21c35ec1e6de0ea8e2ddb .generated_files/flags/toytrain-config/ac02ed1e24fe11f0598702808dd8873bd1b1e619
+	@${MKDIR} "${OBJECTDIR}/_ext/1833659116" 
+	@${RM} ${OBJECTDIR}/_ext/1833659116/plib_systick.o.d 
+	@${RM} ${OBJECTDIR}/_ext/1833659116/plib_systick.o 
+	${MP_CC}  $(MP_EXTRA_CC_PRE) -mcpu=cortex-m0plus -g -D__DEBUG  -gdwarf-2  -x c -c -D__$(MP_PROCESSOR_OPTION)__  -mthumb ${PACK_COMMON_OPTIONS}  -Os -ffunction-sections -mlong-calls -I "../src/config/toytrain-config" -I "../src/packs/ATSAMD21G18A_DFP" -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/1833659116/plib_systick.o.d" -o ${OBJECTDIR}/_ext/1833659116/plib_systick.o ../src/config/toytrain-config/peripheral/systick/plib_systick.c  -DXPRJ_toytrain-config=$(CND_CONF)  $(COMPARISON_BUILD) 
+	
+${OBJECTDIR}/_ext/1963947771/plib_tc3.o: ../src/config/toytrain-config/peripheral/tc/plib_tc3.c  .generated_files/flags/toytrain-config/bd381865c531bcaae1c81727cb2bd0214ce39373 .generated_files/flags/toytrain-config/ac02ed1e24fe11f0598702808dd8873bd1b1e619
+	@${MKDIR} "${OBJECTDIR}/_ext/1963947771" 
+	@${RM} ${OBJECTDIR}/_ext/1963947771/plib_tc3.o.d 
+	@${RM} ${OBJECTDIR}/_ext/1963947771/plib_tc3.o 
+	${MP_CC}  $(MP_EXTRA_CC_PRE) -mcpu=cortex-m0plus -g -D__DEBUG  -gdwarf-2  -x c -c -D__$(MP_PROCESSOR_OPTION)__  -mthumb ${PACK_COMMON_OPTIONS}  -Os -ffunction-sections -mlong-calls -I "../src/config/toytrain-config" -I "../src/packs/ATSAMD21G18A_DFP" -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/1963947771/plib_tc3.o.d" -o ${OBJECTDIR}/_ext/1963947771/plib_tc3.o ../src/config/toytrain-config/peripheral/tc/plib_tc3.c  -DXPRJ_toytrain-config=$(CND_CONF)  $(COMPARISON_BUILD) 
+	
 ${OBJECTDIR}/_ext/752838658/plib_tcc2.o: ../src/config/toytrain-config/peripheral/tcc/plib_tcc2.c  .generated_files/flags/toytrain-config/9202225f0655393f1638233476349daafb90516b .generated_files/flags/toytrain-config/ac02ed1e24fe11f0598702808dd8873bd1b1e619
 	@${MKDIR} "${OBJECTDIR}/_ext/752838658" 
 	@${RM} ${OBJECTDIR}/_ext/752838658/plib_tcc2.o.d 
@@ -241,103 +211,49 @@ ${OBJECTDIR}/_ext/752838658/plib_tcc0.o: ../src/config/toytrain-config/periphera
 	@${RM} ${OBJECTDIR}/_ext/752838658/plib_tcc0.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE) -mcpu=cortex-m0plus -g -D__DEBUG  -gdwarf-2  -x c -c -D__$(MP_PROCESSOR_OPTION)__  -mthumb ${PACK_COMMON_OPTIONS}  -Os -ffunction-sections -mlong-calls -I "../src/config/toytrain-config" -I "../src/packs/ATSAMD21G18A_DFP" -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/752838658/plib_tcc0.o.d" -o ${OBJECTDIR}/_ext/752838658/plib_tcc0.o ../src/config/toytrain-config/peripheral/tcc/plib_tcc0.c  -DXPRJ_toytrain-config=$(CND_CONF)  $(COMPARISON_BUILD) 
 	
-${OBJECTDIR}/_ext/1963947771/plib_tc3.o: ../src/config/toytrain-config/peripheral/tc/plib_tc3.c  .generated_files/flags/toytrain-config/bd381865c531bcaae1c81727cb2bd0214ce39373 .generated_files/flags/toytrain-config/ac02ed1e24fe11f0598702808dd8873bd1b1e619
-	@${MKDIR} "${OBJECTDIR}/_ext/1963947771" 
-	@${RM} ${OBJECTDIR}/_ext/1963947771/plib_tc3.o.d 
-	@${RM} ${OBJECTDIR}/_ext/1963947771/plib_tc3.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE) -mcpu=cortex-m0plus -g -D__DEBUG  -gdwarf-2  -x c -c -D__$(MP_PROCESSOR_OPTION)__  -mthumb ${PACK_COMMON_OPTIONS}  -Os -ffunction-sections -mlong-calls -I "../src/config/toytrain-config" -I "../src/packs/ATSAMD21G18A_DFP" -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/1963947771/plib_tc3.o.d" -o ${OBJECTDIR}/_ext/1963947771/plib_tc3.o ../src/config/toytrain-config/peripheral/tc/plib_tc3.c  -DXPRJ_toytrain-config=$(CND_CONF)  $(COMPARISON_BUILD) 
-	
-else
-${OBJECTDIR}/_ext/2068134214/plib_nvmctrl.o: ../src/config/toytrain-config/peripheral/nvmctrl/plib_nvmctrl.c  .generated_files/flags/toytrain-config/4e96ce3d5052505e2eefdbb321b7a0b3bf44c66d .generated_files/flags/toytrain-config/ac02ed1e24fe11f0598702808dd8873bd1b1e619
-	@${MKDIR} "${OBJECTDIR}/_ext/2068134214" 
-	@${RM} ${OBJECTDIR}/_ext/2068134214/plib_nvmctrl.o.d 
-	@${RM} ${OBJECTDIR}/_ext/2068134214/plib_nvmctrl.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE) -mcpu=cortex-m0plus  -x c -c -D__$(MP_PROCESSOR_OPTION)__  -mthumb ${PACK_COMMON_OPTIONS}  -Os -ffunction-sections -mlong-calls -I "../src/config/toytrain-config" -I "../src/packs/ATSAMD21G18A_DFP" -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/2068134214/plib_nvmctrl.o.d" -o ${OBJECTDIR}/_ext/2068134214/plib_nvmctrl.o ../src/config/toytrain-config/peripheral/nvmctrl/plib_nvmctrl.c  -DXPRJ_toytrain-config=$(CND_CONF)  $(COMPARISON_BUILD) 
-	
-${OBJECTDIR}/_ext/1936712154/plib_evsys.o: ../src/config/toytrain-config/peripheral/evsys/plib_evsys.c  .generated_files/flags/toytrain-config/3bc28ea8f372510d417964da55383e5f6d9512d5 .generated_files/flags/toytrain-config/ac02ed1e24fe11f0598702808dd8873bd1b1e619
-	@${MKDIR} "${OBJECTDIR}/_ext/1936712154" 
-	@${RM} ${OBJECTDIR}/_ext/1936712154/plib_evsys.o.d 
-	@${RM} ${OBJECTDIR}/_ext/1936712154/plib_evsys.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE) -mcpu=cortex-m0plus  -x c -c -D__$(MP_PROCESSOR_OPTION)__  -mthumb ${PACK_COMMON_OPTIONS}  -Os -ffunction-sections -mlong-calls -I "../src/config/toytrain-config" -I "../src/packs/ATSAMD21G18A_DFP" -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/1936712154/plib_evsys.o.d" -o ${OBJECTDIR}/_ext/1936712154/plib_evsys.o ../src/config/toytrain-config/peripheral/evsys/plib_evsys.c  -DXPRJ_toytrain-config=$(CND_CONF)  $(COMPARISON_BUILD) 
-	
-${OBJECTDIR}/_ext/1360937237/main.o: ../src/main.c  .generated_files/flags/toytrain-config/a58f47648f7cd9c3d9ac4e86f3870749e31e6b96 .generated_files/flags/toytrain-config/ac02ed1e24fe11f0598702808dd8873bd1b1e619
-	@${MKDIR} "${OBJECTDIR}/_ext/1360937237" 
-	@${RM} ${OBJECTDIR}/_ext/1360937237/main.o.d 
-	@${RM} ${OBJECTDIR}/_ext/1360937237/main.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE) -mcpu=cortex-m0plus  -x c -c -D__$(MP_PROCESSOR_OPTION)__  -mthumb ${PACK_COMMON_OPTIONS}  -Os -ffunction-sections -mlong-calls -I "../src/config/toytrain-config" -I "../src/packs/ATSAMD21G18A_DFP" -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/1360937237/main.o.d" -o ${OBJECTDIR}/_ext/1360937237/main.o ../src/main.c  -DXPRJ_toytrain-config=$(CND_CONF)  $(COMPARISON_BUILD) 
-	
-${OBJECTDIR}/_ext/1672823694/initialization.o: ../src/config/toytrain-config/initialization.c  .generated_files/flags/toytrain-config/e9e684d4b16495bb5e0267e02de4a51e0414a6a7 .generated_files/flags/toytrain-config/ac02ed1e24fe11f0598702808dd8873bd1b1e619
-	@${MKDIR} "${OBJECTDIR}/_ext/1672823694" 
-	@${RM} ${OBJECTDIR}/_ext/1672823694/initialization.o.d 
-	@${RM} ${OBJECTDIR}/_ext/1672823694/initialization.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE) -mcpu=cortex-m0plus  -x c -c -D__$(MP_PROCESSOR_OPTION)__  -mthumb ${PACK_COMMON_OPTIONS}  -Os -ffunction-sections -mlong-calls -I "../src/config/toytrain-config" -I "../src/packs/ATSAMD21G18A_DFP" -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/1672823694/initialization.o.d" -o ${OBJECTDIR}/_ext/1672823694/initialization.o ../src/config/toytrain-config/initialization.c  -DXPRJ_toytrain-config=$(CND_CONF)  $(COMPARISON_BUILD) 
-	
-${OBJECTDIR}/_ext/1672823694/interrupts.o: ../src/config/toytrain-config/interrupts.c  .generated_files/flags/toytrain-config/3edfd11eb1970adb9de31ff156eacb8e89f01ab7 .generated_files/flags/toytrain-config/ac02ed1e24fe11f0598702808dd8873bd1b1e619
-	@${MKDIR} "${OBJECTDIR}/_ext/1672823694" 
-	@${RM} ${OBJECTDIR}/_ext/1672823694/interrupts.o.d 
-	@${RM} ${OBJECTDIR}/_ext/1672823694/interrupts.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE) -mcpu=cortex-m0plus  -x c -c -D__$(MP_PROCESSOR_OPTION)__  -mthumb ${PACK_COMMON_OPTIONS}  -Os -ffunction-sections -mlong-calls -I "../src/config/toytrain-config" -I "../src/packs/ATSAMD21G18A_DFP" -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/1672823694/interrupts.o.d" -o ${OBJECTDIR}/_ext/1672823694/interrupts.o ../src/config/toytrain-config/interrupts.c  -DXPRJ_toytrain-config=$(CND_CONF)  $(COMPARISON_BUILD) 
-	
-${OBJECTDIR}/_ext/1672823694/exceptions.o: ../src/config/toytrain-config/exceptions.c  .generated_files/flags/toytrain-config/2ae2f3c8559a333635d7972cd4c7ea1c705cb112 .generated_files/flags/toytrain-config/ac02ed1e24fe11f0598702808dd8873bd1b1e619
-	@${MKDIR} "${OBJECTDIR}/_ext/1672823694" 
-	@${RM} ${OBJECTDIR}/_ext/1672823694/exceptions.o.d 
-	@${RM} ${OBJECTDIR}/_ext/1672823694/exceptions.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE) -mcpu=cortex-m0plus  -x c -c -D__$(MP_PROCESSOR_OPTION)__  -mthumb ${PACK_COMMON_OPTIONS}  -Os -ffunction-sections -mlong-calls -I "../src/config/toytrain-config" -I "../src/packs/ATSAMD21G18A_DFP" -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/1672823694/exceptions.o.d" -o ${OBJECTDIR}/_ext/1672823694/exceptions.o ../src/config/toytrain-config/exceptions.c  -DXPRJ_toytrain-config=$(CND_CONF)  $(COMPARISON_BUILD) 
-	
-${OBJECTDIR}/_ext/1863268969/plib_port.o: ../src/config/toytrain-config/peripheral/port/plib_port.c  .generated_files/flags/toytrain-config/33f587d2b820ef0bdda6c5a033c525bd5460b98d .generated_files/flags/toytrain-config/ac02ed1e24fe11f0598702808dd8873bd1b1e619
-	@${MKDIR} "${OBJECTDIR}/_ext/1863268969" 
-	@${RM} ${OBJECTDIR}/_ext/1863268969/plib_port.o.d 
-	@${RM} ${OBJECTDIR}/_ext/1863268969/plib_port.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE) -mcpu=cortex-m0plus  -x c -c -D__$(MP_PROCESSOR_OPTION)__  -mthumb ${PACK_COMMON_OPTIONS}  -Os -ffunction-sections -mlong-calls -I "../src/config/toytrain-config" -I "../src/packs/ATSAMD21G18A_DFP" -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/1863268969/plib_port.o.d" -o ${OBJECTDIR}/_ext/1863268969/plib_port.o ../src/config/toytrain-config/peripheral/port/plib_port.c  -DXPRJ_toytrain-config=$(CND_CONF)  $(COMPARISON_BUILD) 
-	
-${OBJECTDIR}/_ext/1938861640/plib_clock.o: ../src/config/toytrain-config/peripheral/clock/plib_clock.c  .generated_files/flags/toytrain-config/22573d1744ae427456b25badf7d255b5e7451dbb .generated_files/flags/toytrain-config/ac02ed1e24fe11f0598702808dd8873bd1b1e619
-	@${MKDIR} "${OBJECTDIR}/_ext/1938861640" 
-	@${RM} ${OBJECTDIR}/_ext/1938861640/plib_clock.o.d 
-	@${RM} ${OBJECTDIR}/_ext/1938861640/plib_clock.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE) -mcpu=cortex-m0plus  -x c -c -D__$(MP_PROCESSOR_OPTION)__  -mthumb ${PACK_COMMON_OPTIONS}  -Os -ffunction-sections -mlong-calls -I "../src/config/toytrain-config" -I "../src/packs/ATSAMD21G18A_DFP" -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/1938861640/plib_clock.o.d" -o ${OBJECTDIR}/_ext/1938861640/plib_clock.o ../src/config/toytrain-config/peripheral/clock/plib_clock.c  -DXPRJ_toytrain-config=$(CND_CONF)  $(COMPARISON_BUILD) 
-	
-${OBJECTDIR}/_ext/1863322120/plib_nvic.o: ../src/config/toytrain-config/peripheral/nvic/plib_nvic.c  .generated_files/flags/toytrain-config/366c9e73693eb5087d949e015d9bef192961c254 .generated_files/flags/toytrain-config/ac02ed1e24fe11f0598702808dd8873bd1b1e619
-	@${MKDIR} "${OBJECTDIR}/_ext/1863322120" 
-	@${RM} ${OBJECTDIR}/_ext/1863322120/plib_nvic.o.d 
-	@${RM} ${OBJECTDIR}/_ext/1863322120/plib_nvic.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE) -mcpu=cortex-m0plus  -x c -c -D__$(MP_PROCESSOR_OPTION)__  -mthumb ${PACK_COMMON_OPTIONS}  -Os -ffunction-sections -mlong-calls -I "../src/config/toytrain-config" -I "../src/packs/ATSAMD21G18A_DFP" -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/1863322120/plib_nvic.o.d" -o ${OBJECTDIR}/_ext/1863322120/plib_nvic.o ../src/config/toytrain-config/peripheral/nvic/plib_nvic.c  -DXPRJ_toytrain-config=$(CND_CONF)  $(COMPARISON_BUILD) 
-	
-${OBJECTDIR}/_ext/1833659116/plib_systick.o: ../src/config/toytrain-config/peripheral/systick/plib_systick.c  .generated_files/flags/toytrain-config/719b34bad6b06a7a076de1babb03d93fbae99640 .generated_files/flags/toytrain-config/ac02ed1e24fe11f0598702808dd8873bd1b1e619
-	@${MKDIR} "${OBJECTDIR}/_ext/1833659116" 
-	@${RM} ${OBJECTDIR}/_ext/1833659116/plib_systick.o.d 
-	@${RM} ${OBJECTDIR}/_ext/1833659116/plib_systick.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE) -mcpu=cortex-m0plus  -x c -c -D__$(MP_PROCESSOR_OPTION)__  -mthumb ${PACK_COMMON_OPTIONS}  -Os -ffunction-sections -mlong-calls -I "../src/config/toytrain-config" -I "../src/packs/ATSAMD21G18A_DFP" -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/1833659116/plib_systick.o.d" -o ${OBJECTDIR}/_ext/1833659116/plib_systick.o ../src/config/toytrain-config/peripheral/systick/plib_systick.c  -DXPRJ_toytrain-config=$(CND_CONF)  $(COMPARISON_BUILD) 
-	
-${OBJECTDIR}/_ext/1672823694/libc_syscalls.o: ../src/config/toytrain-config/libc_syscalls.c  .generated_files/flags/toytrain-config/87660d8f3192dd52937b5c87785844a55ce81ab2 .generated_files/flags/toytrain-config/ac02ed1e24fe11f0598702808dd8873bd1b1e619
-	@${MKDIR} "${OBJECTDIR}/_ext/1672823694" 
-	@${RM} ${OBJECTDIR}/_ext/1672823694/libc_syscalls.o.d 
-	@${RM} ${OBJECTDIR}/_ext/1672823694/libc_syscalls.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE) -mcpu=cortex-m0plus  -x c -c -D__$(MP_PROCESSOR_OPTION)__  -mthumb ${PACK_COMMON_OPTIONS}  -Os -ffunction-sections -mlong-calls -I "../src/config/toytrain-config" -I "../src/packs/ATSAMD21G18A_DFP" -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/1672823694/libc_syscalls.o.d" -o ${OBJECTDIR}/_ext/1672823694/libc_syscalls.o ../src/config/toytrain-config/libc_syscalls.c  -DXPRJ_toytrain-config=$(CND_CONF)  $(COMPARISON_BUILD) 
-	
-${OBJECTDIR}/_ext/1675061921/startup_gcc.o: /home/afzal/work-zone/MPlab-x/gcc/gcc-config/startup_gcc.c  .generated_files/flags/toytrain-config/cb00ff37a6c096e9c73748f66c95c7c487126f60 .generated_files/flags/toytrain-config/ac02ed1e24fe11f0598702808dd8873bd1b1e619
-	@${MKDIR} "${OBJECTDIR}/_ext/1675061921" 
-	@${RM} ${OBJECTDIR}/_ext/1675061921/startup_gcc.o.d 
-	@${RM} ${OBJECTDIR}/_ext/1675061921/startup_gcc.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE) -mcpu=cortex-m0plus  -x c -c -D__$(MP_PROCESSOR_OPTION)__  -mthumb ${PACK_COMMON_OPTIONS}  -Os -ffunction-sections -mlong-calls -I "../src/config/toytrain-config" -I "../src/packs/ATSAMD21G18A_DFP" -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/1675061921/startup_gcc.o.d" -o ${OBJECTDIR}/_ext/1675061921/startup_gcc.o /home/afzal/work-zone/MPlab-x/gcc/gcc-config/startup_gcc.c  -DXPRJ_toytrain-config=$(CND_CONF)  $(COMPARISON_BUILD) 
-	
-${OBJECTDIR}/_ext/1675061921/gcc_monitor.o: /home/afzal/work-zone/MPlab-x/gcc/gcc-config/gcc_monitor.c  .generated_files/flags/toytrain-config/6e9b79e328192a933089592d77f017674f98871d .generated_files/flags/toytrain-config/ac02ed1e24fe11f0598702808dd8873bd1b1e619
+${OBJECTDIR}/_ext/1675061921/gcc_monitor.o: /home/afzal/work-zone/MPlab-x/gcc/gcc-config/gcc_monitor.c  .generated_files/flags/toytrain-config/ee78c08d722959e7a7a2317552e5eddfa4533d6a .generated_files/flags/toytrain-config/ac02ed1e24fe11f0598702808dd8873bd1b1e619
 	@${MKDIR} "${OBJECTDIR}/_ext/1675061921" 
 	@${RM} ${OBJECTDIR}/_ext/1675061921/gcc_monitor.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1675061921/gcc_monitor.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE) -mcpu=cortex-m0plus  -x c -c -D__$(MP_PROCESSOR_OPTION)__  -mthumb ${PACK_COMMON_OPTIONS}  -Os -ffunction-sections -mlong-calls -I "../src/config/toytrain-config" -I "../src/packs/ATSAMD21G18A_DFP" -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/1675061921/gcc_monitor.o.d" -o ${OBJECTDIR}/_ext/1675061921/gcc_monitor.o /home/afzal/work-zone/MPlab-x/gcc/gcc-config/gcc_monitor.c  -DXPRJ_toytrain-config=$(CND_CONF)  $(COMPARISON_BUILD) 
+	${MP_CC}  $(MP_EXTRA_CC_PRE) -mcpu=cortex-m0plus -g -D__DEBUG  -gdwarf-2  -x c -c -D__$(MP_PROCESSOR_OPTION)__  -mthumb ${PACK_COMMON_OPTIONS}  -Os -ffunction-sections -mlong-calls -I "../src/config/toytrain-config" -I "../src/packs/ATSAMD21G18A_DFP" -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/1675061921/gcc_monitor.o.d" -o ${OBJECTDIR}/_ext/1675061921/gcc_monitor.o /home/afzal/work-zone/MPlab-x/gcc/gcc-config/gcc_monitor.c  -DXPRJ_toytrain-config=$(CND_CONF)  $(COMPARISON_BUILD) 
 	
-${OBJECTDIR}/_ext/332908461/plib_sercom2_usart.o: ../src/config/toytrain-config/peripheral/sercom/usart/plib_sercom2_usart.c  .generated_files/flags/toytrain-config/64b52bf100411005939ce2c9240f21e7c60068b8 .generated_files/flags/toytrain-config/ac02ed1e24fe11f0598702808dd8873bd1b1e619
-	@${MKDIR} "${OBJECTDIR}/_ext/332908461" 
-	@${RM} ${OBJECTDIR}/_ext/332908461/plib_sercom2_usart.o.d 
-	@${RM} ${OBJECTDIR}/_ext/332908461/plib_sercom2_usart.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE) -mcpu=cortex-m0plus  -x c -c -D__$(MP_PROCESSOR_OPTION)__  -mthumb ${PACK_COMMON_OPTIONS}  -Os -ffunction-sections -mlong-calls -I "../src/config/toytrain-config" -I "../src/packs/ATSAMD21G18A_DFP" -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/332908461/plib_sercom2_usart.o.d" -o ${OBJECTDIR}/_ext/332908461/plib_sercom2_usart.o ../src/config/toytrain-config/peripheral/sercom/usart/plib_sercom2_usart.c  -DXPRJ_toytrain-config=$(CND_CONF)  $(COMPARISON_BUILD) 
+${OBJECTDIR}/_ext/1672823694/initialization.o: ../src/config/toytrain-config/initialization.c  .generated_files/flags/toytrain-config/562eb9342d3642a3343558dfaa12395348aeebb2 .generated_files/flags/toytrain-config/ac02ed1e24fe11f0598702808dd8873bd1b1e619
+	@${MKDIR} "${OBJECTDIR}/_ext/1672823694" 
+	@${RM} ${OBJECTDIR}/_ext/1672823694/initialization.o.d 
+	@${RM} ${OBJECTDIR}/_ext/1672823694/initialization.o 
+	${MP_CC}  $(MP_EXTRA_CC_PRE) -mcpu=cortex-m0plus -g -D__DEBUG  -gdwarf-2  -x c -c -D__$(MP_PROCESSOR_OPTION)__  -mthumb ${PACK_COMMON_OPTIONS}  -Os -ffunction-sections -mlong-calls -I "../src/config/toytrain-config" -I "../src/packs/ATSAMD21G18A_DFP" -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/1672823694/initialization.o.d" -o ${OBJECTDIR}/_ext/1672823694/initialization.o ../src/config/toytrain-config/initialization.c  -DXPRJ_toytrain-config=$(CND_CONF)  $(COMPARISON_BUILD) 
 	
-${OBJECTDIR}/_ext/332908461/plib_sercom0_usart.o: ../src/config/toytrain-config/peripheral/sercom/usart/plib_sercom0_usart.c  .generated_files/flags/toytrain-config/8db927cf33249ae162648a1a2103da900e8859c4 .generated_files/flags/toytrain-config/ac02ed1e24fe11f0598702808dd8873bd1b1e619
-	@${MKDIR} "${OBJECTDIR}/_ext/332908461" 
-	@${RM} ${OBJECTDIR}/_ext/332908461/plib_sercom0_usart.o.d 
-	@${RM} ${OBJECTDIR}/_ext/332908461/plib_sercom0_usart.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE) -mcpu=cortex-m0plus  -x c -c -D__$(MP_PROCESSOR_OPTION)__  -mthumb ${PACK_COMMON_OPTIONS}  -Os -ffunction-sections -mlong-calls -I "../src/config/toytrain-config" -I "../src/packs/ATSAMD21G18A_DFP" -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/332908461/plib_sercom0_usart.o.d" -o ${OBJECTDIR}/_ext/332908461/plib_sercom0_usart.o ../src/config/toytrain-config/peripheral/sercom/usart/plib_sercom0_usart.c  -DXPRJ_toytrain-config=$(CND_CONF)  $(COMPARISON_BUILD) 
+${OBJECTDIR}/_ext/1672823694/interrupts.o: ../src/config/toytrain-config/interrupts.c  .generated_files/flags/toytrain-config/99ae0a4a84ade85438e4016d463dce9161789569 .generated_files/flags/toytrain-config/ac02ed1e24fe11f0598702808dd8873bd1b1e619
+	@${MKDIR} "${OBJECTDIR}/_ext/1672823694" 
+	@${RM} ${OBJECTDIR}/_ext/1672823694/interrupts.o.d 
+	@${RM} ${OBJECTDIR}/_ext/1672823694/interrupts.o 
+	${MP_CC}  $(MP_EXTRA_CC_PRE) -mcpu=cortex-m0plus -g -D__DEBUG  -gdwarf-2  -x c -c -D__$(MP_PROCESSOR_OPTION)__  -mthumb ${PACK_COMMON_OPTIONS}  -Os -ffunction-sections -mlong-calls -I "../src/config/toytrain-config" -I "../src/packs/ATSAMD21G18A_DFP" -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/1672823694/interrupts.o.d" -o ${OBJECTDIR}/_ext/1672823694/interrupts.o ../src/config/toytrain-config/interrupts.c  -DXPRJ_toytrain-config=$(CND_CONF)  $(COMPARISON_BUILD) 
 	
+${OBJECTDIR}/_ext/1672823694/exceptions.o: ../src/config/toytrain-config/exceptions.c  .generated_files/flags/toytrain-config/c49e11cf9b987ca39d6756ba421af893c681cecd .generated_files/flags/toytrain-config/ac02ed1e24fe11f0598702808dd8873bd1b1e619
+	@${MKDIR} "${OBJECTDIR}/_ext/1672823694" 
+	@${RM} ${OBJECTDIR}/_ext/1672823694/exceptions.o.d 
+	@${RM} ${OBJECTDIR}/_ext/1672823694/exceptions.o 
+	${MP_CC}  $(MP_EXTRA_CC_PRE) -mcpu=cortex-m0plus -g -D__DEBUG  -gdwarf-2  -x c -c -D__$(MP_PROCESSOR_OPTION)__  -mthumb ${PACK_COMMON_OPTIONS}  -Os -ffunction-sections -mlong-calls -I "../src/config/toytrain-config" -I "../src/packs/ATSAMD21G18A_DFP" -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/1672823694/exceptions.o.d" -o ${OBJECTDIR}/_ext/1672823694/exceptions.o ../src/config/toytrain-config/exceptions.c  -DXPRJ_toytrain-config=$(CND_CONF)  $(COMPARISON_BUILD) 
+	
+${OBJECTDIR}/_ext/1672823694/libc_syscalls.o: ../src/config/toytrain-config/libc_syscalls.c  .generated_files/flags/toytrain-config/6ffd16df61cc71345c1415fa52b7a0ea30c5f14f .generated_files/flags/toytrain-config/ac02ed1e24fe11f0598702808dd8873bd1b1e619
+	@${MKDIR} "${OBJECTDIR}/_ext/1672823694" 
+	@${RM} ${OBJECTDIR}/_ext/1672823694/libc_syscalls.o.d 
+	@${RM} ${OBJECTDIR}/_ext/1672823694/libc_syscalls.o 
+	${MP_CC}  $(MP_EXTRA_CC_PRE) -mcpu=cortex-m0plus -g -D__DEBUG  -gdwarf-2  -x c -c -D__$(MP_PROCESSOR_OPTION)__  -mthumb ${PACK_COMMON_OPTIONS}  -Os -ffunction-sections -mlong-calls -I "../src/config/toytrain-config" -I "../src/packs/ATSAMD21G18A_DFP" -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/1672823694/libc_syscalls.o.d" -o ${OBJECTDIR}/_ext/1672823694/libc_syscalls.o ../src/config/toytrain-config/libc_syscalls.c  -DXPRJ_toytrain-config=$(CND_CONF)  $(COMPARISON_BUILD) 
+	
+${OBJECTDIR}/_ext/1675061921/startup_gcc.o: /home/afzal/work-zone/MPlab-x/gcc/gcc-config/startup_gcc.c  .generated_files/flags/toytrain-config/2b97fb767b0a6db4b876174ce130f23d96f2e6a3 .generated_files/flags/toytrain-config/ac02ed1e24fe11f0598702808dd8873bd1b1e619
+	@${MKDIR} "${OBJECTDIR}/_ext/1675061921" 
+	@${RM} ${OBJECTDIR}/_ext/1675061921/startup_gcc.o.d 
+	@${RM} ${OBJECTDIR}/_ext/1675061921/startup_gcc.o 
+	${MP_CC}  $(MP_EXTRA_CC_PRE) -mcpu=cortex-m0plus -g -D__DEBUG  -gdwarf-2  -x c -c -D__$(MP_PROCESSOR_OPTION)__  -mthumb ${PACK_COMMON_OPTIONS}  -Os -ffunction-sections -mlong-calls -I "../src/config/toytrain-config" -I "../src/packs/ATSAMD21G18A_DFP" -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/1675061921/startup_gcc.o.d" -o ${OBJECTDIR}/_ext/1675061921/startup_gcc.o /home/afzal/work-zone/MPlab-x/gcc/gcc-config/startup_gcc.c  -DXPRJ_toytrain-config=$(CND_CONF)  $(COMPARISON_BUILD) 
+	
+${OBJECTDIR}/_ext/1360937237/main.o: ../src/main.c  .generated_files/flags/toytrain-config/1b7a1cd6bc21522f8dd2d49d7e44eb5c2893a836 .generated_files/flags/toytrain-config/ac02ed1e24fe11f0598702808dd8873bd1b1e619
+	@${MKDIR} "${OBJECTDIR}/_ext/1360937237" 
+	@${RM} ${OBJECTDIR}/_ext/1360937237/main.o.d 
+	@${RM} ${OBJECTDIR}/_ext/1360937237/main.o 
+	${MP_CC}  $(MP_EXTRA_CC_PRE) -mcpu=cortex-m0plus -g -D__DEBUG  -gdwarf-2  -x c -c -D__$(MP_PROCESSOR_OPTION)__  -mthumb ${PACK_COMMON_OPTIONS}  -Os -ffunction-sections -mlong-calls -I "../src/config/toytrain-config" -I "../src/packs/ATSAMD21G18A_DFP" -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/1360937237/main.o.d" -o ${OBJECTDIR}/_ext/1360937237/main.o ../src/main.c  -DXPRJ_toytrain-config=$(CND_CONF)  $(COMPARISON_BUILD) 
+	
+else
 ${OBJECTDIR}/_ext/1239984807/AppGlobals.o: /home/afzal/work-zone/MPlab-x/projects/toy_train_0.2/firmware/src/AppGlobals.c  .generated_files/flags/toytrain-config/fd6c379c73bbb727dc3305671d5474272319f8c4 .generated_files/flags/toytrain-config/ac02ed1e24fe11f0598702808dd8873bd1b1e619
 	@${MKDIR} "${OBJECTDIR}/_ext/1239984807" 
 	@${RM} ${OBJECTDIR}/_ext/1239984807/AppGlobals.o.d 
@@ -368,6 +284,66 @@ ${OBJECTDIR}/_ext/1239984807/rgbLed.o: /home/afzal/work-zone/MPlab-x/projects/to
 	@${RM} ${OBJECTDIR}/_ext/1239984807/rgbLed.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE) -mcpu=cortex-m0plus  -x c -c -D__$(MP_PROCESSOR_OPTION)__  -mthumb ${PACK_COMMON_OPTIONS}  -Os -ffunction-sections -mlong-calls -I "../src/config/toytrain-config" -I "../src/packs/ATSAMD21G18A_DFP" -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/1239984807/rgbLed.o.d" -o ${OBJECTDIR}/_ext/1239984807/rgbLed.o /home/afzal/work-zone/MPlab-x/projects/toy_train_0.2/firmware/src/rgbLed.c  -DXPRJ_toytrain-config=$(CND_CONF)  $(COMPARISON_BUILD) 
 	
+${OBJECTDIR}/_ext/752856886/plib_adc.o: ../src/config/toytrain-config/peripheral/adc/plib_adc.c  .generated_files/flags/toytrain-config/6a382d95b3a0c8cb7cf33fb79d26b0ad9ea473a9 .generated_files/flags/toytrain-config/ac02ed1e24fe11f0598702808dd8873bd1b1e619
+	@${MKDIR} "${OBJECTDIR}/_ext/752856886" 
+	@${RM} ${OBJECTDIR}/_ext/752856886/plib_adc.o.d 
+	@${RM} ${OBJECTDIR}/_ext/752856886/plib_adc.o 
+	${MP_CC}  $(MP_EXTRA_CC_PRE) -mcpu=cortex-m0plus  -x c -c -D__$(MP_PROCESSOR_OPTION)__  -mthumb ${PACK_COMMON_OPTIONS}  -Os -ffunction-sections -mlong-calls -I "../src/config/toytrain-config" -I "../src/packs/ATSAMD21G18A_DFP" -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/752856886/plib_adc.o.d" -o ${OBJECTDIR}/_ext/752856886/plib_adc.o ../src/config/toytrain-config/peripheral/adc/plib_adc.c  -DXPRJ_toytrain-config=$(CND_CONF)  $(COMPARISON_BUILD) 
+	
+${OBJECTDIR}/_ext/1938861640/plib_clock.o: ../src/config/toytrain-config/peripheral/clock/plib_clock.c  .generated_files/flags/toytrain-config/22573d1744ae427456b25badf7d255b5e7451dbb .generated_files/flags/toytrain-config/ac02ed1e24fe11f0598702808dd8873bd1b1e619
+	@${MKDIR} "${OBJECTDIR}/_ext/1938861640" 
+	@${RM} ${OBJECTDIR}/_ext/1938861640/plib_clock.o.d 
+	@${RM} ${OBJECTDIR}/_ext/1938861640/plib_clock.o 
+	${MP_CC}  $(MP_EXTRA_CC_PRE) -mcpu=cortex-m0plus  -x c -c -D__$(MP_PROCESSOR_OPTION)__  -mthumb ${PACK_COMMON_OPTIONS}  -Os -ffunction-sections -mlong-calls -I "../src/config/toytrain-config" -I "../src/packs/ATSAMD21G18A_DFP" -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/1938861640/plib_clock.o.d" -o ${OBJECTDIR}/_ext/1938861640/plib_clock.o ../src/config/toytrain-config/peripheral/clock/plib_clock.c  -DXPRJ_toytrain-config=$(CND_CONF)  $(COMPARISON_BUILD) 
+	
+${OBJECTDIR}/_ext/1936712154/plib_evsys.o: ../src/config/toytrain-config/peripheral/evsys/plib_evsys.c  .generated_files/flags/toytrain-config/3bc28ea8f372510d417964da55383e5f6d9512d5 .generated_files/flags/toytrain-config/ac02ed1e24fe11f0598702808dd8873bd1b1e619
+	@${MKDIR} "${OBJECTDIR}/_ext/1936712154" 
+	@${RM} ${OBJECTDIR}/_ext/1936712154/plib_evsys.o.d 
+	@${RM} ${OBJECTDIR}/_ext/1936712154/plib_evsys.o 
+	${MP_CC}  $(MP_EXTRA_CC_PRE) -mcpu=cortex-m0plus  -x c -c -D__$(MP_PROCESSOR_OPTION)__  -mthumb ${PACK_COMMON_OPTIONS}  -Os -ffunction-sections -mlong-calls -I "../src/config/toytrain-config" -I "../src/packs/ATSAMD21G18A_DFP" -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/1936712154/plib_evsys.o.d" -o ${OBJECTDIR}/_ext/1936712154/plib_evsys.o ../src/config/toytrain-config/peripheral/evsys/plib_evsys.c  -DXPRJ_toytrain-config=$(CND_CONF)  $(COMPARISON_BUILD) 
+	
+${OBJECTDIR}/_ext/1863322120/plib_nvic.o: ../src/config/toytrain-config/peripheral/nvic/plib_nvic.c  .generated_files/flags/toytrain-config/366c9e73693eb5087d949e015d9bef192961c254 .generated_files/flags/toytrain-config/ac02ed1e24fe11f0598702808dd8873bd1b1e619
+	@${MKDIR} "${OBJECTDIR}/_ext/1863322120" 
+	@${RM} ${OBJECTDIR}/_ext/1863322120/plib_nvic.o.d 
+	@${RM} ${OBJECTDIR}/_ext/1863322120/plib_nvic.o 
+	${MP_CC}  $(MP_EXTRA_CC_PRE) -mcpu=cortex-m0plus  -x c -c -D__$(MP_PROCESSOR_OPTION)__  -mthumb ${PACK_COMMON_OPTIONS}  -Os -ffunction-sections -mlong-calls -I "../src/config/toytrain-config" -I "../src/packs/ATSAMD21G18A_DFP" -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/1863322120/plib_nvic.o.d" -o ${OBJECTDIR}/_ext/1863322120/plib_nvic.o ../src/config/toytrain-config/peripheral/nvic/plib_nvic.c  -DXPRJ_toytrain-config=$(CND_CONF)  $(COMPARISON_BUILD) 
+	
+${OBJECTDIR}/_ext/2068134214/plib_nvmctrl.o: ../src/config/toytrain-config/peripheral/nvmctrl/plib_nvmctrl.c  .generated_files/flags/toytrain-config/4e96ce3d5052505e2eefdbb321b7a0b3bf44c66d .generated_files/flags/toytrain-config/ac02ed1e24fe11f0598702808dd8873bd1b1e619
+	@${MKDIR} "${OBJECTDIR}/_ext/2068134214" 
+	@${RM} ${OBJECTDIR}/_ext/2068134214/plib_nvmctrl.o.d 
+	@${RM} ${OBJECTDIR}/_ext/2068134214/plib_nvmctrl.o 
+	${MP_CC}  $(MP_EXTRA_CC_PRE) -mcpu=cortex-m0plus  -x c -c -D__$(MP_PROCESSOR_OPTION)__  -mthumb ${PACK_COMMON_OPTIONS}  -Os -ffunction-sections -mlong-calls -I "../src/config/toytrain-config" -I "../src/packs/ATSAMD21G18A_DFP" -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/2068134214/plib_nvmctrl.o.d" -o ${OBJECTDIR}/_ext/2068134214/plib_nvmctrl.o ../src/config/toytrain-config/peripheral/nvmctrl/plib_nvmctrl.c  -DXPRJ_toytrain-config=$(CND_CONF)  $(COMPARISON_BUILD) 
+	
+${OBJECTDIR}/_ext/1863268969/plib_port.o: ../src/config/toytrain-config/peripheral/port/plib_port.c  .generated_files/flags/toytrain-config/33f587d2b820ef0bdda6c5a033c525bd5460b98d .generated_files/flags/toytrain-config/ac02ed1e24fe11f0598702808dd8873bd1b1e619
+	@${MKDIR} "${OBJECTDIR}/_ext/1863268969" 
+	@${RM} ${OBJECTDIR}/_ext/1863268969/plib_port.o.d 
+	@${RM} ${OBJECTDIR}/_ext/1863268969/plib_port.o 
+	${MP_CC}  $(MP_EXTRA_CC_PRE) -mcpu=cortex-m0plus  -x c -c -D__$(MP_PROCESSOR_OPTION)__  -mthumb ${PACK_COMMON_OPTIONS}  -Os -ffunction-sections -mlong-calls -I "../src/config/toytrain-config" -I "../src/packs/ATSAMD21G18A_DFP" -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/1863268969/plib_port.o.d" -o ${OBJECTDIR}/_ext/1863268969/plib_port.o ../src/config/toytrain-config/peripheral/port/plib_port.c  -DXPRJ_toytrain-config=$(CND_CONF)  $(COMPARISON_BUILD) 
+	
+${OBJECTDIR}/_ext/332908461/plib_sercom2_usart.o: ../src/config/toytrain-config/peripheral/sercom/usart/plib_sercom2_usart.c  .generated_files/flags/toytrain-config/64b52bf100411005939ce2c9240f21e7c60068b8 .generated_files/flags/toytrain-config/ac02ed1e24fe11f0598702808dd8873bd1b1e619
+	@${MKDIR} "${OBJECTDIR}/_ext/332908461" 
+	@${RM} ${OBJECTDIR}/_ext/332908461/plib_sercom2_usart.o.d 
+	@${RM} ${OBJECTDIR}/_ext/332908461/plib_sercom2_usart.o 
+	${MP_CC}  $(MP_EXTRA_CC_PRE) -mcpu=cortex-m0plus  -x c -c -D__$(MP_PROCESSOR_OPTION)__  -mthumb ${PACK_COMMON_OPTIONS}  -Os -ffunction-sections -mlong-calls -I "../src/config/toytrain-config" -I "../src/packs/ATSAMD21G18A_DFP" -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/332908461/plib_sercom2_usart.o.d" -o ${OBJECTDIR}/_ext/332908461/plib_sercom2_usart.o ../src/config/toytrain-config/peripheral/sercom/usart/plib_sercom2_usart.c  -DXPRJ_toytrain-config=$(CND_CONF)  $(COMPARISON_BUILD) 
+	
+${OBJECTDIR}/_ext/332908461/plib_sercom0_usart.o: ../src/config/toytrain-config/peripheral/sercom/usart/plib_sercom0_usart.c  .generated_files/flags/toytrain-config/8db927cf33249ae162648a1a2103da900e8859c4 .generated_files/flags/toytrain-config/ac02ed1e24fe11f0598702808dd8873bd1b1e619
+	@${MKDIR} "${OBJECTDIR}/_ext/332908461" 
+	@${RM} ${OBJECTDIR}/_ext/332908461/plib_sercom0_usart.o.d 
+	@${RM} ${OBJECTDIR}/_ext/332908461/plib_sercom0_usart.o 
+	${MP_CC}  $(MP_EXTRA_CC_PRE) -mcpu=cortex-m0plus  -x c -c -D__$(MP_PROCESSOR_OPTION)__  -mthumb ${PACK_COMMON_OPTIONS}  -Os -ffunction-sections -mlong-calls -I "../src/config/toytrain-config" -I "../src/packs/ATSAMD21G18A_DFP" -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/332908461/plib_sercom0_usart.o.d" -o ${OBJECTDIR}/_ext/332908461/plib_sercom0_usart.o ../src/config/toytrain-config/peripheral/sercom/usart/plib_sercom0_usart.c  -DXPRJ_toytrain-config=$(CND_CONF)  $(COMPARISON_BUILD) 
+	
+${OBJECTDIR}/_ext/1833659116/plib_systick.o: ../src/config/toytrain-config/peripheral/systick/plib_systick.c  .generated_files/flags/toytrain-config/719b34bad6b06a7a076de1babb03d93fbae99640 .generated_files/flags/toytrain-config/ac02ed1e24fe11f0598702808dd8873bd1b1e619
+	@${MKDIR} "${OBJECTDIR}/_ext/1833659116" 
+	@${RM} ${OBJECTDIR}/_ext/1833659116/plib_systick.o.d 
+	@${RM} ${OBJECTDIR}/_ext/1833659116/plib_systick.o 
+	${MP_CC}  $(MP_EXTRA_CC_PRE) -mcpu=cortex-m0plus  -x c -c -D__$(MP_PROCESSOR_OPTION)__  -mthumb ${PACK_COMMON_OPTIONS}  -Os -ffunction-sections -mlong-calls -I "../src/config/toytrain-config" -I "../src/packs/ATSAMD21G18A_DFP" -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/1833659116/plib_systick.o.d" -o ${OBJECTDIR}/_ext/1833659116/plib_systick.o ../src/config/toytrain-config/peripheral/systick/plib_systick.c  -DXPRJ_toytrain-config=$(CND_CONF)  $(COMPARISON_BUILD) 
+	
+${OBJECTDIR}/_ext/1963947771/plib_tc3.o: ../src/config/toytrain-config/peripheral/tc/plib_tc3.c  .generated_files/flags/toytrain-config/7a6f3503afd025356096efe15b175ca829491bf9 .generated_files/flags/toytrain-config/ac02ed1e24fe11f0598702808dd8873bd1b1e619
+	@${MKDIR} "${OBJECTDIR}/_ext/1963947771" 
+	@${RM} ${OBJECTDIR}/_ext/1963947771/plib_tc3.o.d 
+	@${RM} ${OBJECTDIR}/_ext/1963947771/plib_tc3.o 
+	${MP_CC}  $(MP_EXTRA_CC_PRE) -mcpu=cortex-m0plus  -x c -c -D__$(MP_PROCESSOR_OPTION)__  -mthumb ${PACK_COMMON_OPTIONS}  -Os -ffunction-sections -mlong-calls -I "../src/config/toytrain-config" -I "../src/packs/ATSAMD21G18A_DFP" -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/1963947771/plib_tc3.o.d" -o ${OBJECTDIR}/_ext/1963947771/plib_tc3.o ../src/config/toytrain-config/peripheral/tc/plib_tc3.c  -DXPRJ_toytrain-config=$(CND_CONF)  $(COMPARISON_BUILD) 
+	
 ${OBJECTDIR}/_ext/752838658/plib_tcc2.o: ../src/config/toytrain-config/peripheral/tcc/plib_tcc2.c  .generated_files/flags/toytrain-config/6d35a9ff23cfce63f0e5910bcbdd92d67ec32a7d .generated_files/flags/toytrain-config/ac02ed1e24fe11f0598702808dd8873bd1b1e619
 	@${MKDIR} "${OBJECTDIR}/_ext/752838658" 
 	@${RM} ${OBJECTDIR}/_ext/752838658/plib_tcc2.o.d 
@@ -380,11 +356,47 @@ ${OBJECTDIR}/_ext/752838658/plib_tcc0.o: ../src/config/toytrain-config/periphera
 	@${RM} ${OBJECTDIR}/_ext/752838658/plib_tcc0.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE) -mcpu=cortex-m0plus  -x c -c -D__$(MP_PROCESSOR_OPTION)__  -mthumb ${PACK_COMMON_OPTIONS}  -Os -ffunction-sections -mlong-calls -I "../src/config/toytrain-config" -I "../src/packs/ATSAMD21G18A_DFP" -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/752838658/plib_tcc0.o.d" -o ${OBJECTDIR}/_ext/752838658/plib_tcc0.o ../src/config/toytrain-config/peripheral/tcc/plib_tcc0.c  -DXPRJ_toytrain-config=$(CND_CONF)  $(COMPARISON_BUILD) 
 	
-${OBJECTDIR}/_ext/1963947771/plib_tc3.o: ../src/config/toytrain-config/peripheral/tc/plib_tc3.c  .generated_files/flags/toytrain-config/7a6f3503afd025356096efe15b175ca829491bf9 .generated_files/flags/toytrain-config/ac02ed1e24fe11f0598702808dd8873bd1b1e619
-	@${MKDIR} "${OBJECTDIR}/_ext/1963947771" 
-	@${RM} ${OBJECTDIR}/_ext/1963947771/plib_tc3.o.d 
-	@${RM} ${OBJECTDIR}/_ext/1963947771/plib_tc3.o 
-	${MP_CC}  $(MP_EXTRA_CC_PRE) -mcpu=cortex-m0plus  -x c -c -D__$(MP_PROCESSOR_OPTION)__  -mthumb ${PACK_COMMON_OPTIONS}  -Os -ffunction-sections -mlong-calls -I "../src/config/toytrain-config" -I "../src/packs/ATSAMD21G18A_DFP" -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/1963947771/plib_tc3.o.d" -o ${OBJECTDIR}/_ext/1963947771/plib_tc3.o ../src/config/toytrain-config/peripheral/tc/plib_tc3.c  -DXPRJ_toytrain-config=$(CND_CONF)  $(COMPARISON_BUILD) 
+${OBJECTDIR}/_ext/1675061921/gcc_monitor.o: /home/afzal/work-zone/MPlab-x/gcc/gcc-config/gcc_monitor.c  .generated_files/flags/toytrain-config/6e9b79e328192a933089592d77f017674f98871d .generated_files/flags/toytrain-config/ac02ed1e24fe11f0598702808dd8873bd1b1e619
+	@${MKDIR} "${OBJECTDIR}/_ext/1675061921" 
+	@${RM} ${OBJECTDIR}/_ext/1675061921/gcc_monitor.o.d 
+	@${RM} ${OBJECTDIR}/_ext/1675061921/gcc_monitor.o 
+	${MP_CC}  $(MP_EXTRA_CC_PRE) -mcpu=cortex-m0plus  -x c -c -D__$(MP_PROCESSOR_OPTION)__  -mthumb ${PACK_COMMON_OPTIONS}  -Os -ffunction-sections -mlong-calls -I "../src/config/toytrain-config" -I "../src/packs/ATSAMD21G18A_DFP" -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/1675061921/gcc_monitor.o.d" -o ${OBJECTDIR}/_ext/1675061921/gcc_monitor.o /home/afzal/work-zone/MPlab-x/gcc/gcc-config/gcc_monitor.c  -DXPRJ_toytrain-config=$(CND_CONF)  $(COMPARISON_BUILD) 
+	
+${OBJECTDIR}/_ext/1672823694/initialization.o: ../src/config/toytrain-config/initialization.c  .generated_files/flags/toytrain-config/e9e684d4b16495bb5e0267e02de4a51e0414a6a7 .generated_files/flags/toytrain-config/ac02ed1e24fe11f0598702808dd8873bd1b1e619
+	@${MKDIR} "${OBJECTDIR}/_ext/1672823694" 
+	@${RM} ${OBJECTDIR}/_ext/1672823694/initialization.o.d 
+	@${RM} ${OBJECTDIR}/_ext/1672823694/initialization.o 
+	${MP_CC}  $(MP_EXTRA_CC_PRE) -mcpu=cortex-m0plus  -x c -c -D__$(MP_PROCESSOR_OPTION)__  -mthumb ${PACK_COMMON_OPTIONS}  -Os -ffunction-sections -mlong-calls -I "../src/config/toytrain-config" -I "../src/packs/ATSAMD21G18A_DFP" -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/1672823694/initialization.o.d" -o ${OBJECTDIR}/_ext/1672823694/initialization.o ../src/config/toytrain-config/initialization.c  -DXPRJ_toytrain-config=$(CND_CONF)  $(COMPARISON_BUILD) 
+	
+${OBJECTDIR}/_ext/1672823694/interrupts.o: ../src/config/toytrain-config/interrupts.c  .generated_files/flags/toytrain-config/3edfd11eb1970adb9de31ff156eacb8e89f01ab7 .generated_files/flags/toytrain-config/ac02ed1e24fe11f0598702808dd8873bd1b1e619
+	@${MKDIR} "${OBJECTDIR}/_ext/1672823694" 
+	@${RM} ${OBJECTDIR}/_ext/1672823694/interrupts.o.d 
+	@${RM} ${OBJECTDIR}/_ext/1672823694/interrupts.o 
+	${MP_CC}  $(MP_EXTRA_CC_PRE) -mcpu=cortex-m0plus  -x c -c -D__$(MP_PROCESSOR_OPTION)__  -mthumb ${PACK_COMMON_OPTIONS}  -Os -ffunction-sections -mlong-calls -I "../src/config/toytrain-config" -I "../src/packs/ATSAMD21G18A_DFP" -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/1672823694/interrupts.o.d" -o ${OBJECTDIR}/_ext/1672823694/interrupts.o ../src/config/toytrain-config/interrupts.c  -DXPRJ_toytrain-config=$(CND_CONF)  $(COMPARISON_BUILD) 
+	
+${OBJECTDIR}/_ext/1672823694/exceptions.o: ../src/config/toytrain-config/exceptions.c  .generated_files/flags/toytrain-config/2ae2f3c8559a333635d7972cd4c7ea1c705cb112 .generated_files/flags/toytrain-config/ac02ed1e24fe11f0598702808dd8873bd1b1e619
+	@${MKDIR} "${OBJECTDIR}/_ext/1672823694" 
+	@${RM} ${OBJECTDIR}/_ext/1672823694/exceptions.o.d 
+	@${RM} ${OBJECTDIR}/_ext/1672823694/exceptions.o 
+	${MP_CC}  $(MP_EXTRA_CC_PRE) -mcpu=cortex-m0plus  -x c -c -D__$(MP_PROCESSOR_OPTION)__  -mthumb ${PACK_COMMON_OPTIONS}  -Os -ffunction-sections -mlong-calls -I "../src/config/toytrain-config" -I "../src/packs/ATSAMD21G18A_DFP" -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/1672823694/exceptions.o.d" -o ${OBJECTDIR}/_ext/1672823694/exceptions.o ../src/config/toytrain-config/exceptions.c  -DXPRJ_toytrain-config=$(CND_CONF)  $(COMPARISON_BUILD) 
+	
+${OBJECTDIR}/_ext/1672823694/libc_syscalls.o: ../src/config/toytrain-config/libc_syscalls.c  .generated_files/flags/toytrain-config/87660d8f3192dd52937b5c87785844a55ce81ab2 .generated_files/flags/toytrain-config/ac02ed1e24fe11f0598702808dd8873bd1b1e619
+	@${MKDIR} "${OBJECTDIR}/_ext/1672823694" 
+	@${RM} ${OBJECTDIR}/_ext/1672823694/libc_syscalls.o.d 
+	@${RM} ${OBJECTDIR}/_ext/1672823694/libc_syscalls.o 
+	${MP_CC}  $(MP_EXTRA_CC_PRE) -mcpu=cortex-m0plus  -x c -c -D__$(MP_PROCESSOR_OPTION)__  -mthumb ${PACK_COMMON_OPTIONS}  -Os -ffunction-sections -mlong-calls -I "../src/config/toytrain-config" -I "../src/packs/ATSAMD21G18A_DFP" -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/1672823694/libc_syscalls.o.d" -o ${OBJECTDIR}/_ext/1672823694/libc_syscalls.o ../src/config/toytrain-config/libc_syscalls.c  -DXPRJ_toytrain-config=$(CND_CONF)  $(COMPARISON_BUILD) 
+	
+${OBJECTDIR}/_ext/1675061921/startup_gcc.o: /home/afzal/work-zone/MPlab-x/gcc/gcc-config/startup_gcc.c  .generated_files/flags/toytrain-config/cb00ff37a6c096e9c73748f66c95c7c487126f60 .generated_files/flags/toytrain-config/ac02ed1e24fe11f0598702808dd8873bd1b1e619
+	@${MKDIR} "${OBJECTDIR}/_ext/1675061921" 
+	@${RM} ${OBJECTDIR}/_ext/1675061921/startup_gcc.o.d 
+	@${RM} ${OBJECTDIR}/_ext/1675061921/startup_gcc.o 
+	${MP_CC}  $(MP_EXTRA_CC_PRE) -mcpu=cortex-m0plus  -x c -c -D__$(MP_PROCESSOR_OPTION)__  -mthumb ${PACK_COMMON_OPTIONS}  -Os -ffunction-sections -mlong-calls -I "../src/config/toytrain-config" -I "../src/packs/ATSAMD21G18A_DFP" -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/1675061921/startup_gcc.o.d" -o ${OBJECTDIR}/_ext/1675061921/startup_gcc.o /home/afzal/work-zone/MPlab-x/gcc/gcc-config/startup_gcc.c  -DXPRJ_toytrain-config=$(CND_CONF)  $(COMPARISON_BUILD) 
+	
+${OBJECTDIR}/_ext/1360937237/main.o: ../src/main.c  .generated_files/flags/toytrain-config/a58f47648f7cd9c3d9ac4e86f3870749e31e6b96 .generated_files/flags/toytrain-config/ac02ed1e24fe11f0598702808dd8873bd1b1e619
+	@${MKDIR} "${OBJECTDIR}/_ext/1360937237" 
+	@${RM} ${OBJECTDIR}/_ext/1360937237/main.o.d 
+	@${RM} ${OBJECTDIR}/_ext/1360937237/main.o 
+	${MP_CC}  $(MP_EXTRA_CC_PRE) -mcpu=cortex-m0plus  -x c -c -D__$(MP_PROCESSOR_OPTION)__  -mthumb ${PACK_COMMON_OPTIONS}  -Os -ffunction-sections -mlong-calls -I "../src/config/toytrain-config" -I "../src/packs/ATSAMD21G18A_DFP" -Wall -MP -MMD -MF "${OBJECTDIR}/_ext/1360937237/main.o.d" -o ${OBJECTDIR}/_ext/1360937237/main.o ../src/main.c  -DXPRJ_toytrain-config=$(CND_CONF)  $(COMPARISON_BUILD) 
 	
 endif
 

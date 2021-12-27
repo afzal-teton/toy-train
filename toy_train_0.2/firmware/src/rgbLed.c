@@ -1,22 +1,19 @@
 #include "rgbLed.h"
-
-#include"rgbLed.h"
-
+#include "definitions.h"
 
 
-void initRgbLedPin(uint8_t redPin, uint8_t greenPin, uint8_t bluePin){
-//  //pinMode(redPin,OUTPUT);
-//  //pinMode(greenPin,OUTPUT);
-//  //pinMode(bluePin,OUTPUT);
-//  redLed = redPin;
-//  greenLed = greenPin;
-//  blueLed = bluePin;
+void initRGBPeripheral(){
+    TC3_Compare8bitMatch0Set(0);
+    TCC2_PWM16bitDutySet(TCC2_CHANNEL0, 0);
+    TCC2_PWM16bitDutySet(TCC2_CHANNEL1, 0);
+    TCC2_PWMStart();
+    TC3_CompareStart();
 }
 
 void RGBcolorWrite (uint8_t red, uint8_t green, uint8_t blue){
-//  analogWrite(redLed,red);  // pwm for red led
-//  analogWrite(greenLed,green);  //pwm for green led
-//  analogWrite(blueLed,blue); // pwm for blue led 
+    TC3_Compare8bitMatch0Set(blue);
+    TCC2_PWM16bitDutySet(TCC2_CHANNEL0, green*8);
+    TCC2_PWM16bitDutySet(TCC2_CHANNEL1, red*8);
 }
 /*
 void LedDriver :: colorWrite (uint8_t red, uint8_t green, uint8_t blue)
@@ -25,7 +22,7 @@ void LedDriver :: colorWrite (uint8_t red, uint8_t green, uint8_t blue)
   analogWrite(greenLed, 255-green);
   analogWrite(blueLed, 255-blue);
 }*/
-void setColor(uint8_t color){
+void RGBsetColor(uint8_t color){
   switch (color) {
     case RED:
       RGBcolorWrite(255,0,0);

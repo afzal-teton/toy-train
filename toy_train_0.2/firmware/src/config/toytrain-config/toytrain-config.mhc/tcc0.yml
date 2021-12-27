@@ -101,14 +101,14 @@ children:
     - type: Values
       children:
       - type: User
-        attributes: {value: '28'}
+        attributes: {value: '0'}
   - type: Integer
     attributes: {id: TCC_1_CC}
     children:
     - type: Values
       children:
       - type: User
-        attributes: {value: '64'}
+        attributes: {value: '0'}
   - type: Integer
     attributes: {id: TCC_2_CC}
     children:
@@ -129,7 +129,7 @@ children:
     - type: Values
       children:
       - type: User
-        attributes: {value: '66'}
+        attributes: {value: '0'}
   - type: Comment
     attributes: {id: TCC_COMPARE_PERIOD_COMMENT}
     children:

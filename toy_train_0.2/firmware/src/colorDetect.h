@@ -18,26 +18,21 @@
 #define NO_COLOR         6
 
 
+typedef struct pdColors{
+    uint16_t red ;         
+    uint16_t green;       
+    uint16_t blue;   
+    uint16_t ambient;
+    uint16_t white;
+}PDColor ;
+
+extern PDColor pdColor;
+
+void PDInit();
+void PDColorWrite (uint8_t red, uint8_t green, uint8_t blue);
+uint8_t generateColor();
+uint8_t PDColourRead();
 
 
-extern uint8_t lastColor; 
-extern uint8_t readCount;
-extern uint32_t lastMillis;
-extern uint32_t colorCount;
-
-extern uint16_t red ;         
-extern uint16_t green;       
-extern uint16_t blue;   
-extern uint16_t ambient;
-extern uint16_t white;
-
-////------------------- Initialize Color Sensor starts ------------------//
-void initColorDetection(uint8_t redPin, uint8_t greenPin, uint8_t bluePin, uint8_t pdPin);
-////------------------- Initialize Color Sensor ends ------------------//
-////------------------- Color Sensing function starts ------------------//
-void colorWrite (uint8_t red, uint8_t green, uint8_t blue);
-uint8_t getColor();
-uint8_t reading();
-
-#endif	/* COLORDETECT_H */
+#endif	
 

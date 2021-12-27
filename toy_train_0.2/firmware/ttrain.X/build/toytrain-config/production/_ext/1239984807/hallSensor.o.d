@@ -72,10 +72,10 @@ build/toytrain-config/production/_ext/1239984807/hallSensor.o: \
  ../src/config/toytrain-config/device.h \
  ../src/config/toytrain-config/toolchain_specifics.h \
  /opt/microchip/mplabx/v5.50/packs/arm/CMSIS/5.4.0/CMSIS/Core/Include/cmsis_compiler.h \
- ../src/config/toytrain-config/peripheral/sercom/usart/plib_sercom2_usart.h \
- ../src/config/toytrain-config/peripheral/sercom/usart/plib_sercom_usart_common.h \
  ../src/config/toytrain-config/peripheral/tcc/plib_tcc2.h \
  ../src/config/toytrain-config/peripheral/tcc/plib_tcc_common.h \
+ ../src/config/toytrain-config/peripheral/sercom/usart/plib_sercom2_usart.h \
+ ../src/config/toytrain-config/peripheral/sercom/usart/plib_sercom_usart_common.h \
  ../src/config/toytrain-config/peripheral/evsys/plib_evsys.h \
  ../src/config/toytrain-config/peripheral/sercom/usart/plib_sercom0_usart.h \
  ../src/config/toytrain-config/peripheral/tcc/plib_tcc0.h \
@@ -83,6 +83,8 @@ build/toytrain-config/production/_ext/1239984807/hallSensor.o: \
  ../src/config/toytrain-config/peripheral/clock/plib_clock.h \
  ../src/config/toytrain-config/peripheral/nvic/plib_nvic.h \
  ../src/config/toytrain-config/peripheral/systick/plib_systick.h \
+ ../src/config/toytrain-config/peripheral/adc/plib_adc.h \
+ ../src/config/toytrain-config/peripheral/adc/plib_adc_common.h \
  ../src/config/toytrain-config/peripheral/tc/plib_tc3.h \
  ../src/config/toytrain-config/peripheral/tc/plib_tc_common.h
 
@@ -230,13 +232,13 @@ build/toytrain-config/production/_ext/1239984807/hallSensor.o: \
 
 /opt/microchip/mplabx/v5.50/packs/arm/CMSIS/5.4.0/CMSIS/Core/Include/cmsis_compiler.h:
 
-../src/config/toytrain-config/peripheral/sercom/usart/plib_sercom2_usart.h:
-
-../src/config/toytrain-config/peripheral/sercom/usart/plib_sercom_usart_common.h:
-
 ../src/config/toytrain-config/peripheral/tcc/plib_tcc2.h:
 
 ../src/config/toytrain-config/peripheral/tcc/plib_tcc_common.h:
+
+../src/config/toytrain-config/peripheral/sercom/usart/plib_sercom2_usart.h:
+
+../src/config/toytrain-config/peripheral/sercom/usart/plib_sercom_usart_common.h:
 
 ../src/config/toytrain-config/peripheral/evsys/plib_evsys.h:
 
@@ -251,6 +253,10 @@ build/toytrain-config/production/_ext/1239984807/hallSensor.o: \
 ../src/config/toytrain-config/peripheral/nvic/plib_nvic.h:
 
 ../src/config/toytrain-config/peripheral/systick/plib_systick.h:
+
+../src/config/toytrain-config/peripheral/adc/plib_adc.h:
+
+../src/config/toytrain-config/peripheral/adc/plib_adc_common.h:
 
 ../src/config/toytrain-config/peripheral/tc/plib_tc3.h:
 

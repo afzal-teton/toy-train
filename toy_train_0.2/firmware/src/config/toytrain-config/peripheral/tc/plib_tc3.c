@@ -85,7 +85,7 @@ void TC3_CompareInitialize( void )
 
 
     TC3_REGS->COUNT8.TC_PER = 255U;
-    TC3_REGS->COUNT8.TC_CC[0] = 128U;
+    TC3_REGS->COUNT8.TC_CC[0] = 0U;
     TC3_REGS->COUNT8.TC_CC[1] = 255U;
 
     /* Clear all interrupt flags */
