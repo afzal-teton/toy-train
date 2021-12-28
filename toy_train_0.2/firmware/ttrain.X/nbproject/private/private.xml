@@ -5,7 +5,15 @@
         <group>
             <file>file:/home/afzal/work-zone/MPlab-x/projects/toy_train_0.2/firmware/src/config/toytrain-config/peripheral/tcc/plib_tcc0.h</file>
             <file>file:/home/afzal/work-zone/MPlab-x/projects/toy_train_0.2/firmware/src/config/toytrain-config/peripheral/tcc/plib_tcc2.c</file>
+            <file>file:/home/afzal/work-zone/MPlab-x/projects/toy_train_0.2/firmware/src/rgbLed.c</file>
+            <file>file:/home/afzal/work-zone/MPlab-x/projects/toy_train_0.2/firmware/src/config/toytrain-config/peripheral/adc/plib_adc.c</file>
+            <file>file:/home/afzal/work-zone/MPlab-x/projects/toy_train_0.2/firmware/src/AppGlobals.c</file>
             <file>file:/home/afzal/work-zone/MPlab-x/projects/toy_train_0.2/firmware/src/main.c</file>
+            <file>file:/home/afzal/work-zone/MPlab-x/projects/toy_train_0.2/firmware/src/config/toytrain-config/initialization.c</file>
+            <file>file:/home/afzal/work-zone/MPlab-x/projects/toy_train_0.2/firmware/src/colorDetect.c</file>
+            <file>file:/home/afzal/work-zone/MPlab-x/projects/toy_train_0.2/firmware/src/hallSensor.c</file>
+            <file>file:/home/afzal/work-zone/MPlab-x/projects/toy_train_0.2/firmware/src/config/toytrain-config/peripheral/port/plib_port.c</file>
+            <file>file:/home/afzal/work-zone/MPlab-x/projects/toy_train_0.2/firmware/src/motorControl.c</file>
             <file>file:/home/afzal/work-zone/MPlab-x/projects/toy_train_0.2/firmware/src/config/toytrain-config/peripheral/tcc/plib_tcc0.c</file>
         </group>
     </open-files>

@@ -32,13 +32,12 @@
 #include "string.h"
 #include "rgbLed.h"
 #include "colorDetect.h"
+#include "bluetooth.h"
 // *****************************************************************************
 // *****************************************************************************
 // Section: Main Entry Point
 // *****************************************************************************
 // *****************************************************************************
-
-volatile uint16_t adc_value = 0 ;
 
 
 void systickCallback(uintptr_t context)
@@ -56,37 +55,22 @@ void systickCallback(uintptr_t context)
         global_carWashWaitTime--;
     }
 }
-
-
-
-
 void adcCallBack(uintptr_t context){
-
     adcValue = ADC_ConversionResultGet();
-    
 }
 
-
-
-uint8_t pwmValue = 0;
-//uint8_t pwmValue_red = 0;
-//uint8_t pwmValue_green = 0;
-char dbg_adc_str_value[6];
-
-
-
-
+uint8_t ble_dbg_str[8]="kakbkc\r\n";
+uint8_t ble_read_buffer[10];
+uint8_t dbg_adc_str_value[6];
 uint8_t dbgCounter = 0;
 uint8_t dbg_str_red[6]; 
 uint8_t dbg_str_green[6]; 
 uint8_t dbg_str_blue[6]; 
 uint8_t dbg_str_white[6]; 
 uint8_t dbg_str_ambient[6]; 
-
 volatile uint8_t dbg_buffer[22];
 
 int main ( void ){
-    
     uint8_t hallSensorRes = 0 ;
     uint8_t  PDColorRes = 0;
     uint8_t PDNoColorCount = 0 ;
@@ -98,24 +82,52 @@ int main ( void ){
     SYSTICK_TimerStart();
     
     
-    ADC_CallbackRegister(adcCallBack, 0);
+    ADC_CallbackRegister(&adcCallBack, 0);
     ADC_Enable();
     ADC_ChannelSelect(ADC_POSINPUT_PIN2, ADC_NEGINPUT_GND);
     
     initRGBPeripheral();
     initMotorPeripheral();
-
-    while ( true )
-    {
+    initBluetoothSerial();
+    
+    while ( true ) {
+        switch(checkBlutoothCommand()){
+            case BL_COMMMAND_MOTOR_TASK:
+                switch(bluetooth.task){
+                    case(0):
+                        stopMotor();
+                        setHallSensorReadDelay();
+                        break;
+                    case(1):
+                        accelerateMotor();
+                        setHallNoReasultInterval();
+                        setHallSensorReadDelay();
+                        break;
+                    case(2):
+                        decelerateMotor();
+                        setHallSensorReadDelay();
+                        break;
+                    case(3):
+                        reverseMotor();
+                        setHallNoReasultInterval();
+                        setHallSensorReadDelay();
+                        break;
+                    default:
+                        break;
+                }
+                break;
+            case BL_COMMMAND_SOUND_TASK:
+                //TODO :: SOUND TASK ... audio.setAudio(bluetooth.getTask());
+                break;
+            case BL_COMMMAND_LED_TASK:
+                RGBcolorWrite(bluetooth.red, bluetooth.green, bluetooth.blue);
+                break;
+            default:
+                break;
         
-//        if(dbgCounter > 255){
-//            dbgCounter = 0 ;
-//           
-//        }
-//        RGBcolorWrite(0, 0, dbgCounter++);
-//      
-//       
- //       SYSTICK_DelayMs(1000);
+        }
+        
+//        SYSTICK_DelayMs(1000);
 //        
 //        
     

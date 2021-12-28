@@ -9,13 +9,9 @@
 #define	COLORDETECT_H
 
 #include <stdint.h>
+#include "AppGlobals.h"
 
-#define RED              1
-#define GREEN            2
-#define BLUE             3
-#define WHITE            4
-#define YELLOW           5
-#define NO_COLOR         6
+
 
 
 typedef struct pdColors{

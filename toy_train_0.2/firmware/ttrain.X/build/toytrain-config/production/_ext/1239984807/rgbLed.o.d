@@ -1,6 +1,7 @@
 build/toytrain-config/production/_ext/1239984807/rgbLed.o: \
  /home/afzal/work-zone/MPlab-x/projects/toy_train_0.2/firmware/src/rgbLed.c \
  /home/afzal/work-zone/MPlab-x/projects/toy_train_0.2/firmware/src/rgbLed.h \
+ /home/afzal/work-zone/MPlab-x/projects/toy_train_0.2/firmware/src/AppGlobals.h \
  ../src/config/toytrain-config/definitions.h \
  ../src/config/toytrain-config/peripheral/nvmctrl/plib_nvmctrl.h \
  ../src/config/toytrain-config/device.h \
@@ -88,6 +89,8 @@ build/toytrain-config/production/_ext/1239984807/rgbLed.o: \
  ../src/config/toytrain-config/peripheral/tc/plib_tc_common.h
 
 /home/afzal/work-zone/MPlab-x/projects/toy_train_0.2/firmware/src/rgbLed.h:
+
+/home/afzal/work-zone/MPlab-x/projects/toy_train_0.2/firmware/src/AppGlobals.h:
 
 ../src/config/toytrain-config/definitions.h:
 

@@ -13,6 +13,12 @@
 #define ON               1
 #define OFF              0
 
+#define RED              1
+#define GREEN            2
+#define BLUE             3
+#define WHITE            4
+#define YELLOW           5
+#define NO_COLOR         6
 
 #define HALL_SENSOR_IDLE_TIME                               200
 #define HALL_SENSOR_INERTIA                                 200

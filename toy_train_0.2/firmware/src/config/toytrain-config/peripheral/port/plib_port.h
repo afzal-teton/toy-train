@@ -96,13 +96,13 @@
 #define pd_blue_Get()               (((PORT_REGS->GROUP[0].PORT_IN >> 6U)) & 0x01U)
 #define pd_blue_PIN                  PORT_PIN_PA06
 
-/*** Macros for bl_rx pin ***/
-#define bl_rx_Get()               (((PORT_REGS->GROUP[0].PORT_IN >> 8U)) & 0x01U)
-#define bl_rx_PIN                  PORT_PIN_PA08
+/*** Macros for sercom2_tx pin ***/
+#define sercom2_tx_Get()               (((PORT_REGS->GROUP[0].PORT_IN >> 8U)) & 0x01U)
+#define sercom2_tx_PIN                  PORT_PIN_PA08
 
-/*** Macros for bl_tx pin ***/
-#define bl_tx_Get()               (((PORT_REGS->GROUP[0].PORT_IN >> 9U)) & 0x01U)
-#define bl_tx_PIN                  PORT_PIN_PA09
+/*** Macros for sercom2_rx pin ***/
+#define sercom2_rx_Get()               (((PORT_REGS->GROUP[0].PORT_IN >> 9U)) & 0x01U)
+#define sercom2_rx_PIN                  PORT_PIN_PA09
 
 /*** Macros for print_tx pin ***/
 #define print_tx_Get()               (((PORT_REGS->GROUP[0].PORT_IN >> 10U)) & 0x01U)

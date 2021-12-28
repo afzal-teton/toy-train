@@ -9,14 +9,7 @@
 #define	RGBLED_H
 
 #include<stdint.h>
-
-#define NO_COLOR         0
-#define RED              1
-#define GREEN            2
-#define BLUE             3
-#define WHITE            4
-#define YELLOW           5
-
+#include "AppGlobals.h"
 
 
 void initRGBPeripheral();

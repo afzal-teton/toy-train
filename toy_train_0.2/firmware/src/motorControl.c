@@ -32,10 +32,13 @@ void motorControl(int8_t direction, uint8_t speed){
   motor.direction_flag = direction;
   motor.speed_flag = speed;
   if (direction == MOTOR_FORWARD){
-  
+    TCC0_PWM24bitDutySet(TCC0_CHANNEL3, 0);
+    TCC0_PWM24bitDutySet(TCC0_CHANNEL2, speed);
     //direction pin will be ground and speed pin will be pwm.  
   }
   else if(direction == MOTOR_REVERSE){
+    TCC0_PWM24bitDutySet(TCC0_CHANNEL3, speed);
+    TCC0_PWM24bitDutySet(TCC0_CHANNEL2, 0);
     //direction pin will be ground and speed pin will be pwm. 
   } 
 }
