@@ -70,13 +70,10 @@ build/toytrain-config/production/_ext/1672823694/initialization.o: \
  ../src/config/toytrain-config/device.h \
  ../src/config/toytrain-config/toolchain_specifics.h \
  /opt/microchip/mplabx/v5.50/packs/arm/CMSIS/5.4.0/CMSIS/Core/Include/cmsis_compiler.h \
- ../src/config/toytrain-config/peripheral/tcc/plib_tcc2.h \
- ../src/config/toytrain-config/peripheral/tcc/plib_tcc_common.h \
  ../src/config/toytrain-config/peripheral/sercom/usart/plib_sercom2_usart.h \
  ../src/config/toytrain-config/peripheral/sercom/usart/plib_sercom_usart_common.h \
  ../src/config/toytrain-config/peripheral/evsys/plib_evsys.h \
  ../src/config/toytrain-config/peripheral/sercom/usart/plib_sercom0_usart.h \
- ../src/config/toytrain-config/peripheral/tcc/plib_tcc0.h \
  ../src/config/toytrain-config/peripheral/port/plib_port.h \
  ../src/config/toytrain-config/peripheral/clock/plib_clock.h \
  ../src/config/toytrain-config/peripheral/nvic/plib_nvic.h \
@@ -84,7 +81,12 @@ build/toytrain-config/production/_ext/1672823694/initialization.o: \
  ../src/config/toytrain-config/peripheral/adc/plib_adc.h \
  ../src/config/toytrain-config/peripheral/adc/plib_adc_common.h \
  ../src/config/toytrain-config/peripheral/tc/plib_tc3.h \
- ../src/config/toytrain-config/peripheral/tc/plib_tc_common.h
+ ../src/config/toytrain-config/peripheral/tc/plib_tc_common.h \
+ ../src/config/toytrain-config/peripheral/dac/plib_dac.h \
+ ../src/config/toytrain-config/peripheral/tc/plib_tc4.h \
+ ../src/config/toytrain-config/peripheral/tcc/plib_tcc2.h \
+ ../src/config/toytrain-config/peripheral/tcc/plib_tcc_common.h \
+ ../src/config/toytrain-config/peripheral/tcc/plib_tcc0.h
 
 ../src/config/toytrain-config/definitions.h:
 
@@ -226,10 +228,6 @@ build/toytrain-config/production/_ext/1672823694/initialization.o: \
 
 /opt/microchip/mplabx/v5.50/packs/arm/CMSIS/5.4.0/CMSIS/Core/Include/cmsis_compiler.h:
 
-../src/config/toytrain-config/peripheral/tcc/plib_tcc2.h:
-
-../src/config/toytrain-config/peripheral/tcc/plib_tcc_common.h:
-
 ../src/config/toytrain-config/peripheral/sercom/usart/plib_sercom2_usart.h:
 
 ../src/config/toytrain-config/peripheral/sercom/usart/plib_sercom_usart_common.h:
@@ -237,8 +235,6 @@ build/toytrain-config/production/_ext/1672823694/initialization.o: \
 ../src/config/toytrain-config/peripheral/evsys/plib_evsys.h:
 
 ../src/config/toytrain-config/peripheral/sercom/usart/plib_sercom0_usart.h:
-
-../src/config/toytrain-config/peripheral/tcc/plib_tcc0.h:
 
 ../src/config/toytrain-config/peripheral/port/plib_port.h:
 
@@ -255,3 +251,13 @@ build/toytrain-config/production/_ext/1672823694/initialization.o: \
 ../src/config/toytrain-config/peripheral/tc/plib_tc3.h:
 
 ../src/config/toytrain-config/peripheral/tc/plib_tc_common.h:
+
+../src/config/toytrain-config/peripheral/dac/plib_dac.h:
+
+../src/config/toytrain-config/peripheral/tc/plib_tc4.h:
+
+../src/config/toytrain-config/peripheral/tcc/plib_tcc2.h:
+
+../src/config/toytrain-config/peripheral/tcc/plib_tcc_common.h:
+
+../src/config/toytrain-config/peripheral/tcc/plib_tcc0.h:

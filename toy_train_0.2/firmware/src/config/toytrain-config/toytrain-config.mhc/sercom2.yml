@@ -20,15 +20,6 @@ children:
         attributes: {id: source}
         children:
         - {type: Value, value: ../peripheral/sercom_u2201/templates/plib_sercom_usart.h.ftl}
-  - type: Comment
-    attributes: {id: SERCOM_USART_RING_BUFFER_SIZE_CONFIG}
-    children:
-    - type: Attributes
-      children:
-      - type: Boolean
-        attributes: {id: visible}
-        children:
-        - {type: Value, value: 'false'}
   - type: File
     attributes: {id: SERCOM_USART_SOURCE}
     children:
@@ -94,6 +85,13 @@ children:
       children:
       - type: Dynamic
         attributes: {id: sercom2, value: 'false'}
+  - type: Boolean
+    attributes: {id: USART_RUNSTDBY}
+    children:
+    - type: Values
+      children:
+      - type: User
+        attributes: {value: 'false'}
   - type: KeyValueSet
     attributes: {id: USART_RXPO}
     children:
@@ -108,15 +106,6 @@ children:
       children:
       - type: User
         attributes: {value: 'true'}
-  - type: Integer
-    attributes: {id: USART_RX_RING_BUFFER_SIZE}
-    children:
-    - type: Attributes
-      children:
-      - type: Boolean
-        attributes: {id: visible}
-        children:
-        - {type: Value, value: 'false'}
   - type: Integer
     attributes: {id: USART_SAMPLE_COUNT}
     children:
@@ -145,14 +134,5 @@ children:
       children:
       - type: User
         attributes: {value: 'true'}
-  - type: Integer
-    attributes: {id: USART_TX_RING_BUFFER_SIZE}
-    children:
-    - type: Attributes
-      children:
-      - type: Boolean
-        attributes: {id: visible}
-        children:
-        - {type: Value, value: 'false'}
 - type: ElementPosition
-  attributes: {x: '295', y: '220', id: sercom2}
+  attributes: {x: '289', y: '221', id: sercom2}

@@ -33,12 +33,21 @@
 #include "rgbLed.h"
 #include "colorDetect.h"
 #include "bluetooth.h"
+#include "music.h"
+#include <math.h>
+#include <string.h>
+#include <stdlib.h>
 // *****************************************************************************
 // *****************************************************************************
 // Section: Main Entry Point
 // *****************************************************************************
 // *****************************************************************************
 
+
+volatile uint32_t sample2Size = 0;
+volatile uint32_t musicSampleCounter = 0;
+
+volatile uint8_t sinData[360];
 
 void systickCallback(uintptr_t context)
 {
@@ -58,8 +67,17 @@ void systickCallback(uintptr_t context)
 void adcCallBack(uintptr_t context){
     adcValue = ADC_ConversionResultGet();
 }
+void TC4DacCallBack (TC_TIMER_STATUS status, uintptr_t context){ 
+   // pd_green_Toggle() ;
+    DAC_DataWrite (sample1[musicSampleCounter++]*4);
+    if(musicSampleCounter >= sample2Size){
+        musicSampleCounter = 0 ;
+    }
+    
+}
 
-uint8_t ble_dbg_str[8]="kakbkc\r\n";
+
+
 uint8_t ble_read_buffer[10];
 uint8_t dbg_adc_str_value[6];
 uint8_t dbgCounter = 0;
@@ -70,11 +88,21 @@ uint8_t dbg_str_white[6];
 uint8_t dbg_str_ambient[6]; 
 volatile uint8_t dbg_buffer[22];
 
+const uint8_t t[]={0x52, 0x49, 0x46, 0x46, 0xA0, 0xF4, 0x01};
+
 int main ( void ){
+    
+    
+    
+    
     uint8_t hallSensorRes = 0 ;
     uint8_t  PDColorRes = 0;
     uint8_t PDNoColorCount = 0 ;
     uint8_t PDLastColor = 0 ;
+    
+    
+    sample2Size = sample1Size();
+    //sample2Size = 800000u;
     
     /* Initialize all modules */
     SYS_Initialize ( NULL );
@@ -86,11 +114,18 @@ int main ( void ){
     ADC_Enable();
     ADC_ChannelSelect(ADC_POSINPUT_PIN2, ADC_NEGINPUT_GND);
     
+    TC4_TimerCallbackRegister(TC4DacCallBack, (uintptr_t)NULL);
+    TC4_TimerStart();
+    
     initRGBPeripheral();
     initMotorPeripheral();
     initBluetoothSerial();
     
+    
     while ( true ) {
+        
+        SYSTICK_DelayMs(1000);
+          /* 
         switch(checkBlutoothCommand()){
             case BL_COMMMAND_MOTOR_TASK:
                 switch(bluetooth.task){
@@ -128,18 +163,6 @@ int main ( void ){
         }
         
 //        SYSTICK_DelayMs(1000);
-//        
-//        
-    
-
-
-
-//        memset(dbg_adc_str_value, 0, sizeof(dbg_adc_str_value));
-//        itoa(adc_value, dbg_adc_str_value, 10);
-////        SERCOM0_USART_Write("adc : ", 6);
-//        strcat(dbg_adc_str_value, "\n");
-//        SERCOM0_USART_Write(dbg_adc_str_value, sizeof(dbg_adc_str_value));
-
         
         hallSensorRes = measureHallSensorValue();
         switch(hallSensorRes){
@@ -149,7 +172,7 @@ int main ( void ){
                     hallSensor.previousStatus = HALL_SENSE_FORWRD;
                 }
                 else if(motor.speed_flag == MOTOR_SPEED_NULL){
-                    motorControl(MOTOR_FORWARD, MOTOR_SPEED_MIN);        //SERCOM0_USART_Write("forward : 1 \n", 13);
+                    motorControl(MOTOR_FORWARD, MOTOR_SPEED_MIN);        
                 }
                 else if(motor.direction_flag == MOTOR_REVERSE){
                     stopMotor();  
@@ -161,7 +184,7 @@ int main ( void ){
                     hallSensor.previousStatus = HALL_SENSE_REVERSE;
                 }
                 else if(motor.speed_flag == MOTOR_SPEED_NULL){
-                    motorControl(MOTOR_REVERSE,MOTOR_SPEED_MIN);       //SERCOM0_USART_Write("reverse : 1 \n", 13);
+                    motorControl(MOTOR_REVERSE,MOTOR_SPEED_MIN);       
                 }
                 else if(motor.direction_flag == MOTOR_FORWARD){
                     stopMotor();    
@@ -170,43 +193,14 @@ int main ( void ){
             case(HALL_SENSE_STOP):
                // SERCOM0_USART_Write("hall test res : 3 \n", 19);
                 if(motor.speed_flag != MOTOR_SPEED_NULL){
-                    stopMotor();                                   // SERCOM0_USART_Write("stop : 1 \n", 10);
+                    stopMotor();                                   
                 }
                 break;
             default:
                 //SERCOM0_USART_Write("hall test res : -1 \n", 19);
                 break;
         }
-       
- //       PDColorRes = PDColourRead();
-//        if(PDColorRes){
-            //RGBsetColor(PDColorRes);
-//             SYSTICK_DelayMs(100);
-//            memset(dbg_buffer, 0, sizeof(dbg_buffer));
-//            memset(dbg_str_red, '\0', sizeof(dbg_str_red));
-//            memset(dbg_str_green, 0, sizeof(dbg_str_green));
-//            memset(dbg_str_blue, 0, sizeof(dbg_str_blue));
-//            memset(dbg_str_white, 0, sizeof(dbg_str_white));
-//            memset(dbg_str_ambient, 0, sizeof(dbg_str_ambient));
-//                     
-//            itoa(pdColor.red,dbg_str_red,10);
-//            itoa(pdColor.green,dbg_str_green,10);
-//            itoa(pdColor.blue,dbg_str_blue,10);
-//            itoa(pdColor.white,dbg_str_white,10);
-//            itoa(pdColor.ambient,dbg_str_ambient,10);
-//            
-//            
-//            strcpy(dbg_buffer, dbg_str_red);     strcat(dbg_buffer,", ");   
-//            strcat(dbg_buffer, dbg_str_green);   strcat(dbg_buffer,", "); 
-//            strcat(dbg_buffer, dbg_str_blue);    strcat(dbg_buffer,", "); 
-//            strcat(dbg_buffer, dbg_str_white);   strcat(dbg_buffer,", "); 
-//            strcat(dbg_buffer, dbg_str_ambient); strcat(dbg_buffer,"\n"); 
-//            SERCOM0_USART_Write(dbg_buffer, sizeof(dbg_buffer)); 
-//             SYSTICK_DelayMs(100);
- //       }
-       
-    
-     
+      
         PDColorRes = PDColourRead();
         if(PDColorRes){
             if(PDColorRes == NO_COLOR){
@@ -268,7 +262,8 @@ int main ( void ){
 //                }
                 //TODO :: RING THE BELL AT 1S INTERVAL .. 
             }
-        }     
+        }    
+     */ 
     }
 
     /* Execution should not come here during normal operation */

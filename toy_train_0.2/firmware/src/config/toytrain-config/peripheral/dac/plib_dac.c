@@ -1,19 +1,21 @@
 /*******************************************************************************
- System Interrupts File
+  Digital-to-Analog Converter (DAC) PLIB
 
   Company:
     Microchip Technology Inc.
 
   File Name:
-    interrupt.h
+    plib_dac.c
 
   Summary:
-    Interrupt vectors mapping
+    DAC PLIB Implementation file
 
   Description:
-    This file contains declarations of device vectors used by Harmony 3
- *******************************************************************************/
+    This file defines the interface to the DAC peripheral library. This
+    library provides access to and control of the associated peripheral
+    instance.
 
+*******************************************************************************/
 // DOM-IGNORE-BEGIN
 /*******************************************************************************
 * Copyright (C) 2018 Microchip Technology Inc. and its subsidiaries.
@@ -36,35 +38,47 @@
 * FULLEST EXTENT ALLOWED BY LAW, MICROCHIP'S TOTAL LIABILITY ON ALL CLAIMS IN
 * ANY WAY RELATED TO THIS SOFTWARE WILL NOT EXCEED THE AMOUNT OF FEES, IF ANY,
 * THAT YOU HAVE PAID DIRECTLY TO MICROCHIP FOR THIS SOFTWARE.
- *******************************************************************************/
+*******************************************************************************/
 // DOM-IGNORE-END
-
-#ifndef INTERRUPTS_H
-#define INTERRUPTS_H
 
 // *****************************************************************************
 // *****************************************************************************
 // Section: Included Files
 // *****************************************************************************
 // *****************************************************************************
-#include <stdint.h>
+/* This section lists the other files that are included in this file.
+*/
+#include "device.h"
+#include "interrupts.h"
+#include "plib_dac.h"
 
 
-
-// *****************************************************************************
-// *****************************************************************************
-// Section: Handler Routines
-// *****************************************************************************
-// *****************************************************************************
-
-void Reset_Handler (void);
-void NonMaskableInt_Handler (void);
-void HardFault_Handler (void);
-void SysTick_Handler (void);
-void SERCOM2_USART_InterruptHandler (void);
-void TC4_TimerInterruptHandler (void);
-void ADC_InterruptHandler (void);
+/* (DAC DATA) Mask DATA[15:10] Bit */
+#define DAC_DATA_MSB_MASK                    (0x03FFU)
 
 
+void DAC_Initialize(void)
+{
+    /* Set Reference Voltage */
+    DAC_REGS->DAC_CTRLB = (uint8_t)(DAC_CTRLB_REFSEL(1UL) | DAC_CTRLB_EOEN_Msk );
 
-#endif // INTERRUPTS_H
+    DAC_REGS->DAC_EVCTRL = 0U;
+    
+    /* Enable DAC */
+    DAC_REGS->DAC_CTRLA =(uint8_t)(DAC_CTRLA_ENABLE_Msk);	
+    while(DAC_REGS->DAC_STATUS != 0U)
+    {
+        /* Wait for Synchronization after Enabling DAC */
+    }
+    
+}
+
+void DAC_DataWrite(uint16_t data)
+{
+    /* Write Data to DATA Register for conversion(DATA[9:0]) */
+    DAC_REGS->DAC_DATA = (uint16_t)(DAC_DATA_MSB_MASK & DAC_DATA_DATA((uint32_t)data));
+    while(DAC_REGS->DAC_STATUS != 0U)
+    {
+        /* Wait for Synchronization after writing Data to DATA Register */
+    }
+}

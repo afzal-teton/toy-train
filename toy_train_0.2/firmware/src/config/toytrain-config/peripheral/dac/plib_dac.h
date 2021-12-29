@@ -1,19 +1,21 @@
 /*******************************************************************************
- System Interrupts File
+  Digital-to-Analog Converter (DAC) PLIB
 
   Company:
     Microchip Technology Inc.
 
   File Name:
-    interrupt.h
+    plib_dac.h
 
   Summary:
-    Interrupt vectors mapping
+    DAC PLIB Header file
 
   Description:
-    This file contains declarations of device vectors used by Harmony 3
- *******************************************************************************/
+    This file defines the interface to the DAC peripheral library. This
+    library provides access to and control of the associated peripheral
+    instance.
 
+*******************************************************************************/
 // DOM-IGNORE-BEGIN
 /*******************************************************************************
 * Copyright (C) 2018 Microchip Technology Inc. and its subsidiaries.
@@ -36,35 +38,33 @@
 * FULLEST EXTENT ALLOWED BY LAW, MICROCHIP'S TOTAL LIABILITY ON ALL CLAIMS IN
 * ANY WAY RELATED TO THIS SOFTWARE WILL NOT EXCEED THE AMOUNT OF FEES, IF ANY,
 * THAT YOU HAVE PAID DIRECTLY TO MICROCHIP FOR THIS SOFTWARE.
- *******************************************************************************/
+*******************************************************************************/
 // DOM-IGNORE-END
 
-#ifndef INTERRUPTS_H
-#define INTERRUPTS_H
+#ifndef PLIB_DAC_H
+#define PLIB_DAC_H
 
 // *****************************************************************************
 // *****************************************************************************
 // Section: Included Files
 // *****************************************************************************
 // *****************************************************************************
+/* This section lists the other files that are included in this file.
+*/
+
 #include <stdint.h>
+#include <stdbool.h>
+#include <stddef.h>
 
+#ifdef __cplusplus // Provide C++ Compatibility
+extern "C" {
+#endif
 
+void DAC_Initialize(void);
+void DAC_DataWrite(uint16_t data);
 
-// *****************************************************************************
-// *****************************************************************************
-// Section: Handler Routines
-// *****************************************************************************
-// *****************************************************************************
+#ifdef __cplusplus  // Provide C++ Compatibility
+}
+#endif
 
-void Reset_Handler (void);
-void NonMaskableInt_Handler (void);
-void HardFault_Handler (void);
-void SysTick_Handler (void);
-void SERCOM2_USART_InterruptHandler (void);
-void TC4_TimerInterruptHandler (void);
-void ADC_InterruptHandler (void);
-
-
-
-#endif // INTERRUPTS_H
+#endif /* PLIB_DAC_H */

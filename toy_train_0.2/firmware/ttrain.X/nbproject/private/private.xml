@@ -3,18 +3,20 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+            <file>file:/home/afzal/work-zone/MPlab-x/projects/toy_train_0.2/firmware/src/config/toytrain-config/peripheral/sercom/usart/plib_sercom2_usart.c</file>
+            <file>file:/home/afzal/work-zone/MPlab-x/projects/toy_train_0.2/firmware/src/AppGlobals.h</file>
             <file>file:/home/afzal/work-zone/MPlab-x/projects/toy_train_0.2/firmware/src/config/toytrain-config/peripheral/tcc/plib_tcc0.h</file>
-            <file>file:/home/afzal/work-zone/MPlab-x/projects/toy_train_0.2/firmware/src/config/toytrain-config/peripheral/tcc/plib_tcc2.c</file>
+            <file>file:/home/afzal/work-zone/MPlab-x/projects/toy_train_0.2/firmware/src/rgbLed.h</file>
             <file>file:/home/afzal/work-zone/MPlab-x/projects/toy_train_0.2/firmware/src/rgbLed.c</file>
-            <file>file:/home/afzal/work-zone/MPlab-x/projects/toy_train_0.2/firmware/src/config/toytrain-config/peripheral/adc/plib_adc.c</file>
+            <file>file:/home/afzal/work-zone/MPlab-x/projects/toy_train_0.2/firmware/src/motorControl.h</file>
             <file>file:/home/afzal/work-zone/MPlab-x/projects/toy_train_0.2/firmware/src/AppGlobals.c</file>
             <file>file:/home/afzal/work-zone/MPlab-x/projects/toy_train_0.2/firmware/src/main.c</file>
-            <file>file:/home/afzal/work-zone/MPlab-x/projects/toy_train_0.2/firmware/src/config/toytrain-config/initialization.c</file>
-            <file>file:/home/afzal/work-zone/MPlab-x/projects/toy_train_0.2/firmware/src/colorDetect.c</file>
-            <file>file:/home/afzal/work-zone/MPlab-x/projects/toy_train_0.2/firmware/src/hallSensor.c</file>
+            <file>file:/home/afzal/work-zone/MPlab-x/projects/toy_train_0.2/firmware/src/bluetooth.c</file>
             <file>file:/home/afzal/work-zone/MPlab-x/projects/toy_train_0.2/firmware/src/config/toytrain-config/peripheral/port/plib_port.c</file>
             <file>file:/home/afzal/work-zone/MPlab-x/projects/toy_train_0.2/firmware/src/motorControl.c</file>
-            <file>file:/home/afzal/work-zone/MPlab-x/projects/toy_train_0.2/firmware/src/config/toytrain-config/peripheral/tcc/plib_tcc0.c</file>
+            <file>file:/home/afzal/work-zone/MPlab-x/projects/toy_train_0.2/firmware/src/bluetooth.h</file>
+            <file>file:/home/afzal/work-zone/MPlab-x/projects/toy_train_0.2/firmware/src/colorDetect.h</file>
+            <file>file:/home/afzal/work-zone/MPlab-x/projects/toy_train_0.2/firmware/src/config/toytrain-config/initialization.c</file>
         </group>
     </open-files>
 </project-private>
