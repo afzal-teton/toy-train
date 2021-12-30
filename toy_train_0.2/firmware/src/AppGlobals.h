@@ -33,8 +33,8 @@
 #define MUSIC_BLE_ON        3
 #define MUSIC_BLE_OFF       4
 #define MUSIC_HORN          5
-#define MUSIC_ONE           6
-#define MUSIC_TWO           7
+#define MUSIC_SAMPLE_ONE    6
+#define MUSIC_SAMPLE_TWO    7
 #define MUSIC_BELL          8
 #define MUSIC_CAR_WASH      9
 #define MUSIC_LIMIT         10

@@ -11,18 +11,26 @@
 #include<stdint.h>
 #include "AppGlobals.h"
 
-extern const uint8_t powerOnMusic[]   ;
-extern const unsigned char sample2[]  ;
-extern const unsigned char sample3[]  ;
-extern const unsigned char sample4[]  ;
-extern const unsigned char sample5[]  ;
-extern const unsigned char sample6[]  ;
-extern const unsigned char sample7[]  ;
-extern const unsigned char sample8[]  ;
-extern const unsigned char sample9[]  ;
+
+#include "bellMusic.h"
+#include "bleOnMusic.h"
+#include "bleOffMusic.h"
+#include "carWashMusic.h"
+#include "hornMusic.h"
+#include "powerOneMusic.h"
+#include "powerOffMusic.h"
+#include "sampleMusicOne.h"
+#include "sampleMusicTwo.h"
 
 
-void setMusicSize(uint32_t musicArray[]);
+
+
+
+
+
+extern const uint8_t __nullMusic[] ;
+
+
 
 
 #endif	/* MUSIC_H */

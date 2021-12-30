@@ -184,7 +184,7 @@ int main ( void ){
                             accelerateMotor();
                             setHallNoReasultInterval();
                             setHallSensorReadDelay();
-                            playAudio(MUSIC_ONE);
+                            playAudio(MUSIC_SAMPLE_ONE);
                             break;
                         case BLUE:
                             reverseMotor();
@@ -201,7 +201,7 @@ int main ( void ){
                         case YELLOW:
                             decelerateMotor();
                             setHallSensorReadDelay();
-                            playAudio(MUSIC_TWO);
+                            playAudio(MUSIC_SAMPLE_TWO);
                             break;
                         default:
                             break;

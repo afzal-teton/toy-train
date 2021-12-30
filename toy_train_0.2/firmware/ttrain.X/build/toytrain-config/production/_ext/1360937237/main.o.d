@@ -88,7 +88,10 @@ build/toytrain-config/production/_ext/1360937237/main.o: ../src/main.c \
  ../src/config/toytrain-config/peripheral/tcc/plib_tcc0.h \
  ../src/AppGlobals.h ../src/hallSensor.h ../src/motorControl.h \
  ../src/rgbLed.h ../src/colorDetect.h ../src/bluetooth.h ../src/audio.h \
- ../src/music.h
+ ../src/music.h ../src/bellMusic.h ../src/bleOnMusic.h \
+ ../src/bleOffMusic.h ../src/carWashMusic.h ../src/hornMusic.h \
+ ../src/powerOneMusic.h ../src/powerOffMusic.h ../src/sampleMusicOne.h \
+ ../src/sampleMusicTwo.h
 
 ../src/config/toytrain-config/definitions.h:
 
@@ -279,3 +282,21 @@ build/toytrain-config/production/_ext/1360937237/main.o: ../src/main.c \
 ../src/audio.h:
 
 ../src/music.h:
+
+../src/bellMusic.h:
+
+../src/bleOnMusic.h:
+
+../src/bleOffMusic.h:
+
+../src/carWashMusic.h:
+
+../src/hornMusic.h:
+
+../src/powerOneMusic.h:
+
+../src/powerOffMusic.h:
+
+../src/sampleMusicOne.h:
+
+../src/sampleMusicTwo.h:
