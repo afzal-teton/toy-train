@@ -22,16 +22,16 @@ void initAudioPeripheral(){
    TC4_TimerCallbackRegister(TC4DacCallBack, (uintptr_t)NULL);
    TC4_TimerStart();
    
-   musicFileAray[MUSIC_NULL] =  sample3 ;
-   musicFileAray[MUSIC_POWER_ON] =  sample3 ;
-   musicFileAray[MUSIC_POWER_OFF] =  sample3 ;
-   musicFileAray[MUSIC_BLE_ON] =  sample3 ;
-   musicFileAray[MUSIC_BLE_OFF] =  sample3 ;
-   musicFileAray[MUSIC_HORN] =  sample3 ;
-   musicFileAray[MUSIC_ONE] =  sample3 ;
-   musicFileAray[MUSIC_TWO] =  sample3 ;
-   musicFileAray[MUSIC_BELL] =  sample3 ;
-   musicFileAray[MUSIC_CAR_WASH] =  sample3 ;
+   musicFileAray[MUSIC_NULL] =  powerOnMusic ;
+   musicFileAray[MUSIC_POWER_ON] =  powerOnMusic ;
+   musicFileAray[MUSIC_POWER_OFF] =  powerOnMusic ;
+   musicFileAray[MUSIC_BLE_ON] =  powerOnMusic ;
+   musicFileAray[MUSIC_BLE_OFF] =  powerOnMusic ;
+   musicFileAray[MUSIC_HORN] =  powerOnMusic ;
+   musicFileAray[MUSIC_ONE] =  powerOnMusic ;
+   musicFileAray[MUSIC_TWO] =  powerOnMusic ;
+   musicFileAray[MUSIC_BELL] =  powerOnMusic ;
+   musicFileAray[MUSIC_CAR_WASH] =  powerOnMusic ;
 
    setMusicSize(musicSizeArray);
    

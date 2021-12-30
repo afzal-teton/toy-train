@@ -38,7 +38,7 @@
 #define MUSIC_BELL          8
 #define MUSIC_CAR_WASH      9
 #define MUSIC_LIMIT         10
-
+#define DEFAULT_MUSIC_TIMEOUT_MS 1000
 
 
 
@@ -47,7 +47,7 @@ extern volatile uint8_t global_hallReasultWaitCounter ;
 extern volatile uint8_t global_hallSensorInertiaCounter ;
 extern volatile uint16_t global_photoDiodeLastReadInterval ;
 extern volatile uint16_t global_carWashWaitTime ;
-    
+extern volatile uint16_t global_defaultMusicTimeout;
    
     
 

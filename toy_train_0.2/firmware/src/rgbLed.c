@@ -15,13 +15,6 @@ void RGBcolorWrite (uint8_t red, uint8_t green, uint8_t blue){
     TCC2_PWM16bitDutySet(TCC2_CHANNEL0, green*8);
     TCC2_PWM16bitDutySet(TCC2_CHANNEL1, red*8);
 }
-/*
-void LedDriver :: colorWrite (uint8_t red, uint8_t green, uint8_t blue)
-{
-  analogWrite(redLed, 255-red);
-  analogWrite(greenLed, 255-green);
-  analogWrite(blueLed, 255-blue);
-}*/
 void RGBsetColor(uint8_t color){
   switch (color) {
     case RED:

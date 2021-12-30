@@ -58,32 +58,20 @@ void systickCallback(uintptr_t context)
     if(global_carWashWaitTime > 0 ){
         global_carWashWaitTime--;
     }
+    if(global_defaultMusicTimeout < DEFAULT_MUSIC_TIMEOUT_MS ){
+        global_defaultMusicTimeout++ ;
+    }
 }
 void adcCallBack(uintptr_t context){
     adcValue = ADC_ConversionResultGet();
 }
 
 
-uint8_t ble_read_buffer[10];
-uint8_t dbg_adc_str_value[6];
-uint8_t dbgCounter = 0;
-uint8_t dbg_str_red[6]; 
-uint8_t dbg_str_green[6]; 
-uint8_t dbg_str_blue[6]; 
-uint8_t dbg_str_white[6]; 
-uint8_t dbg_str_ambient[6]; 
-volatile uint8_t dbg_buffer[22];
-
-
 int main ( void ){
-    
     uint8_t hallSensorRes = 0 ;
     uint8_t PDColorRes = 0;
     uint8_t PDNoColorCount = 0 ;
     uint8_t PDLastColor = 0 ;
-    
-    
-
     
     /* Initialize all modules */
     SYS_Initialize ( NULL );
@@ -203,13 +191,12 @@ int main ( void ){
                             setHallNoReasultInterval();
                             setHallSensorReadDelay();
                             playAudio(MUSIC_BELL);
-                            //TODO : audio.setAudio(bell);
+                            global_defaultMusicTimeout = 0 ;
                             break;
                         case WHITE:
                             stopMotor();
                             setHallSensorReadDelay();
                             playAudio(MUSIC_CAR_WASH);
-                            //TODO :: audio.setAudio(car_wash);
                             break;
                         case YELLOW:
                             decelerateMotor();
@@ -229,17 +216,13 @@ int main ( void ){
             }
             if(PDLastColor == BLUE  &&  getMotorDirection() == MOTOR_REVERSE){
                 PDNoColorCount = 0;
-//                if(millis() - color_time > 1000){
-//                    audio.setAudio(bell);
-//                    color_time = millis();
-//                }
-                //TODO :: RING THE BELL AT 1S INTERVAL .. 
+                if(global_defaultMusicTimeout >= DEFAULT_MUSIC_TIMEOUT_MS){
+                    global_defaultMusicTimeout = 0 ;
+                    playAudio(MUSIC_BELL);
+                }
             }
         }    
     }
-
-    /* Execution should not come here during normal operation */
-
     return ( EXIT_FAILURE );
 }
 

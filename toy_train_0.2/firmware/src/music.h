@@ -11,7 +11,7 @@
 #include<stdint.h>
 #include "AppGlobals.h"
 
-extern const uint8_t sample1[]   ;
+extern const uint8_t powerOnMusic[]   ;
 extern const unsigned char sample2[]  ;
 extern const unsigned char sample3[]  ;
 extern const unsigned char sample4[]  ;
