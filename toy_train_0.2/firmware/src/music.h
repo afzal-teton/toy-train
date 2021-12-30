@@ -9,6 +9,7 @@
 #define	MUSIC_H
 
 #include<stdint.h>
+#include "AppGlobals.h"
 
 extern const uint8_t sample1[]   ;
 extern const unsigned char sample2[]  ;
@@ -21,7 +22,8 @@ extern const unsigned char sample8[]  ;
 extern const unsigned char sample9[]  ;
 
 
-uint32_t sample1Size();
+void setMusicSize(uint32_t musicArray[]);
+
 
 #endif	/* MUSIC_H */
 

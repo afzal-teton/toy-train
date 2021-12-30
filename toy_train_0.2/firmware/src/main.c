@@ -25,6 +25,7 @@
 #include <stddef.h>                     // Defines NULL
 #include <stdbool.h>                    // Defines true
 #include <stdlib.h>                     // Defines EXIT_FAILURE
+#include <string.h>
 #include "definitions.h"                // SYS function prototypes
 #include "AppGlobals.h"
 #include "hallSensor.h"
@@ -33,10 +34,8 @@
 #include "rgbLed.h"
 #include "colorDetect.h"
 #include "bluetooth.h"
-#include "music.h"
-#include <math.h>
-#include <string.h>
-#include <stdlib.h>
+#include "audio.h"
+
 // *****************************************************************************
 // *****************************************************************************
 // Section: Main Entry Point
@@ -44,10 +43,6 @@
 // *****************************************************************************
 
 
-volatile uint32_t sample2Size = 0;
-volatile uint32_t musicSampleCounter = 0;
-
-volatile uint8_t sinData[360];
 
 void systickCallback(uintptr_t context)
 {
@@ -67,15 +62,6 @@ void systickCallback(uintptr_t context)
 void adcCallBack(uintptr_t context){
     adcValue = ADC_ConversionResultGet();
 }
-void TC4DacCallBack (TC_TIMER_STATUS status, uintptr_t context){ 
-   // pd_green_Toggle() ;
-    DAC_DataWrite (sample1[musicSampleCounter++]*4);
-    if(musicSampleCounter >= sample2Size){
-        musicSampleCounter = 0 ;
-    }
-    
-}
-
 
 
 uint8_t ble_read_buffer[10];
@@ -88,21 +74,16 @@ uint8_t dbg_str_white[6];
 uint8_t dbg_str_ambient[6]; 
 volatile uint8_t dbg_buffer[22];
 
-const uint8_t t[]={0x52, 0x49, 0x46, 0x46, 0xA0, 0xF4, 0x01};
 
 int main ( void ){
     
-    
-    
-    
     uint8_t hallSensorRes = 0 ;
-    uint8_t  PDColorRes = 0;
+    uint8_t PDColorRes = 0;
     uint8_t PDNoColorCount = 0 ;
     uint8_t PDLastColor = 0 ;
     
     
-    sample2Size = sample1Size();
-    //sample2Size = 800000u;
+
     
     /* Initialize all modules */
     SYS_Initialize ( NULL );
@@ -114,21 +95,17 @@ int main ( void ){
     ADC_Enable();
     ADC_ChannelSelect(ADC_POSINPUT_PIN2, ADC_NEGINPUT_GND);
     
-    TC4_TimerCallbackRegister(TC4DacCallBack, (uintptr_t)NULL);
-    TC4_TimerStart();
     
     initRGBPeripheral();
     initMotorPeripheral();
     initBluetoothSerial();
-    
-    
+    initAudioPeripheral();
     while ( true ) {
-        
-        SYSTICK_DelayMs(1000);
-          /* 
+       // SYSTICK_DelayMs(1000);
         switch(checkBlutoothCommand()){
+            SERCOM0_USART_Write("ble\n", 4);
             case BL_COMMMAND_MOTOR_TASK:
-                switch(bluetooth.task){
+                switch(bluetooth.motorControl){
                     case(0):
                         stopMotor();
                         setHallSensorReadDelay();
@@ -152,7 +129,7 @@ int main ( void ){
                 }
                 break;
             case BL_COMMMAND_SOUND_TASK:
-                //TODO :: SOUND TASK ... audio.setAudio(bluetooth.getTask());
+                playAudio(bluetooth.music);
                 break;
             case BL_COMMMAND_LED_TASK:
                 RGBcolorWrite(bluetooth.red, bluetooth.green, bluetooth.blue);
@@ -161,13 +138,10 @@ int main ( void ){
                 break;
         
         }
-        
-//        SYSTICK_DelayMs(1000);
-        
+       
         hallSensorRes = measureHallSensorValue();
         switch(hallSensorRes){
             case(HALL_SENSE_FORWRD):
-               // SERCOM0_USART_Write("hall test res : 1 \n", 19);
                 if(hallSensor.previousStatus != HALL_SENSE_FORWRD){
                     hallSensor.previousStatus = HALL_SENSE_FORWRD;
                 }
@@ -179,7 +153,6 @@ int main ( void ){
                 }
                 break;
             case(HALL_SENSE_REVERSE):
-               // SERCOM0_USART_Write("hall test res : 2 \n", 19);
                 if(hallSensor.previousStatus != HALL_SENSE_REVERSE){
                     hallSensor.previousStatus = HALL_SENSE_REVERSE;
                 }
@@ -191,13 +164,11 @@ int main ( void ){
                 }
                 break;
             case(HALL_SENSE_STOP):
-               // SERCOM0_USART_Write("hall test res : 3 \n", 19);
                 if(motor.speed_flag != MOTOR_SPEED_NULL){
                     stopMotor();                                   
                 }
                 break;
             default:
-                //SERCOM0_USART_Write("hall test res : -1 \n", 19);
                 break;
         }
       
@@ -219,29 +190,31 @@ int main ( void ){
                         case RED:
                             stopMotor();
                             setHallSensorReadDelay();
-                            //TODO : AUDIO TASK .... audio.setAudio(horn);
+                            playAudio(MUSIC_HORN);
                             break;
                         case GREEN:
                             accelerateMotor();
                             setHallNoReasultInterval();
                             setHallSensorReadDelay();
-                            // TODO : audio.setAudio(music_1);
+                            playAudio(MUSIC_ONE);
                             break;
                         case BLUE:
                             reverseMotor();
                             setHallNoReasultInterval();
                             setHallSensorReadDelay();
+                            playAudio(MUSIC_BELL);
                             //TODO : audio.setAudio(bell);
                             break;
                         case WHITE:
                             stopMotor();
                             setHallSensorReadDelay();
+                            playAudio(MUSIC_CAR_WASH);
                             //TODO :: audio.setAudio(car_wash);
                             break;
                         case YELLOW:
                             decelerateMotor();
                             setHallSensorReadDelay();
-                            //TODO :: audio.setAudio(music_2);
+                            playAudio(MUSIC_TWO);
                             break;
                         default:
                             break;
@@ -263,7 +236,6 @@ int main ( void ){
                 //TODO :: RING THE BELL AT 1S INTERVAL .. 
             }
         }    
-     */ 
     }
 
     /* Execution should not come here during normal operation */

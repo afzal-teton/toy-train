@@ -12,6 +12,7 @@
         <itemPath>/home/afzal/work-zone/MPlab-x/projects/toy_train_0.2/firmware/src/rgbLed.h</itemPath>
         <itemPath>/home/afzal/work-zone/MPlab-x/projects/toy_train_0.2/firmware/src/bluetooth.h</itemPath>
         <itemPath>/home/afzal/work-zone/MPlab-x/projects/toy_train_0.2/firmware/src/music.h</itemPath>
+        <itemPath>/home/afzal/work-zone/MPlab-x/projects/toy_train_0.2/firmware/src/audio.h</itemPath>
       </logicalFolder>
       <logicalFolder name="f1" displayName="config" projectFiles="true">
         <logicalFolder name="f1" displayName="toytrain-config" projectFiles="true">
@@ -177,6 +178,7 @@
         <itemPath>/home/afzal/work-zone/MPlab-x/projects/toy_train_0.2/firmware/src/rgbLed.c</itemPath>
         <itemPath>/home/afzal/work-zone/MPlab-x/projects/toy_train_0.2/firmware/src/bluetooth.c</itemPath>
         <itemPath>/home/afzal/work-zone/MPlab-x/projects/toy_train_0.2/firmware/src/music.c</itemPath>
+        <itemPath>/home/afzal/work-zone/MPlab-x/projects/toy_train_0.2/firmware/src/audio.c</itemPath>
       </logicalFolder>
       <logicalFolder name="f1" displayName="config" projectFiles="true">
         <logicalFolder name="f1" displayName="toytrain-config" projectFiles="true">

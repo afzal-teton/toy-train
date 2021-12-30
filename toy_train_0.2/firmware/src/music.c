@@ -13365,7 +13365,17 @@ const unsigned char sample9[] = {0x52, 0x49, 0x46, 0x46, 0x1A, 0x12, 0x00, 0x00,
 0x7F, 0x80, 0x7F, 0x80, 0x7F, 0x80, 0x7F, 0x80, 0x7F, 0x80, 0x7F, 0x80, 0x7F, 0x80, 0x7F, 0x80};
 
 
+const uint8_t nullMusic = { 0x00 };
 
-uint32_t sample1Size(){
-    return sizeof(sample1);
+void setMusicSize(uint32_t musicArray[]){
+    musicArray[MUSIC_NULL] = sizeof(nullMusic);
+    musicArray[MUSIC_POWER_ON] = sizeof(sample3);
+    musicArray[MUSIC_POWER_OFF] = sizeof(sample3);
+    musicArray[MUSIC_BLE_ON] = sizeof(sample3);
+    musicArray[MUSIC_BLE_OFF] = sizeof(sample3);
+    musicArray[MUSIC_HORN] = sizeof(sample3);
+    musicArray[MUSIC_ONE] = sizeof(sample3);
+    musicArray[MUSIC_TWO] = sizeof(sample3);
+    musicArray[MUSIC_BELL] = sizeof(sample3);
+    musicArray[MUSIC_CAR_WASH] = sizeof(sample3);
 }

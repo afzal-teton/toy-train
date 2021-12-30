@@ -20,11 +20,13 @@
 #define BL_COMMMAND_LED_TASK        '3'
 
 
-typedef struct bluetoothParam{
-    uint8_t task;
+typedef struct BluetoothParam{
     uint8_t red;
     uint8_t green;
     uint8_t blue;
+    
+    uint8_t motorControl;
+    uint8_t music;
 } Bluetooth;
 
 extern Bluetooth bluetooth;

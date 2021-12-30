@@ -1,4 +1,8 @@
-build/toytrain-config/production/_ext/1360937237/main.o: ../src/main.c \
+build/toytrain-config/production/_ext/1239984807/audio.o: \
+ /home/afzal/work-zone/MPlab-x/projects/toy_train_0.2/firmware/src/audio.c \
+ /home/afzal/work-zone/MPlab-x/projects/toy_train_0.2/firmware/src/audio.h \
+ /home/afzal/work-zone/MPlab-x/projects/toy_train_0.2/firmware/src/music.h \
+ /home/afzal/work-zone/MPlab-x/projects/toy_train_0.2/firmware/src/AppGlobals.h \
  ../src/config/toytrain-config/definitions.h \
  ../src/config/toytrain-config/peripheral/nvmctrl/plib_nvmctrl.h \
  ../src/config/toytrain-config/device.h \
@@ -85,10 +89,13 @@ build/toytrain-config/production/_ext/1360937237/main.o: ../src/main.c \
  ../src/config/toytrain-config/peripheral/tc/plib_tc4.h \
  ../src/config/toytrain-config/peripheral/tcc/plib_tcc2.h \
  ../src/config/toytrain-config/peripheral/tcc/plib_tcc_common.h \
- ../src/config/toytrain-config/peripheral/tcc/plib_tcc0.h \
- ../src/AppGlobals.h ../src/hallSensor.h ../src/motorControl.h \
- ../src/rgbLed.h ../src/colorDetect.h ../src/bluetooth.h ../src/audio.h \
- ../src/music.h
+ ../src/config/toytrain-config/peripheral/tcc/plib_tcc0.h
+
+/home/afzal/work-zone/MPlab-x/projects/toy_train_0.2/firmware/src/audio.h:
+
+/home/afzal/work-zone/MPlab-x/projects/toy_train_0.2/firmware/src/music.h:
+
+/home/afzal/work-zone/MPlab-x/projects/toy_train_0.2/firmware/src/AppGlobals.h:
 
 ../src/config/toytrain-config/definitions.h:
 
@@ -263,19 +270,3 @@ build/toytrain-config/production/_ext/1360937237/main.o: ../src/main.c \
 ../src/config/toytrain-config/peripheral/tcc/plib_tcc_common.h:
 
 ../src/config/toytrain-config/peripheral/tcc/plib_tcc0.h:
-
-../src/AppGlobals.h:
-
-../src/hallSensor.h:
-
-../src/motorControl.h:
-
-../src/rgbLed.h:
-
-../src/colorDetect.h:
-
-../src/bluetooth.h:
-
-../src/audio.h:
-
-../src/music.h:

@@ -1,7 +1,6 @@
 #include "bluetooth.h"
 #include "definitions.h"
 
-
 Bluetooth bluetooth;
 
 
@@ -42,16 +41,23 @@ uint8_t convertToHex(char in){
 uint8_t checkBlutoothCommand(){
   if (bluetoohSerialFlag){ 
       bluetoohSerialFlag = false;
-      strcpy(blutoothCommand, blutoothSerialData);
+      SERCOM0_USART_Write(blutoothSerialData, 10);
+      memcpy(blutoothCommand, blutoothSerialData, BLUETOOTH_COMMAND_LENGTH);
+      //strcpy(blutoothCommand, blutoothSerialData);
+      //SERCOM0_USART_Write("bl1\n", 4);
       memset(blutoothSerialData, 0, sizeof(blutoothSerialData));
+     // SERCOM0_USART_Write("bl2\n", 4);
       SERCOM2_USART_Read(blutoothSerialData, sizeof(blutoothSerialData));
+      //SERCOM0_USART_Write("bl3\n", 4);
       switch(blutoothCommand[1]){
         case(BL_COMMMAND_MOTOR_TASK):
-            bluetooth.task =  convertToHex(blutoothCommand[7]);
+            bluetooth.motorControl =  convertToHex(blutoothCommand[7]);
             return BL_COMMMAND_MOTOR_TASK;
             break;
         case(BL_COMMMAND_SOUND_TASK):
-            bluetooth.task =  convertToHex(blutoothCommand[7]);
+            //SERCOM0_USART_Write("d1\n", 3);
+            bluetooth.music =  convertToHex(blutoothCommand[7]);
+            //SERCOM0_USART_Write("d2", 2);
             return BL_COMMMAND_SOUND_TASK;
             break;
         case(BL_COMMMAND_LED_TASK):
