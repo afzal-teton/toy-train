@@ -6,20 +6,20 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: E45D1648EFC10229D7BE94DB19221FF7
-- generatedChecksum: F1D587001C526D4E038DABA14052D60E
+- generatedChecksum: 809B8E93216D87FD647B5516A80AD058
   logicalPath: config/toytrain-config
   name: initialization.c
   physicalPath: ''
   security: NON_SECURE
   type: SOURCE
-  userChecksum: F1D587001C526D4E038DABA14052D60E
-- generatedChecksum: DA8491A28E35275E2AE0BAA14C4107D4
+  userChecksum: 809B8E93216D87FD647B5516A80AD058
+- generatedChecksum: A565295B397FD28F47DCBEDA8397AD8A
   logicalPath: config/toytrain-config
   name: interrupts.c
   physicalPath: ''
   security: NON_SECURE
   type: SOURCE
-  userChecksum: DA8491A28E35275E2AE0BAA14C4107D4
+  userChecksum: A565295B397FD28F47DCBEDA8397AD8A
 - generatedChecksum: 6513F2461B8F476B68CA73906086047F
   logicalPath: config/toytrain-config
   name: libc_syscalls.c
@@ -48,13 +48,20 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: CA4FFD20437986EE5AA2B53025CF73F3
-- generatedChecksum: CE1AA1D4E0ABDE6A12FCBA7F2C038B54
+- generatedChecksum: 7A8067F683B387DF9A602D8CD93360ED
   logicalPath: config/toytrain-config/peripheral/dac
   name: plib_dac.c
   physicalPath: peripheral/dac
   security: NON_SECURE
   type: SOURCE
-  userChecksum: CE1AA1D4E0ABDE6A12FCBA7F2C038B54
+  userChecksum: 7A8067F683B387DF9A602D8CD93360ED
+- generatedChecksum: 301C77C92E4BC8AEB7BDD29E1B50EC84
+  logicalPath: config/toytrain-config/peripheral/dmac
+  name: plib_dmac.c
+  physicalPath: peripheral/dmac
+  security: NON_SECURE
+  type: SOURCE
+  userChecksum: 301C77C92E4BC8AEB7BDD29E1B50EC84
 - generatedChecksum: C3ECDED3D6301DB0DE622293ED615D21
   logicalPath: config/toytrain-config/peripheral/evsys
   name: plib_evsys.c
@@ -62,13 +69,13 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: C3ECDED3D6301DB0DE622293ED615D21
-- generatedChecksum: 009DD8666CD09B16279E16D509438DBC
+- generatedChecksum: 83163F2AC663321FC6A9BDF0E09D1F70
   logicalPath: config/toytrain-config/peripheral/nvic
   name: plib_nvic.c
   physicalPath: peripheral/nvic
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 009DD8666CD09B16279E16D509438DBC
+  userChecksum: 83163F2AC663321FC6A9BDF0E09D1F70
 - generatedChecksum: 8E76B0609233122F5E1694614CEC13B1
   logicalPath: config/toytrain-config/peripheral/nvmctrl
   name: plib_nvmctrl.c
@@ -111,13 +118,13 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: 328F87A3B2112FE007A36C00AD28ADDA
-- generatedChecksum: 329DDDFEF14A66C9DF6035E2CA144B42
+- generatedChecksum: EB49DCDF201B15519F3637106A9DFEC5
   logicalPath: config/toytrain-config/peripheral/tc
   name: plib_tc4.c
   physicalPath: peripheral/tc
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 329DDDFEF14A66C9DF6035E2CA144B42
+  userChecksum: EB49DCDF201B15519F3637106A9DFEC5
 - generatedChecksum: CAB7EABC4F5FCCF5EDAED5F2169C5433
   logicalPath: config/toytrain-config/peripheral/tcc
   name: plib_tcc0.c
@@ -251,13 +258,13 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: 2AD9700A41DC94A60C663A17CEDB2703
-- generatedChecksum: 86B85359C650B97EEB43171845F81160
+- generatedChecksum: D46FCCF2489C25886C14CE2C3FBB93A9
   logicalPath: config/toytrain-config
   name: definitions.h
   physicalPath: ''
   security: NON_SECURE
   type: HEADER
-  userChecksum: 86B85359C650B97EEB43171845F81160
+  userChecksum: D46FCCF2489C25886C14CE2C3FBB93A9
 - generatedChecksum: 7200FE37B300952D70C11DFE5DA3D6B7
   logicalPath: config/toytrain-config
   name: device.h
@@ -370,13 +377,13 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: 4017D6C4D2082CB4A87FEFE5411B6559
-- generatedChecksum: 7CEB0732619E0546FA34065AA97FBAC7
+- generatedChecksum: 1CEB93A05D62CF6493AE69FAFD98E3EB
   logicalPath: config/toytrain-config
   name: interrupts.h
   physicalPath: ''
   security: NON_SECURE
   type: HEADER
-  userChecksum: 7CEB0732619E0546FA34065AA97FBAC7
+  userChecksum: 1CEB93A05D62CF6493AE69FAFD98E3EB
 - generatedChecksum: 47E760D36E42A7B436306A9CB4E72A0E
   logicalPath: packs/CMSIS/CMSIS/Core/Include
   name: mpu_armv7.h
@@ -468,6 +475,13 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: 9290D4A79F86C3A3D1E5CE508A1A0DF4
+- generatedChecksum: EF28B8FDF7CE58CF8854CADBE4D52493
+  logicalPath: config/toytrain-config/peripheral/dmac
+  name: plib_dmac.h
+  physicalPath: peripheral/dmac
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: EF28B8FDF7CE58CF8854CADBE4D52493
 - generatedChecksum: CCAEF942C66AF995876DFD85CEFF611F
   logicalPath: config/toytrain-config/peripheral/evsys
   name: plib_evsys.h
@@ -531,13 +545,13 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: C0B782AE052ECFCF017ECB83483386F5
-- generatedChecksum: E01E00A2118C68B3894A2A4BEE85FFA1
+- generatedChecksum: E077FD12F85CA08C98C2AA356A8A67A5
   logicalPath: config/toytrain-config/peripheral/tc
   name: plib_tc4.h
   physicalPath: peripheral/tc
   security: NON_SECURE
   type: HEADER
-  userChecksum: E01E00A2118C68B3894A2A4BEE85FFA1
+  userChecksum: E077FD12F85CA08C98C2AA356A8A67A5
 - generatedChecksum: 6DBEAF7BD42014F5492374805406687A
   logicalPath: config/toytrain-config/peripheral/tc
   name: plib_tc_common.h

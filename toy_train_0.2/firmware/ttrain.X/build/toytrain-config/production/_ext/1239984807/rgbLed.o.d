@@ -80,6 +80,7 @@ build/toytrain-config/production/_ext/1239984807/rgbLed.o: \
  ../src/config/toytrain-config/peripheral/clock/plib_clock.h \
  ../src/config/toytrain-config/peripheral/nvic/plib_nvic.h \
  ../src/config/toytrain-config/peripheral/systick/plib_systick.h \
+ ../src/config/toytrain-config/peripheral/dmac/plib_dmac.h \
  ../src/config/toytrain-config/peripheral/adc/plib_adc.h \
  ../src/config/toytrain-config/peripheral/adc/plib_adc_common.h \
  ../src/config/toytrain-config/peripheral/tc/plib_tc3.h \
@@ -249,6 +250,8 @@ build/toytrain-config/production/_ext/1239984807/rgbLed.o: \
 ../src/config/toytrain-config/peripheral/nvic/plib_nvic.h:
 
 ../src/config/toytrain-config/peripheral/systick/plib_systick.h:
+
+../src/config/toytrain-config/peripheral/dmac/plib_dmac.h:
 
 ../src/config/toytrain-config/peripheral/adc/plib_adc.h:
 

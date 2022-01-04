@@ -10,7 +10,7 @@
 
 #include "music.h"
 
-extern const unsigned char __bleOnMusic[];
+extern const uint8_t __bleOnMusic[];
 uint32_t sizeOfBleOnMusic();
 
 

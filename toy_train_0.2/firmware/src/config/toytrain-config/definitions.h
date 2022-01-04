@@ -56,6 +56,7 @@
 #include "peripheral/clock/plib_clock.h"
 #include "peripheral/nvic/plib_nvic.h"
 #include "peripheral/systick/plib_systick.h"
+#include "peripheral/dmac/plib_dmac.h"
 #include "peripheral/adc/plib_adc.h"
 #include "peripheral/tc/plib_tc3.h"
 #include "peripheral/dac/plib_dac.h"

@@ -1,8 +1,7 @@
-build/toytrain-config/production/_ext/1239984807/bluetooth.o: \
- /home/afzal/work-zone/MPlab-x/projects/toy_train_0.2/firmware/src/bluetooth.c \
- /home/afzal/work-zone/MPlab-x/projects/toy_train_0.2/firmware/src/bluetooth.h \
- ../src/config/toytrain-config/definitions.h \
- ../src/config/toytrain-config/peripheral/nvmctrl/plib_nvmctrl.h \
+build/toytrain-config/production/_ext/1863628927/plib_dmac.o: \
+ ../src/config/toytrain-config/peripheral/dmac/plib_dmac.c \
+ ../src/config/toytrain-config/interrupts.h \
+ ../src/config/toytrain-config/peripheral/dmac/plib_dmac.h \
  ../src/config/toytrain-config/device.h \
  /opt/microchip/mplabx/v5.50/packs/Microchip/SAMD21_DFP/3.4.116/samd21a/include/samd21g18a.h \
  /opt/microchip/mplabx/v5.50/packs/arm/CMSIS/5.4.0/CMSIS/Core/Include/core_cm0plus.h \
@@ -70,31 +69,11 @@ build/toytrain-config/production/_ext/1239984807/bluetooth.o: \
  ../src/config/toytrain-config/device_cache.h \
  ../src/config/toytrain-config/device.h \
  ../src/config/toytrain-config/toolchain_specifics.h \
- /opt/microchip/mplabx/v5.50/packs/arm/CMSIS/5.4.0/CMSIS/Core/Include/cmsis_compiler.h \
- ../src/config/toytrain-config/peripheral/sercom/usart/plib_sercom2_usart.h \
- ../src/config/toytrain-config/peripheral/sercom/usart/plib_sercom_usart_common.h \
- ../src/config/toytrain-config/peripheral/evsys/plib_evsys.h \
- ../src/config/toytrain-config/peripheral/sercom/usart/plib_sercom0_usart.h \
- ../src/config/toytrain-config/peripheral/port/plib_port.h \
- ../src/config/toytrain-config/peripheral/clock/plib_clock.h \
- ../src/config/toytrain-config/peripheral/nvic/plib_nvic.h \
- ../src/config/toytrain-config/peripheral/systick/plib_systick.h \
- ../src/config/toytrain-config/peripheral/dmac/plib_dmac.h \
- ../src/config/toytrain-config/peripheral/adc/plib_adc.h \
- ../src/config/toytrain-config/peripheral/adc/plib_adc_common.h \
- ../src/config/toytrain-config/peripheral/tc/plib_tc3.h \
- ../src/config/toytrain-config/peripheral/tc/plib_tc_common.h \
- ../src/config/toytrain-config/peripheral/dac/plib_dac.h \
- ../src/config/toytrain-config/peripheral/tc/plib_tc4.h \
- ../src/config/toytrain-config/peripheral/tcc/plib_tcc2.h \
- ../src/config/toytrain-config/peripheral/tcc/plib_tcc_common.h \
- ../src/config/toytrain-config/peripheral/tcc/plib_tcc0.h
+ /opt/microchip/mplabx/v5.50/packs/arm/CMSIS/5.4.0/CMSIS/Core/Include/cmsis_compiler.h
 
-/home/afzal/work-zone/MPlab-x/projects/toy_train_0.2/firmware/src/bluetooth.h:
+../src/config/toytrain-config/interrupts.h:
 
-../src/config/toytrain-config/definitions.h:
-
-../src/config/toytrain-config/peripheral/nvmctrl/plib_nvmctrl.h:
+../src/config/toytrain-config/peripheral/dmac/plib_dmac.h:
 
 ../src/config/toytrain-config/device.h:
 
@@ -231,39 +210,3 @@ build/toytrain-config/production/_ext/1239984807/bluetooth.o: \
 ../src/config/toytrain-config/toolchain_specifics.h:
 
 /opt/microchip/mplabx/v5.50/packs/arm/CMSIS/5.4.0/CMSIS/Core/Include/cmsis_compiler.h:
-
-../src/config/toytrain-config/peripheral/sercom/usart/plib_sercom2_usart.h:
-
-../src/config/toytrain-config/peripheral/sercom/usart/plib_sercom_usart_common.h:
-
-../src/config/toytrain-config/peripheral/evsys/plib_evsys.h:
-
-../src/config/toytrain-config/peripheral/sercom/usart/plib_sercom0_usart.h:
-
-../src/config/toytrain-config/peripheral/port/plib_port.h:
-
-../src/config/toytrain-config/peripheral/clock/plib_clock.h:
-
-../src/config/toytrain-config/peripheral/nvic/plib_nvic.h:
-
-../src/config/toytrain-config/peripheral/systick/plib_systick.h:
-
-../src/config/toytrain-config/peripheral/dmac/plib_dmac.h:
-
-../src/config/toytrain-config/peripheral/adc/plib_adc.h:
-
-../src/config/toytrain-config/peripheral/adc/plib_adc_common.h:
-
-../src/config/toytrain-config/peripheral/tc/plib_tc3.h:
-
-../src/config/toytrain-config/peripheral/tc/plib_tc_common.h:
-
-../src/config/toytrain-config/peripheral/dac/plib_dac.h:
-
-../src/config/toytrain-config/peripheral/tc/plib_tc4.h:
-
-../src/config/toytrain-config/peripheral/tcc/plib_tcc2.h:
-
-../src/config/toytrain-config/peripheral/tcc/plib_tcc_common.h:
-
-../src/config/toytrain-config/peripheral/tcc/plib_tcc0.h:

@@ -3,39 +3,15 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/home/afzal/work-zone/MPlab-x/projects/toy_train_0.2/firmware/src/bellMusic.c</file>
+            <file>file:/home/afzal/work-zone/MPlab-x/projects/toy_train_0.2/firmware/src/packs/ATSAMD21G18A_DFP/component/dmac.h</file>
             <file>file:/home/afzal/work-zone/MPlab-x/projects/toy_train_0.2/firmware/src/sampleMusicOne.c</file>
-            <file>file:/home/afzal/work-zone/MPlab-x/projects/toy_train_0.2/firmware/src/config/toytrain-config/peripheral/sercom/usart/plib_sercom0_usart.c</file>
-            <file>file:/home/afzal/work-zone/MPlab-x/projects/toy_train_0.2/firmware/src/bellMusic.h</file>
-            <file>file:/home/afzal/work-zone/MPlab-x/projects/toy_train_0.2/firmware/src/main.c</file>
-            <file>file:/home/afzal/work-zone/MPlab-x/projects/toy_train_0.2/firmware/src/config/toytrain-config/peripheral/dac/plib_dac.c</file>
-            <file>file:/home/afzal/work-zone/MPlab-x/projects/toy_train_0.2/firmware/src/sampleMusicOne.h</file>
-            <file>file:/home/afzal/work-zone/MPlab-x/projects/toy_train_0.2/firmware/src/bluetooth.h</file>
+            <file>file:/home/afzal/work-zone/MPlab-x/projects/toy_train_0.2/firmware/src/music.h</file>
             <file>file:/home/afzal/work-zone/MPlab-x/projects/toy_train_0.2/firmware/src/bleOnMusic.c</file>
             <file>file:/home/afzal/work-zone/MPlab-x/projects/toy_train_0.2/firmware/src/audio.h</file>
+            <file>file:/home/afzal/work-zone/MPlab-x/projects/toy_train_0.2/firmware/src/main.c</file>
+            <file>file:/home/afzal/work-zone/MPlab-x/projects/toy_train_0.2/firmware/src/config/toytrain-config/initialization.c</file>
             <file>file:/home/afzal/work-zone/MPlab-x/projects/toy_train_0.2/firmware/src/bleOnMusic.h</file>
             <file>file:/home/afzal/work-zone/MPlab-x/projects/toy_train_0.2/firmware/src/audio.c</file>
-            <file>file:/home/afzal/work-zone/MPlab-x/projects/toy_train_0.2/firmware/src/powerOneMusic.h</file>
-            <file>file:/home/afzal/work-zone/MPlab-x/projects/toy_train_0.2/firmware/src/config/toytrain-config/definitions.h</file>
-            <file>file:/home/afzal/work-zone/MPlab-x/projects/toy_train_0.2/firmware/src/bleOffMusic.c</file>
-            <file>file:/home/afzal/work-zone/MPlab-x/projects/toy_train_0.2/firmware/src/sampleMusicTwo.h</file>
-            <file>file:/home/afzal/work-zone/MPlab-x/projects/toy_train_0.2/firmware/src/AppGlobals.h</file>
-            <file>file:/home/afzal/work-zone/MPlab-x/projects/toy_train_0.2/firmware/src/music.h</file>
-            <file>file:/home/afzal/work-zone/MPlab-x/projects/toy_train_0.2/firmware/src/rgbLed.c</file>
-            <file>file:/home/afzal/work-zone/MPlab-x/projects/toy_train_0.2/firmware/src/bleOffMusic.h</file>
-            <file>file:/home/afzal/work-zone/MPlab-x/projects/toy_train_0.2/firmware/src/AppGlobals.c</file>
-            <file>file:/home/afzal/work-zone/MPlab-x/projects/toy_train_0.2/firmware/src/music.c</file>
-            <file>file:/home/afzal/work-zone/MPlab-x/projects/toy_train_0.2/firmware/src/bluetooth.c</file>
-            <file>file:/home/afzal/work-zone/MPlab-x/projects/toy_train_0.2/firmware/src/powerOffMusic.c</file>
-            <file>file:/home/afzal/work-zone/MPlab-x/projects/toy_train_0.2/firmware/src/config/toytrain-config/peripheral/port/plib_port.c</file>
-            <file>file:/home/afzal/work-zone/MPlab-x/projects/toy_train_0.2/firmware/src/powerOnMusic.c</file>
-            <file>file:/home/afzal/work-zone/MPlab-x/projects/toy_train_0.2/firmware/src/powerOffMusic.h</file>
-            <file>file:/home/afzal/work-zone/MPlab-x/projects/toy_train_0.2/firmware/src/carWashMusic.c</file>
-            <file>file:/home/afzal/work-zone/MPlab-x/projects/toy_train_0.2/firmware/src/carWashMusic.h</file>
-            <file>file:/home/afzal/work-zone/MPlab-x/projects/toy_train_0.2/firmware/src/hornMusic.c</file>
-            <file>file:/home/afzal/work-zone/MPlab-x/projects/toy_train_0.2/firmware/src/config/toytrain-config/initialization.c</file>
-            <file>file:/home/afzal/work-zone/MPlab-x/projects/toy_train_0.2/firmware/src/sampleMusicTwo.c</file>
-            <file>file:/home/afzal/work-zone/MPlab-x/projects/toy_train_0.2/firmware/src/hornMusic.h</file>
         </group>
     </open-files>
 </project-private>
