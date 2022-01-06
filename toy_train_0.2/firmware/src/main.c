@@ -88,9 +88,10 @@ int main ( void ){
     initMotorPeripheral();
     initBluetoothSerial();
     initAudioPeripheral();
+    
     while ( true ) {
-       SYSTICK_DelayMs(1000);
-     /*   switch(checkBlutoothCommand()){
+       //SYSTICK_DelayMs(1000);
+       switch(checkBlutoothCommand()){
             SERCOM0_USART_Write("ble\n", 4);
             case BL_COMMMAND_MOTOR_TASK:
                 switch(bluetooth.motorControl){
@@ -221,8 +222,7 @@ int main ( void ){
                     playAudio(MUSIC_BELL);
                 }
             }
-        }  
-       */  
+        } 
     }
     return ( EXIT_FAILURE );
 }
