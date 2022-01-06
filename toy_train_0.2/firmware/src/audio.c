@@ -4,16 +4,13 @@
 #include "definitions.h"
 
 
-#define NUM_OF_SAMPLES (100)
-#define TEST_BUFFER_SIZE 20000
+#define MAX_MUSIC_FILE_SIZE      65535u
 
 
+//volatile AudioTrack audioTrack;
 
 
-volatile AudioTrack audioTrack;
-
-
-uint32_t powerOnMusicFoileSize = 0;
+//uint32_t powerOnMusicFoileSize = 0;
 uint8_t *musicFileAray[10];
 uint32_t musicSizeArray[10];
 
@@ -33,10 +30,10 @@ uint32_t musicSizeArray[10];
 //0x16A,	0x177,	0x185,	0x193,	0x1A2,	0x1B1,	0x1C0,	0x1D0,	0x1E0,	0x1F0,
 //};
 
-const uint8_t sample_triangle[] = {  0x00 ,0x00 ,0x00 ,0x00 ,
-    0x00 ,0xD0, 0xE0,  0x00 ,0xD0, 0xF0,0xF0,0xF0,0xF0,0xF0,0xF0,0xF0,0xF0,0xF0,0xF0,0xF0,0xF0,
-0xF0,0xF0,0xF0,0xF0,
-};
+//const uint8_t sample_triangle[] = {  0x00 ,0x00 ,0x00 ,0x00 ,
+//    0x00 ,0xD0, 0xE0,  0x00 ,0xD0, 0xF0,0xF0,0xF0,0xF0,0xF0,0xF0,0xF0,0xF0,0xF0,0xF0,0xF0,0xF0,
+//0xF0,0xF0,0xF0,0xF0,
+//};
 
 
 __attribute__((__aligned__(16))) static dmac_descriptor_registers_t pTxLinkedListDesc[1];
@@ -50,9 +47,6 @@ __attribute__((__aligned__(16))) static dmac_descriptor_registers_t pTxLinkedLis
 
 
 void initAudioPeripheral(){
-   //TC4_TimerCallbackRegister(TC4DacCallBack, (uintptr_t)NULL);
-   
-   
    musicFileAray[MUSIC_NULL] =  __nullMusic ;
    musicFileAray[MUSIC_POWER_ON] =  __powerOnMusic ;
    musicFileAray[MUSIC_POWER_OFF] =  __powerOffMusic ;
@@ -83,14 +77,14 @@ void initAudioPeripheral(){
 void playAudio(uint8_t audio){
     DMAC_ChannelDisable(DMAC_CHANNEL_0);
     if(audio >= MUSIC_LIMIT)   return ;
-    audioTrack.audioFile = musicFileAray[audio];
-    audioTrack.fileLength =  musicSizeArray[audio];
-    audioTrack.trackCounter = 0 ;
+//    audioTrack.audioFile = musicFileAray[audio];
+//    audioTrack.fileLength =  musicSizeArray[audio];
+//    audioTrack.trackCounter = 0 ;
     
     pTxLinkedListDesc[0].DMAC_BTCTRL     = (uint16_t)BUFFER_TX_BTCTRL;
-    if(musicSizeArray[audio] > 65535u){
-        pTxLinkedListDesc[0].DMAC_BTCNT      =  65535u;
-        pTxLinkedListDesc[0].DMAC_SRCADDR    = (uint32_t)musicFileAray[audio] + 65535u;
+    if(musicSizeArray[audio] > MAX_MUSIC_FILE_SIZE){
+        pTxLinkedListDesc[0].DMAC_BTCNT      =  MAX_MUSIC_FILE_SIZE;
+        pTxLinkedListDesc[0].DMAC_SRCADDR    = (uint32_t)musicFileAray[audio] + MAX_MUSIC_FILE_SIZE;
     } 
     else{
         pTxLinkedListDesc[0].DMAC_BTCNT      =  musicSizeArray[audio];
