@@ -346,6 +346,13 @@ Discarded input sections
                 0x0000000000000000        0xc build/toy-train-config/production/_ext/1312468825/plib_tcc0.o
  .text.TCC0_PWMInterruptStatusGet
                 0x0000000000000000        0xc build/toy-train-config/production/_ext/1312468825/plib_tcc0.o
+ .text          0x0000000000000000        0x0 build/toy-train-config/production/_ext/1312465894/plib_wdt.o
+ .data          0x0000000000000000        0x0 build/toy-train-config/production/_ext/1312465894/plib_wdt.o
+ .bss           0x0000000000000000        0x0 build/toy-train-config/production/_ext/1312465894/plib_wdt.o
+ .text.WDT_Disable
+                0x0000000000000000       0x20 build/toy-train-config/production/_ext/1312465894/plib_wdt.o
+ .text.WDT_ClearWithSync
+                0x0000000000000000       0x1c build/toy-train-config/production/_ext/1312465894/plib_wdt.o
  .text          0x0000000000000000        0x0 build/toy-train-config/production/_ext/336147711/gcc_monitor.o
  .data          0x0000000000000000        0x0 build/toy-train-config/production/_ext/336147711/gcc_monitor.o
  .bss           0x0000000000000000        0x0 build/toy-train-config/production/_ext/336147711/gcc_monitor.o
@@ -561,6 +568,7 @@ LOAD build/toy-train-config/production/_ext/873621700/plib_tc3.o
 LOAD build/toy-train-config/production/_ext/873621700/plib_tc4.o
 LOAD build/toy-train-config/production/_ext/1312468825/plib_tcc2.o
 LOAD build/toy-train-config/production/_ext/1312468825/plib_tcc0.o
+LOAD build/toy-train-config/production/_ext/1312465894/plib_wdt.o
 LOAD build/toy-train-config/production/_ext/336147711/gcc_monitor.o
 LOAD build/toy-train-config/production/_ext/1423632105/initialization.o
 LOAD build/toy-train-config/production/_ext/1423632105/interrupts.o
@@ -599,7 +607,7 @@ LOAD /home/babu/work-zone/firmware/microchip/gcc/arm-gnu-toolchain-6.3.1.508-lin
 LOAD /home/babu/work-zone/firmware/microchip/gcc/arm-gnu-toolchain-6.3.1.508-linux.any.x86_64/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/crtn.o
                 0x0000000000002000                STACK_SIZE = DEFINED (STACK_SIZE)?STACK_SIZE:DEFINED (__stack_size__)?__stack_size__:0x2000
 
-.text           0x0000000000000000    0x20f3c
+.text           0x0000000000000000    0x20f80
                 0x0000000000000000                . = ALIGN (0x4)
                 0x0000000000000000                _sfixed = .
  *(.vectors .vectors.*)
@@ -718,287 +726,293 @@ LOAD /home/babu/work-zone/firmware/microchip/gcc/arm-gnu-toolchain-6.3.1.508-lin
  .text.TCC0_PWMStart
                 0x0000000000000890       0x18 build/toy-train-config/production/_ext/1312468825/plib_tcc0.o
                 0x0000000000000890                TCC0_PWMStart
+ .text.WDT_Enable
+                0x00000000000008a8       0x20 build/toy-train-config/production/_ext/1312465894/plib_wdt.o
+                0x00000000000008a8                WDT_Enable
+ .text.WDT_Clear
+                0x00000000000008c8       0x14 build/toy-train-config/production/_ext/1312465894/plib_wdt.o
+                0x00000000000008c8                WDT_Clear
  .text.SYS_Initialize
-                0x00000000000008a8       0x88 build/toy-train-config/production/_ext/1423632105/initialization.o
-                0x00000000000008a8                SYS_Initialize
+                0x00000000000008dc       0x88 build/toy-train-config/production/_ext/1423632105/initialization.o
+                0x00000000000008dc                SYS_Initialize
  .text.Dummy_Handler
-                0x0000000000000930        0x2 build/toy-train-config/production/_ext/1423632105/interrupts.o
-                0x0000000000000930                SVCall_Handler
-                0x0000000000000930                DMAC_Handler
-                0x0000000000000930                AC_Handler
-                0x0000000000000930                PendSV_Handler
-                0x0000000000000930                SERCOM1_Handler
-                0x0000000000000930                TCC1_Handler
-                0x0000000000000930                TCC0_Handler
-                0x0000000000000930                RTC_Handler
-                0x0000000000000930                EIC_Handler
-                0x0000000000000930                WDT_Handler
-                0x0000000000000930                TC4_Handler
-                0x0000000000000930                USB_Handler
-                0x0000000000000930                TC3_Handler
-                0x0000000000000930                Dummy_Handler
-                0x0000000000000930                PM_Handler
-                0x0000000000000930                SERCOM5_Handler
-                0x0000000000000930                TCC2_Handler
-                0x0000000000000930                EVSYS_Handler
-                0x0000000000000930                SERCOM3_Handler
-                0x0000000000000930                SERCOM4_Handler
-                0x0000000000000930                I2S_Handler
-                0x0000000000000930                NVMCTRL_Handler
-                0x0000000000000930                SERCOM0_Handler
-                0x0000000000000930                DAC_Handler
-                0x0000000000000930                PTC_Handler
-                0x0000000000000930                TC5_Handler
-                0x0000000000000930                SYSCTRL_Handler
+                0x0000000000000964        0x2 build/toy-train-config/production/_ext/1423632105/interrupts.o
+                0x0000000000000964                SVCall_Handler
+                0x0000000000000964                DMAC_Handler
+                0x0000000000000964                AC_Handler
+                0x0000000000000964                PendSV_Handler
+                0x0000000000000964                SERCOM1_Handler
+                0x0000000000000964                TCC1_Handler
+                0x0000000000000964                TCC0_Handler
+                0x0000000000000964                RTC_Handler
+                0x0000000000000964                EIC_Handler
+                0x0000000000000964                WDT_Handler
+                0x0000000000000964                TC4_Handler
+                0x0000000000000964                USB_Handler
+                0x0000000000000964                TC3_Handler
+                0x0000000000000964                Dummy_Handler
+                0x0000000000000964                PM_Handler
+                0x0000000000000964                SERCOM5_Handler
+                0x0000000000000964                TCC2_Handler
+                0x0000000000000964                EVSYS_Handler
+                0x0000000000000964                SERCOM3_Handler
+                0x0000000000000964                SERCOM4_Handler
+                0x0000000000000964                I2S_Handler
+                0x0000000000000964                NVMCTRL_Handler
+                0x0000000000000964                SERCOM0_Handler
+                0x0000000000000964                DAC_Handler
+                0x0000000000000964                PTC_Handler
+                0x0000000000000964                TC5_Handler
+                0x0000000000000964                SYSCTRL_Handler
  .text.NonMaskableInt_Handler
-                0x0000000000000932        0x2 build/toy-train-config/production/_ext/1423632105/exceptions.o
-                0x0000000000000932                NonMaskableInt_Handler
+                0x0000000000000966        0x2 build/toy-train-config/production/_ext/1423632105/exceptions.o
+                0x0000000000000966                NonMaskableInt_Handler
  .text.HardFault_Handler
-                0x0000000000000934        0x2 build/toy-train-config/production/_ext/1423632105/exceptions.o
-                0x0000000000000934                HardFault_Handler
- *fill*         0x0000000000000936        0x2 
+                0x0000000000000968        0x2 build/toy-train-config/production/_ext/1423632105/exceptions.o
+                0x0000000000000968                HardFault_Handler
+ *fill*         0x000000000000096a        0x2 
  .text.Reset_Handler
-                0x0000000000000938       0x90 build/toy-train-config/production/_ext/336147711/startup_gcc.o
-                0x0000000000000938                Reset_Handler
+                0x000000000000096c       0x90 build/toy-train-config/production/_ext/336147711/startup_gcc.o
+                0x000000000000096c                Reset_Handler
  .text.sizeOfSampleTwoMusic
-                0x00000000000009c8        0x4 build/toy-train-config/production/_ext/1360937237/sampleMusicTwo.o
-                0x00000000000009c8                sizeOfSampleTwoMusic
+                0x00000000000009fc        0x4 build/toy-train-config/production/_ext/1360937237/sampleMusicTwo.o
+                0x00000000000009fc                sizeOfSampleTwoMusic
  .text.sizeOfSampleOneMusic
-                0x00000000000009cc        0x4 build/toy-train-config/production/_ext/1360937237/sampleMusicOne.o
-                0x00000000000009cc                sizeOfSampleOneMusic
+                0x0000000000000a00        0x4 build/toy-train-config/production/_ext/1360937237/sampleMusicOne.o
+                0x0000000000000a00                sizeOfSampleOneMusic
  .text.sizeOfPowerOnMusic
-                0x00000000000009d0        0x8 build/toy-train-config/production/_ext/1360937237/powerOnMusic.o
-                0x00000000000009d0                sizeOfPowerOnMusic
+                0x0000000000000a04        0x8 build/toy-train-config/production/_ext/1360937237/powerOnMusic.o
+                0x0000000000000a04                sizeOfPowerOnMusic
  .text.sizeOfPowerOffMusic
-                0x00000000000009d8        0x4 build/toy-train-config/production/_ext/1360937237/powerOffMusic.o
-                0x00000000000009d8                sizeOfPowerOffMusic
+                0x0000000000000a0c        0x4 build/toy-train-config/production/_ext/1360937237/powerOffMusic.o
+                0x0000000000000a0c                sizeOfPowerOffMusic
  .text.sizeOfHornMusic
-                0x00000000000009dc        0x4 build/toy-train-config/production/_ext/1360937237/hornMusic.o
-                0x00000000000009dc                sizeOfHornMusic
+                0x0000000000000a10        0x4 build/toy-train-config/production/_ext/1360937237/hornMusic.o
+                0x0000000000000a10                sizeOfHornMusic
  .text.sizeOfCarWashMusic
-                0x00000000000009e0        0x4 build/toy-train-config/production/_ext/1360937237/carWashMusic.o
-                0x00000000000009e0                sizeOfCarWashMusic
+                0x0000000000000a14        0x4 build/toy-train-config/production/_ext/1360937237/carWashMusic.o
+                0x0000000000000a14                sizeOfCarWashMusic
  .text.sizeOfBleOnMusic
-                0x00000000000009e4        0x4 build/toy-train-config/production/_ext/1360937237/bleOnMusic.o
-                0x00000000000009e4                sizeOfBleOnMusic
+                0x0000000000000a18        0x4 build/toy-train-config/production/_ext/1360937237/bleOnMusic.o
+                0x0000000000000a18                sizeOfBleOnMusic
  .text.sizeOfBleOffMusic
-                0x00000000000009e8        0x4 build/toy-train-config/production/_ext/1360937237/bleOffMusic.o
-                0x00000000000009e8                sizeOfBleOffMusic
+                0x0000000000000a1c        0x4 build/toy-train-config/production/_ext/1360937237/bleOffMusic.o
+                0x0000000000000a1c                sizeOfBleOffMusic
  .text.sizeOfBellMusic
-                0x00000000000009ec        0x6 build/toy-train-config/production/_ext/1360937237/bellMusic.o
-                0x00000000000009ec                sizeOfBellMusic
- *fill*         0x00000000000009f2        0x2 
+                0x0000000000000a20        0x6 build/toy-train-config/production/_ext/1360937237/bellMusic.o
+                0x0000000000000a20                sizeOfBellMusic
+ *fill*         0x0000000000000a26        0x2 
  .text.TCC2_PWM16bitDutySet
-                0x00000000000009f4       0x24 build/toy-train-config/production/_ext/1360937237/rgbLed.o
+                0x0000000000000a28       0x24 build/toy-train-config/production/_ext/1360937237/rgbLed.o
  .text.initRGBPeripheral
-                0x0000000000000a18       0x30 build/toy-train-config/production/_ext/1360937237/rgbLed.o
-                0x0000000000000a18                initRGBPeripheral
+                0x0000000000000a4c       0x30 build/toy-train-config/production/_ext/1360937237/rgbLed.o
+                0x0000000000000a4c                initRGBPeripheral
  .text.RGBcolorWrite
-                0x0000000000000a48       0x24 build/toy-train-config/production/_ext/1360937237/rgbLed.o
-                0x0000000000000a48                RGBcolorWrite
+                0x0000000000000a7c       0x24 build/toy-train-config/production/_ext/1360937237/rgbLed.o
+                0x0000000000000a7c                RGBcolorWrite
  .text.RGBsetColor
-                0x0000000000000a6c       0x44 build/toy-train-config/production/_ext/1360937237/rgbLed.o
-                0x0000000000000a6c                RGBsetColor
+                0x0000000000000aa0       0x44 build/toy-train-config/production/_ext/1360937237/rgbLed.o
+                0x0000000000000aa0                RGBsetColor
  .text.TCC0_PWM24bitDutySet
-                0x0000000000000ab0       0x28 build/toy-train-config/production/_ext/1360937237/motorControl.o
+                0x0000000000000ae4       0x28 build/toy-train-config/production/_ext/1360937237/motorControl.o
  .text.initMotorPeripheral
-                0x0000000000000ad8       0x20 build/toy-train-config/production/_ext/1360937237/motorControl.o
-                0x0000000000000ad8                initMotorPeripheral
+                0x0000000000000b0c       0x20 build/toy-train-config/production/_ext/1360937237/motorControl.o
+                0x0000000000000b0c                initMotorPeripheral
  .text.motorControl
-                0x0000000000000af8       0x3c build/toy-train-config/production/_ext/1360937237/motorControl.o
-                0x0000000000000af8                motorControl
+                0x0000000000000b2c       0x3c build/toy-train-config/production/_ext/1360937237/motorControl.o
+                0x0000000000000b2c                motorControl
  .text.accelerateMotor
-                0x0000000000000b34       0x38 build/toy-train-config/production/_ext/1360937237/motorControl.o
-                0x0000000000000b34                accelerateMotor
+                0x0000000000000b68       0x38 build/toy-train-config/production/_ext/1360937237/motorControl.o
+                0x0000000000000b68                accelerateMotor
  .text.reverseMotor
-                0x0000000000000b6c       0x10 build/toy-train-config/production/_ext/1360937237/motorControl.o
-                0x0000000000000b6c                reverseMotor
+                0x0000000000000ba0       0x10 build/toy-train-config/production/_ext/1360937237/motorControl.o
+                0x0000000000000ba0                reverseMotor
  .text.stopMotor
-                0x0000000000000b7c       0x10 build/toy-train-config/production/_ext/1360937237/motorControl.o
-                0x0000000000000b7c                stopMotor
+                0x0000000000000bb0       0x10 build/toy-train-config/production/_ext/1360937237/motorControl.o
+                0x0000000000000bb0                stopMotor
  .text.decelerateMotor
-                0x0000000000000b8c       0x38 build/toy-train-config/production/_ext/1360937237/motorControl.o
-                0x0000000000000b8c                decelerateMotor
+                0x0000000000000bc0       0x38 build/toy-train-config/production/_ext/1360937237/motorControl.o
+                0x0000000000000bc0                decelerateMotor
  .text.getMotorDirection
-                0x0000000000000bc4        0xc build/toy-train-config/production/_ext/1360937237/motorControl.o
-                0x0000000000000bc4                getMotorDirection
+                0x0000000000000bf8        0xc build/toy-train-config/production/_ext/1360937237/motorControl.o
+                0x0000000000000bf8                getMotorDirection
  .text.adcCallBack
-                0x0000000000000bd0       0x14 build/toy-train-config/production/_ext/1360937237/main.o
-                0x0000000000000bd0                adcCallBack
+                0x0000000000000c04       0x14 build/toy-train-config/production/_ext/1360937237/main.o
+                0x0000000000000c04                adcCallBack
  .text.systickCallback
-                0x0000000000000be4       0x74 build/toy-train-config/production/_ext/1360937237/main.o
-                0x0000000000000be4                systickCallback
+                0x0000000000000c18       0x74 build/toy-train-config/production/_ext/1360937237/main.o
+                0x0000000000000c18                systickCallback
  .text.startup.main
-                0x0000000000000c58      0x244 build/toy-train-config/production/_ext/1360937237/main.o
-                0x0000000000000c58                main
+                0x0000000000000c8c      0x254 build/toy-train-config/production/_ext/1360937237/main.o
+                0x0000000000000c8c                main
  .text.measureHallSensorValue
-                0x0000000000000e9c       0x58 build/toy-train-config/production/_ext/1360937237/hallSensor.o
-                0x0000000000000e9c                measureHallSensorValue
+                0x0000000000000ee0       0x58 build/toy-train-config/production/_ext/1360937237/hallSensor.o
+                0x0000000000000ee0                measureHallSensorValue
  .text.setHallSensorReadDelay
-                0x0000000000000ef4        0xc build/toy-train-config/production/_ext/1360937237/hallSensor.o
-                0x0000000000000ef4                setHallSensorReadDelay
+                0x0000000000000f38        0xc build/toy-train-config/production/_ext/1360937237/hallSensor.o
+                0x0000000000000f38                setHallSensorReadDelay
  .text.setHallNoReasultInterval
-                0x0000000000000f00        0xc build/toy-train-config/production/_ext/1360937237/hallSensor.o
-                0x0000000000000f00                setHallNoReasultInterval
+                0x0000000000000f44        0xc build/toy-train-config/production/_ext/1360937237/hallSensor.o
+                0x0000000000000f44                setHallNoReasultInterval
  .text.generateColor
-                0x0000000000000f0c      0x1a4 build/toy-train-config/production/_ext/1360937237/colorDetect.o
-                0x0000000000000f0c                generateColor
+                0x0000000000000f50      0x1a4 build/toy-train-config/production/_ext/1360937237/colorDetect.o
+                0x0000000000000f50                generateColor
  .text.PDColourRead
-                0x00000000000010b0       0xd0 build/toy-train-config/production/_ext/1360937237/colorDetect.o
-                0x00000000000010b0                PDColourRead
+                0x00000000000010f4       0xd0 build/toy-train-config/production/_ext/1360937237/colorDetect.o
+                0x00000000000010f4                PDColourRead
  .text.sercom2WriteCallBack
-                0x0000000000001180        0xc build/toy-train-config/production/_ext/1360937237/bluetooth.o
-                0x0000000000001180                sercom2WriteCallBack
+                0x00000000000011c4        0xc build/toy-train-config/production/_ext/1360937237/bluetooth.o
+                0x00000000000011c4                sercom2WriteCallBack
  .text.sercom2ReadCallBack
-                0x000000000000118c       0x20 build/toy-train-config/production/_ext/1360937237/bluetooth.o
-                0x000000000000118c                sercom2ReadCallBack
+                0x00000000000011d0       0x20 build/toy-train-config/production/_ext/1360937237/bluetooth.o
+                0x00000000000011d0                sercom2ReadCallBack
  .text.initBluetoothSerial
-                0x00000000000011ac       0x34 build/toy-train-config/production/_ext/1360937237/bluetooth.o
-                0x00000000000011ac                initBluetoothSerial
+                0x00000000000011f0       0x34 build/toy-train-config/production/_ext/1360937237/bluetooth.o
+                0x00000000000011f0                initBluetoothSerial
  .text.convertToHex
-                0x00000000000011e0       0x1a build/toy-train-config/production/_ext/1360937237/bluetooth.o
-                0x00000000000011e0                convertToHex
- *fill*         0x00000000000011fa        0x2 
+                0x0000000000001224       0x1a build/toy-train-config/production/_ext/1360937237/bluetooth.o
+                0x0000000000001224                convertToHex
+ *fill*         0x000000000000123e        0x2 
  .text.checkBlutoothCommand
-                0x00000000000011fc       0xc0 build/toy-train-config/production/_ext/1360937237/bluetooth.o
-                0x00000000000011fc                checkBlutoothCommand
+                0x0000000000001240       0xc0 build/toy-train-config/production/_ext/1360937237/bluetooth.o
+                0x0000000000001240                checkBlutoothCommand
  .text.playAudio
-                0x00000000000012bc       0x68 build/toy-train-config/production/_ext/1360937237/audio.o
-                0x00000000000012bc                playAudio
+                0x0000000000001300       0x68 build/toy-train-config/production/_ext/1360937237/audio.o
+                0x0000000000001300                playAudio
  .text.initAudioPeripheral
-                0x0000000000001324       0xd0 build/toy-train-config/production/_ext/1360937237/audio.o
-                0x0000000000001324                initAudioPeripheral
- .text          0x00000000000013f4       0x14 /home/babu/work-zone/firmware/microchip/gcc/arm-gnu-toolchain-6.3.1.508-linux.any.x86_64/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/libgcc.a(_thumb1_case_uqi.o)
-                0x00000000000013f4                __gnu_thumb1_case_uqi
- .text          0x0000000000001408      0x1d4 /home/babu/work-zone/firmware/microchip/gcc/arm-gnu-toolchain-6.3.1.508-linux.any.x86_64/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/libgcc.a(_divsi3.o)
-                0x0000000000001408                __aeabi_idiv
-                0x0000000000001408                __divsi3
-                0x00000000000015d4                __aeabi_idivmod
- .text          0x00000000000015dc        0x4 /home/babu/work-zone/firmware/microchip/gcc/arm-gnu-toolchain-6.3.1.508-linux.any.x86_64/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/libgcc.a(_dvmd_tls.o)
-                0x00000000000015dc                __aeabi_ldiv0
-                0x00000000000015dc                __aeabi_idiv0
+                0x0000000000001368       0xd0 build/toy-train-config/production/_ext/1360937237/audio.o
+                0x0000000000001368                initAudioPeripheral
+ .text          0x0000000000001438       0x14 /home/babu/work-zone/firmware/microchip/gcc/arm-gnu-toolchain-6.3.1.508-linux.any.x86_64/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/libgcc.a(_thumb1_case_uqi.o)
+                0x0000000000001438                __gnu_thumb1_case_uqi
+ .text          0x000000000000144c      0x1d4 /home/babu/work-zone/firmware/microchip/gcc/arm-gnu-toolchain-6.3.1.508-linux.any.x86_64/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/libgcc.a(_divsi3.o)
+                0x000000000000144c                __aeabi_idiv
+                0x000000000000144c                __divsi3
+                0x0000000000001618                __aeabi_idivmod
+ .text          0x0000000000001620        0x4 /home/babu/work-zone/firmware/microchip/gcc/arm-gnu-toolchain-6.3.1.508-linux.any.x86_64/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/libgcc.a(_dvmd_tls.o)
+                0x0000000000001620                __aeabi_ldiv0
+                0x0000000000001620                __aeabi_idiv0
  .text.__libc_init_array
-                0x00000000000015e0       0x48 /home/babu/work-zone/firmware/microchip/gcc/arm-gnu-toolchain-6.3.1.508-linux.any.x86_64/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc.a(lib_a-init.o)
-                0x00000000000015e0                __libc_init_array
- .text.memcpy   0x0000000000001628       0x84 /home/babu/work-zone/firmware/microchip/gcc/arm-gnu-toolchain-6.3.1.508-linux.any.x86_64/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc.a(lib_a-memcpy-stub.o)
-                0x0000000000001628                memcpy
- .text.memset   0x00000000000016ac       0x94 /home/babu/work-zone/firmware/microchip/gcc/arm-gnu-toolchain-6.3.1.508-linux.any.x86_64/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc.a(lib_a-memset.o)
-                0x00000000000016ac                memset
+                0x0000000000001624       0x48 /home/babu/work-zone/firmware/microchip/gcc/arm-gnu-toolchain-6.3.1.508-linux.any.x86_64/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc.a(lib_a-init.o)
+                0x0000000000001624                __libc_init_array
+ .text.memcpy   0x000000000000166c       0x84 /home/babu/work-zone/firmware/microchip/gcc/arm-gnu-toolchain-6.3.1.508-linux.any.x86_64/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc.a(lib_a-memcpy-stub.o)
+                0x000000000000166c                memcpy
+ .text.memset   0x00000000000016f0       0x94 /home/babu/work-zone/firmware/microchip/gcc/arm-gnu-toolchain-6.3.1.508-linux.any.x86_64/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc.a(lib_a-memset.o)
+                0x00000000000016f0                memset
  .text.startup.register_fini
-                0x0000000000001740       0x18 /home/babu/work-zone/firmware/microchip/gcc/arm-gnu-toolchain-6.3.1.508-linux.any.x86_64/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc.a(lib_a-__call_atexit.o)
- .text.atexit   0x0000000000001758       0x10 /home/babu/work-zone/firmware/microchip/gcc/arm-gnu-toolchain-6.3.1.508-linux.any.x86_64/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc.a(lib_a-atexit.o)
-                0x0000000000001758                atexit
+                0x0000000000001784       0x18 /home/babu/work-zone/firmware/microchip/gcc/arm-gnu-toolchain-6.3.1.508-linux.any.x86_64/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc.a(lib_a-__call_atexit.o)
+ .text.atexit   0x000000000000179c       0x10 /home/babu/work-zone/firmware/microchip/gcc/arm-gnu-toolchain-6.3.1.508-linux.any.x86_64/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc.a(lib_a-atexit.o)
+                0x000000000000179c                atexit
  .text.__libc_fini_array
-                0x0000000000001768       0x34 /home/babu/work-zone/firmware/microchip/gcc/arm-gnu-toolchain-6.3.1.508-linux.any.x86_64/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc.a(lib_a-fini.o)
-                0x0000000000001768                __libc_fini_array
+                0x00000000000017ac       0x34 /home/babu/work-zone/firmware/microchip/gcc/arm-gnu-toolchain-6.3.1.508-linux.any.x86_64/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc.a(lib_a-fini.o)
+                0x00000000000017ac                __libc_fini_array
  .text.__retarget_lock_acquire_recursive
-                0x000000000000179c        0x4 /home/babu/work-zone/firmware/microchip/gcc/arm-gnu-toolchain-6.3.1.508-linux.any.x86_64/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc.a(lib_a-lock.o)
-                0x000000000000179c                __retarget_lock_acquire_recursive
+                0x00000000000017e0        0x4 /home/babu/work-zone/firmware/microchip/gcc/arm-gnu-toolchain-6.3.1.508-linux.any.x86_64/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc.a(lib_a-lock.o)
+                0x00000000000017e0                __retarget_lock_acquire_recursive
  .text.__retarget_lock_release_recursive
-                0x00000000000017a0        0x4 /home/babu/work-zone/firmware/microchip/gcc/arm-gnu-toolchain-6.3.1.508-linux.any.x86_64/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc.a(lib_a-lock.o)
-                0x00000000000017a0                __retarget_lock_release_recursive
+                0x00000000000017e4        0x4 /home/babu/work-zone/firmware/microchip/gcc/arm-gnu-toolchain-6.3.1.508-linux.any.x86_64/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc.a(lib_a-lock.o)
+                0x00000000000017e4                __retarget_lock_release_recursive
  .text.__register_exitproc
-                0x00000000000017a4       0xf4 /home/babu/work-zone/firmware/microchip/gcc/arm-gnu-toolchain-6.3.1.508-linux.any.x86_64/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc.a(lib_a-__atexit.o)
-                0x00000000000017a4                __register_exitproc
+                0x00000000000017e8       0xf4 /home/babu/work-zone/firmware/microchip/gcc/arm-gnu-toolchain-6.3.1.508-linux.any.x86_64/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc.a(lib_a-__atexit.o)
+                0x00000000000017e8                __register_exitproc
  *(.glue_7t)
- .glue_7t       0x0000000000001898        0x0 linker stubs
+ .glue_7t       0x00000000000018dc        0x0 linker stubs
  *(.glue_7)
- .glue_7        0x0000000000001898        0x0 linker stubs
+ .glue_7        0x00000000000018dc        0x0 linker stubs
  *(.rodata .rodata* .gnu.linkonce.r.*)
- .rodata        0x0000000000001898        0x0 build/toy-train-config/production/_ext/1360937237/sampleMusicTwo.o
-                0x0000000000001898                __sampleTwoMusic
- .rodata        0x0000000000001898        0x0 build/toy-train-config/production/_ext/1360937237/sampleMusicOne.o
-                0x0000000000001898                __sampleOneMusic
- .rodata        0x0000000000001898    0x1f4a8 build/toy-train-config/production/_ext/1360937237/powerOnMusic.o
-                0x0000000000001898                __powerOnMusic
- .rodata        0x0000000000020d40        0x0 build/toy-train-config/production/_ext/1360937237/powerOffMusic.o
-                0x0000000000020d40                __powerOffMusic
- .rodata        0x0000000000020d40       0x60 build/toy-train-config/production/_ext/1360937237/hornMusic.o
-                0x0000000000020d40                __hornMusic
- .rodata        0x0000000000020da0        0x0 build/toy-train-config/production/_ext/1360937237/carWashMusic.o
-                0x0000000000020da0                __carWashMusic
- .rodata        0x0000000000020da0        0x0 build/toy-train-config/production/_ext/1360937237/bleOnMusic.o
-                0x0000000000020da0                __bleOnMusic
- .rodata        0x0000000000020da0       0x60 build/toy-train-config/production/_ext/1360937237/bleOffMusic.o
-                0x0000000000020da0                __bleOffMusic
- .rodata        0x0000000000020e00      0x110 build/toy-train-config/production/_ext/1360937237/bellMusic.o
-                0x0000000000020e00                __bellMusic
- .rodata        0x0000000000020f10        0x1 build/toy-train-config/production/_ext/1360937237/music.o
-                0x0000000000020f10                __nullMusic
- *fill*         0x0000000000020f11        0x3 
+ .rodata        0x00000000000018dc        0x0 build/toy-train-config/production/_ext/1360937237/sampleMusicTwo.o
+                0x00000000000018dc                __sampleTwoMusic
+ .rodata        0x00000000000018dc        0x0 build/toy-train-config/production/_ext/1360937237/sampleMusicOne.o
+                0x00000000000018dc                __sampleOneMusic
+ .rodata        0x00000000000018dc    0x1f4a8 build/toy-train-config/production/_ext/1360937237/powerOnMusic.o
+                0x00000000000018dc                __powerOnMusic
+ .rodata        0x0000000000020d84        0x0 build/toy-train-config/production/_ext/1360937237/powerOffMusic.o
+                0x0000000000020d84                __powerOffMusic
+ .rodata        0x0000000000020d84       0x60 build/toy-train-config/production/_ext/1360937237/hornMusic.o
+                0x0000000000020d84                __hornMusic
+ .rodata        0x0000000000020de4        0x0 build/toy-train-config/production/_ext/1360937237/carWashMusic.o
+                0x0000000000020de4                __carWashMusic
+ .rodata        0x0000000000020de4        0x0 build/toy-train-config/production/_ext/1360937237/bleOnMusic.o
+                0x0000000000020de4                __bleOnMusic
+ .rodata        0x0000000000020de4       0x60 build/toy-train-config/production/_ext/1360937237/bleOffMusic.o
+                0x0000000000020de4                __bleOffMusic
+ .rodata        0x0000000000020e44      0x110 build/toy-train-config/production/_ext/1360937237/bellMusic.o
+                0x0000000000020e44                __bellMusic
+ .rodata        0x0000000000020f54        0x1 build/toy-train-config/production/_ext/1360937237/music.o
+                0x0000000000020f54                __nullMusic
+ *fill*         0x0000000000020f55        0x3 
  .rodata._global_impure_ptr
-                0x0000000000020f14        0x4 /home/babu/work-zone/firmware/microchip/gcc/arm-gnu-toolchain-6.3.1.508-linux.any.x86_64/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc.a(lib_a-impure.o)
-                0x0000000000020f14                _global_impure_ptr
+                0x0000000000020f58        0x4 /home/babu/work-zone/firmware/microchip/gcc/arm-gnu-toolchain-6.3.1.508-linux.any.x86_64/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc.a(lib_a-impure.o)
+                0x0000000000020f58                _global_impure_ptr
  *(.ARM.extab* .gnu.linkonce.armextab.*)
-                0x0000000000020f18                . = ALIGN (0x4)
+                0x0000000000020f5c                . = ALIGN (0x4)
  *(.init)
- .init          0x0000000000020f18        0x4 /home/babu/work-zone/firmware/microchip/gcc/arm-gnu-toolchain-6.3.1.508-linux.any.x86_64/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/crti.o
-                0x0000000000020f18                _init
- .init          0x0000000000020f1c        0x8 /home/babu/work-zone/firmware/microchip/gcc/arm-gnu-toolchain-6.3.1.508-linux.any.x86_64/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/crtn.o
-                0x0000000000020f24                . = ALIGN (0x4)
-                0x0000000000020f24                __preinit_array_start = .
+ .init          0x0000000000020f5c        0x4 /home/babu/work-zone/firmware/microchip/gcc/arm-gnu-toolchain-6.3.1.508-linux.any.x86_64/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/crti.o
+                0x0000000000020f5c                _init
+ .init          0x0000000000020f60        0x8 /home/babu/work-zone/firmware/microchip/gcc/arm-gnu-toolchain-6.3.1.508-linux.any.x86_64/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/crtn.o
+                0x0000000000020f68                . = ALIGN (0x4)
+                0x0000000000020f68                __preinit_array_start = .
  *(.preinit_array)
-                0x0000000000020f24                __preinit_array_end = .
-                0x0000000000020f24                . = ALIGN (0x4)
-                0x0000000000020f24                __init_array_start = .
+                0x0000000000020f68                __preinit_array_end = .
+                0x0000000000020f68                . = ALIGN (0x4)
+                0x0000000000020f68                __init_array_start = .
  *(SORT(.init_array.*))
  .init_array.00000
-                0x0000000000020f24        0x4 /home/babu/work-zone/firmware/microchip/gcc/arm-gnu-toolchain-6.3.1.508-linux.any.x86_64/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc.a(lib_a-__call_atexit.o)
+                0x0000000000020f68        0x4 /home/babu/work-zone/firmware/microchip/gcc/arm-gnu-toolchain-6.3.1.508-linux.any.x86_64/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc.a(lib_a-__call_atexit.o)
  *(.init_array)
- .init_array    0x0000000000020f28        0x4 /home/babu/work-zone/firmware/microchip/gcc/arm-gnu-toolchain-6.3.1.508-linux.any.x86_64/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/crtbegin.o
-                0x0000000000020f2c                __init_array_end = .
-                0x0000000000020f2c                . = ALIGN (0x4)
+ .init_array    0x0000000000020f6c        0x4 /home/babu/work-zone/firmware/microchip/gcc/arm-gnu-toolchain-6.3.1.508-linux.any.x86_64/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/crtbegin.o
+                0x0000000000020f70                __init_array_end = .
+                0x0000000000020f70                . = ALIGN (0x4)
  *crtbegin.o(.ctors)
  *(EXCLUDE_FILE(*crtend.o) .ctors)
  *(SORT(.ctors.*))
  *crtend.o(.ctors)
-                0x0000000000020f2c                . = ALIGN (0x4)
+                0x0000000000020f70                . = ALIGN (0x4)
  *(.fini)
- .fini          0x0000000000020f2c        0x4 /home/babu/work-zone/firmware/microchip/gcc/arm-gnu-toolchain-6.3.1.508-linux.any.x86_64/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/crti.o
-                0x0000000000020f2c                _fini
- .fini          0x0000000000020f30        0x8 /home/babu/work-zone/firmware/microchip/gcc/arm-gnu-toolchain-6.3.1.508-linux.any.x86_64/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/crtn.o
-                0x0000000000020f38                . = ALIGN (0x4)
-                0x0000000000020f38                __fini_array_start = .
+ .fini          0x0000000000020f70        0x4 /home/babu/work-zone/firmware/microchip/gcc/arm-gnu-toolchain-6.3.1.508-linux.any.x86_64/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/crti.o
+                0x0000000000020f70                _fini
+ .fini          0x0000000000020f74        0x8 /home/babu/work-zone/firmware/microchip/gcc/arm-gnu-toolchain-6.3.1.508-linux.any.x86_64/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/crtn.o
+                0x0000000000020f7c                . = ALIGN (0x4)
+                0x0000000000020f7c                __fini_array_start = .
  *(.fini_array)
- .fini_array    0x0000000000020f38        0x4 /home/babu/work-zone/firmware/microchip/gcc/arm-gnu-toolchain-6.3.1.508-linux.any.x86_64/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/crtbegin.o
+ .fini_array    0x0000000000020f7c        0x4 /home/babu/work-zone/firmware/microchip/gcc/arm-gnu-toolchain-6.3.1.508-linux.any.x86_64/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/crtbegin.o
  *(SORT(.fini_array.*))
-                0x0000000000020f3c                __fini_array_end = .
+                0x0000000000020f80                __fini_array_end = .
  *crtbegin.o(.dtors)
  *(EXCLUDE_FILE(*crtend.o) .dtors)
  *(SORT(.dtors.*))
  *crtend.o(.dtors)
-                0x0000000000020f3c                . = ALIGN (0x4)
-                0x0000000000020f3c                _efixed = .
+                0x0000000000020f80                . = ALIGN (0x4)
+                0x0000000000020f80                _efixed = .
                 [!provide]                        PROVIDE (__exidx_start, .)
 
-.vfp11_veneer   0x0000000000020f3c        0x0
- .vfp11_veneer  0x0000000000020f3c        0x0 linker stubs
+.vfp11_veneer   0x0000000000020f80        0x0
+ .vfp11_veneer  0x0000000000020f80        0x0 linker stubs
 
-.v4_bx          0x0000000000020f3c        0x0
- .v4_bx         0x0000000000020f3c        0x0 linker stubs
+.v4_bx          0x0000000000020f80        0x0
+ .v4_bx         0x0000000000020f80        0x0 linker stubs
 
-.iplt           0x0000000000020f3c        0x0
- .iplt          0x0000000000020f3c        0x0 /home/babu/work-zone/firmware/microchip/gcc/arm-gnu-toolchain-6.3.1.508-linux.any.x86_64/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/crtbegin.o
+.iplt           0x0000000000020f80        0x0
+ .iplt          0x0000000000020f80        0x0 /home/babu/work-zone/firmware/microchip/gcc/arm-gnu-toolchain-6.3.1.508-linux.any.x86_64/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/crtbegin.o
 
-.eh_frame       0x0000000000020f3c        0x0
- .eh_frame      0x0000000000020f3c        0x0 /home/babu/work-zone/firmware/microchip/gcc/arm-gnu-toolchain-6.3.1.508-linux.any.x86_64/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/crtbegin.o
+.eh_frame       0x0000000000020f80        0x0
+ .eh_frame      0x0000000000020f80        0x0 /home/babu/work-zone/firmware/microchip/gcc/arm-gnu-toolchain-6.3.1.508-linux.any.x86_64/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/crtbegin.o
 
-.rel.dyn        0x0000000000020f3c        0x0
- .rel.iplt      0x0000000000020f3c        0x0 /home/babu/work-zone/firmware/microchip/gcc/arm-gnu-toolchain-6.3.1.508-linux.any.x86_64/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/crtbegin.o
+.rel.dyn        0x0000000000020f80        0x0
+ .rel.iplt      0x0000000000020f80        0x0 /home/babu/work-zone/firmware/microchip/gcc/arm-gnu-toolchain-6.3.1.508-linux.any.x86_64/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/crtbegin.o
 
-.jcr            0x0000000000020f3c        0x0
- .jcr           0x0000000000020f3c        0x0 /home/babu/work-zone/firmware/microchip/gcc/arm-gnu-toolchain-6.3.1.508-linux.any.x86_64/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/crtbegin.o
+.jcr            0x0000000000020f80        0x0
+ .jcr           0x0000000000020f80        0x0 /home/babu/work-zone/firmware/microchip/gcc/arm-gnu-toolchain-6.3.1.508-linux.any.x86_64/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/crtbegin.o
 
-.igot.plt       0x0000000000020f3c        0x0
- .igot.plt      0x0000000000020f3c        0x0 /home/babu/work-zone/firmware/microchip/gcc/arm-gnu-toolchain-6.3.1.508-linux.any.x86_64/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/crtbegin.o
+.igot.plt       0x0000000000020f80        0x0
+ .igot.plt      0x0000000000020f80        0x0 /home/babu/work-zone/firmware/microchip/gcc/arm-gnu-toolchain-6.3.1.508-linux.any.x86_64/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/crtbegin.o
 
 .ARM.exidx
  *(.ARM.exidx* .gnu.linkonce.armexidx.*)
                 [!provide]                        PROVIDE (__exidx_end, .)
-                0x0000000000020f3c                . = ALIGN (0x4)
-                0x0000000000020f3c                _etext = .
+                0x0000000000020f80                . = ALIGN (0x4)
+                0x0000000000020f80                _etext = .
 
-.relocate       0x0000000020000000      0x434 load address 0x0000000000020f3c
+.relocate       0x0000000020000000      0x434 load address 0x0000000000020f80
                 0x0000000020000000                . = ALIGN (0x4)
                 0x0000000020000000                _srelocate = .
  *(.ramfunc .ramfunc.*)
@@ -1015,7 +1029,7 @@ LOAD /home/babu/work-zone/firmware/microchip/gcc/arm-gnu-toolchain-6.3.1.508-lin
                 0x0000000020000434                . = ALIGN (0x4)
                 0x0000000020000434                _erelocate = .
 
-.bss            0x0000000020000440      0x160 load address 0x0000000000021380
+.bss            0x0000000020000440      0x160 load address 0x00000000000213c0
                 0x0000000020000440                . = ALIGN (0x4)
                 0x0000000020000440                _sbss = .
                 0x0000000020000440                _szero = .
@@ -1072,7 +1086,7 @@ LOAD /home/babu/work-zone/firmware/microchip/gcc/arm-gnu-toolchain-6.3.1.508-lin
                 0x00000000200005a0                _ebss = .
                 0x00000000200005a0                _ezero = .
 
-.stack          0x00000000200005a0     0x2000 load address 0x00000000000214e0
+.stack          0x00000000200005a0     0x2000 load address 0x0000000000021520
                 0x00000000200005a0                . = ALIGN (0x8)
                 0x00000000200005a0                _sstack = .
                 0x00000000200025a0                . = (. + STACK_SIZE)
@@ -1120,75 +1134,77 @@ OUTPUT(dist/toy-train-config/production/toy-train.X.production.elf elf32-littlea
  .ARM.attributes
                 0x0000000000000306       0x32 build/toy-train-config/production/_ext/1312468825/plib_tcc0.o
  .ARM.attributes
-                0x0000000000000338       0x32 build/toy-train-config/production/_ext/1423632105/initialization.o
+                0x0000000000000338       0x32 build/toy-train-config/production/_ext/1312465894/plib_wdt.o
  .ARM.attributes
-                0x000000000000036a       0x32 build/toy-train-config/production/_ext/1423632105/interrupts.o
+                0x000000000000036a       0x32 build/toy-train-config/production/_ext/1423632105/initialization.o
  .ARM.attributes
-                0x000000000000039c       0x32 build/toy-train-config/production/_ext/1423632105/exceptions.o
+                0x000000000000039c       0x32 build/toy-train-config/production/_ext/1423632105/interrupts.o
  .ARM.attributes
-                0x00000000000003ce       0x32 build/toy-train-config/production/_ext/336147711/startup_gcc.o
+                0x00000000000003ce       0x32 build/toy-train-config/production/_ext/1423632105/exceptions.o
  .ARM.attributes
-                0x0000000000000400       0x32 build/toy-train-config/production/_ext/1360937237/sampleMusicTwo.o
+                0x0000000000000400       0x32 build/toy-train-config/production/_ext/336147711/startup_gcc.o
  .ARM.attributes
-                0x0000000000000432       0x32 build/toy-train-config/production/_ext/1360937237/sampleMusicOne.o
+                0x0000000000000432       0x32 build/toy-train-config/production/_ext/1360937237/sampleMusicTwo.o
  .ARM.attributes
-                0x0000000000000464       0x32 build/toy-train-config/production/_ext/1360937237/powerOnMusic.o
+                0x0000000000000464       0x32 build/toy-train-config/production/_ext/1360937237/sampleMusicOne.o
  .ARM.attributes
-                0x0000000000000496       0x32 build/toy-train-config/production/_ext/1360937237/powerOffMusic.o
+                0x0000000000000496       0x32 build/toy-train-config/production/_ext/1360937237/powerOnMusic.o
  .ARM.attributes
-                0x00000000000004c8       0x32 build/toy-train-config/production/_ext/1360937237/hornMusic.o
+                0x00000000000004c8       0x32 build/toy-train-config/production/_ext/1360937237/powerOffMusic.o
  .ARM.attributes
-                0x00000000000004fa       0x32 build/toy-train-config/production/_ext/1360937237/carWashMusic.o
+                0x00000000000004fa       0x32 build/toy-train-config/production/_ext/1360937237/hornMusic.o
  .ARM.attributes
-                0x000000000000052c       0x32 build/toy-train-config/production/_ext/1360937237/bleOnMusic.o
+                0x000000000000052c       0x32 build/toy-train-config/production/_ext/1360937237/carWashMusic.o
  .ARM.attributes
-                0x000000000000055e       0x32 build/toy-train-config/production/_ext/1360937237/bleOffMusic.o
+                0x000000000000055e       0x32 build/toy-train-config/production/_ext/1360937237/bleOnMusic.o
  .ARM.attributes
-                0x0000000000000590       0x32 build/toy-train-config/production/_ext/1360937237/bellMusic.o
+                0x0000000000000590       0x32 build/toy-train-config/production/_ext/1360937237/bleOffMusic.o
  .ARM.attributes
-                0x00000000000005c2       0x32 build/toy-train-config/production/_ext/1360937237/music.o
+                0x00000000000005c2       0x32 build/toy-train-config/production/_ext/1360937237/bellMusic.o
  .ARM.attributes
-                0x00000000000005f4       0x32 build/toy-train-config/production/_ext/1360937237/rgbLed.o
+                0x00000000000005f4       0x32 build/toy-train-config/production/_ext/1360937237/music.o
  .ARM.attributes
-                0x0000000000000626       0x32 build/toy-train-config/production/_ext/1360937237/motorControl.o
+                0x0000000000000626       0x32 build/toy-train-config/production/_ext/1360937237/rgbLed.o
  .ARM.attributes
-                0x0000000000000658       0x32 build/toy-train-config/production/_ext/1360937237/main.o
+                0x0000000000000658       0x32 build/toy-train-config/production/_ext/1360937237/motorControl.o
  .ARM.attributes
-                0x000000000000068a       0x32 build/toy-train-config/production/_ext/1360937237/hallSensor.o
+                0x000000000000068a       0x32 build/toy-train-config/production/_ext/1360937237/main.o
  .ARM.attributes
-                0x00000000000006bc       0x32 build/toy-train-config/production/_ext/1360937237/colorDetect.o
+                0x00000000000006bc       0x32 build/toy-train-config/production/_ext/1360937237/hallSensor.o
  .ARM.attributes
-                0x00000000000006ee       0x32 build/toy-train-config/production/_ext/1360937237/bluetooth.o
+                0x00000000000006ee       0x32 build/toy-train-config/production/_ext/1360937237/colorDetect.o
  .ARM.attributes
-                0x0000000000000720       0x32 build/toy-train-config/production/_ext/1360937237/audio.o
+                0x0000000000000720       0x32 build/toy-train-config/production/_ext/1360937237/bluetooth.o
  .ARM.attributes
-                0x0000000000000752       0x32 build/toy-train-config/production/_ext/1360937237/AppGlobals.o
+                0x0000000000000752       0x32 build/toy-train-config/production/_ext/1360937237/audio.o
  .ARM.attributes
-                0x0000000000000784       0x1e /home/babu/work-zone/firmware/microchip/gcc/arm-gnu-toolchain-6.3.1.508-linux.any.x86_64/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/libgcc.a(_thumb1_case_uqi.o)
+                0x0000000000000784       0x32 build/toy-train-config/production/_ext/1360937237/AppGlobals.o
  .ARM.attributes
-                0x00000000000007a2       0x1e /home/babu/work-zone/firmware/microchip/gcc/arm-gnu-toolchain-6.3.1.508-linux.any.x86_64/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/libgcc.a(_divsi3.o)
+                0x00000000000007b6       0x1e /home/babu/work-zone/firmware/microchip/gcc/arm-gnu-toolchain-6.3.1.508-linux.any.x86_64/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/libgcc.a(_thumb1_case_uqi.o)
  .ARM.attributes
-                0x00000000000007c0       0x1e /home/babu/work-zone/firmware/microchip/gcc/arm-gnu-toolchain-6.3.1.508-linux.any.x86_64/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/libgcc.a(_dvmd_tls.o)
+                0x00000000000007d4       0x1e /home/babu/work-zone/firmware/microchip/gcc/arm-gnu-toolchain-6.3.1.508-linux.any.x86_64/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/libgcc.a(_divsi3.o)
  .ARM.attributes
-                0x00000000000007de       0x2c /home/babu/work-zone/firmware/microchip/gcc/arm-gnu-toolchain-6.3.1.508-linux.any.x86_64/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc.a(lib_a-impure.o)
+                0x00000000000007f2       0x1e /home/babu/work-zone/firmware/microchip/gcc/arm-gnu-toolchain-6.3.1.508-linux.any.x86_64/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/libgcc.a(_dvmd_tls.o)
  .ARM.attributes
-                0x000000000000080a       0x2c /home/babu/work-zone/firmware/microchip/gcc/arm-gnu-toolchain-6.3.1.508-linux.any.x86_64/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc.a(lib_a-init.o)
+                0x0000000000000810       0x2c /home/babu/work-zone/firmware/microchip/gcc/arm-gnu-toolchain-6.3.1.508-linux.any.x86_64/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc.a(lib_a-impure.o)
  .ARM.attributes
-                0x0000000000000836       0x2c /home/babu/work-zone/firmware/microchip/gcc/arm-gnu-toolchain-6.3.1.508-linux.any.x86_64/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc.a(lib_a-memcpy-stub.o)
+                0x000000000000083c       0x2c /home/babu/work-zone/firmware/microchip/gcc/arm-gnu-toolchain-6.3.1.508-linux.any.x86_64/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc.a(lib_a-init.o)
  .ARM.attributes
-                0x0000000000000862       0x2c /home/babu/work-zone/firmware/microchip/gcc/arm-gnu-toolchain-6.3.1.508-linux.any.x86_64/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc.a(lib_a-memset.o)
+                0x0000000000000868       0x2c /home/babu/work-zone/firmware/microchip/gcc/arm-gnu-toolchain-6.3.1.508-linux.any.x86_64/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc.a(lib_a-memcpy-stub.o)
  .ARM.attributes
-                0x000000000000088e       0x2c /home/babu/work-zone/firmware/microchip/gcc/arm-gnu-toolchain-6.3.1.508-linux.any.x86_64/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc.a(lib_a-__call_atexit.o)
+                0x0000000000000894       0x2c /home/babu/work-zone/firmware/microchip/gcc/arm-gnu-toolchain-6.3.1.508-linux.any.x86_64/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc.a(lib_a-memset.o)
  .ARM.attributes
-                0x00000000000008ba       0x2c /home/babu/work-zone/firmware/microchip/gcc/arm-gnu-toolchain-6.3.1.508-linux.any.x86_64/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc.a(lib_a-atexit.o)
+                0x00000000000008c0       0x2c /home/babu/work-zone/firmware/microchip/gcc/arm-gnu-toolchain-6.3.1.508-linux.any.x86_64/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc.a(lib_a-__call_atexit.o)
  .ARM.attributes
-                0x00000000000008e6       0x2c /home/babu/work-zone/firmware/microchip/gcc/arm-gnu-toolchain-6.3.1.508-linux.any.x86_64/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc.a(lib_a-fini.o)
+                0x00000000000008ec       0x2c /home/babu/work-zone/firmware/microchip/gcc/arm-gnu-toolchain-6.3.1.508-linux.any.x86_64/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc.a(lib_a-atexit.o)
  .ARM.attributes
-                0x0000000000000912       0x2c /home/babu/work-zone/firmware/microchip/gcc/arm-gnu-toolchain-6.3.1.508-linux.any.x86_64/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc.a(lib_a-lock.o)
+                0x0000000000000918       0x2c /home/babu/work-zone/firmware/microchip/gcc/arm-gnu-toolchain-6.3.1.508-linux.any.x86_64/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc.a(lib_a-fini.o)
  .ARM.attributes
-                0x000000000000093e       0x2c /home/babu/work-zone/firmware/microchip/gcc/arm-gnu-toolchain-6.3.1.508-linux.any.x86_64/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc.a(lib_a-__atexit.o)
+                0x0000000000000944       0x2c /home/babu/work-zone/firmware/microchip/gcc/arm-gnu-toolchain-6.3.1.508-linux.any.x86_64/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc.a(lib_a-lock.o)
  .ARM.attributes
-                0x000000000000096a       0x1e /home/babu/work-zone/firmware/microchip/gcc/arm-gnu-toolchain-6.3.1.508-linux.any.x86_64/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/crtn.o
+                0x0000000000000970       0x2c /home/babu/work-zone/firmware/microchip/gcc/arm-gnu-toolchain-6.3.1.508-linux.any.x86_64/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc.a(lib_a-__atexit.o)
+ .ARM.attributes
+                0x000000000000099c       0x1e /home/babu/work-zone/firmware/microchip/gcc/arm-gnu-toolchain-6.3.1.508-linux.any.x86_64/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/crtn.o
 
 .comment        0x0000000000000000       0x59
  .comment       0x0000000000000000       0x59 build/toy-train-config/production/_ext/1312487053/plib_adc.o
@@ -1207,6 +1223,7 @@ OUTPUT(dist/toy-train-config/production/toy-train.X.production.elf elf32-littlea
  .comment       0x0000000000000059       0x5a build/toy-train-config/production/_ext/873621700/plib_tc4.o
  .comment       0x0000000000000059       0x5a build/toy-train-config/production/_ext/1312468825/plib_tcc2.o
  .comment       0x0000000000000059       0x5a build/toy-train-config/production/_ext/1312468825/plib_tcc0.o
+ .comment       0x0000000000000059       0x5a build/toy-train-config/production/_ext/1312465894/plib_wdt.o
  .comment       0x0000000000000059       0x5a build/toy-train-config/production/_ext/1423632105/initialization.o
  .comment       0x0000000000000059       0x5a build/toy-train-config/production/_ext/1423632105/interrupts.o
  .comment       0x0000000000000059       0x5a build/toy-train-config/production/_ext/1423632105/exceptions.o

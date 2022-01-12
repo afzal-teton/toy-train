@@ -82,6 +82,7 @@ build/toy-train-config/production/_ext/1423632105/exceptions.o: \
  ../src/config/toy-train-config/peripheral/nvic/plib_nvic.h \
  ../src/config/toy-train-config/peripheral/systick/plib_systick.h \
  ../src/config/toy-train-config/peripheral/dmac/plib_dmac.h \
+ ../src/config/toy-train-config/peripheral/wdt/plib_wdt.h \
  ../src/config/toy-train-config/peripheral/adc/plib_adc.h \
  ../src/config/toy-train-config/peripheral/adc/plib_adc_common.h \
  ../src/config/toy-train-config/peripheral/tc/plib_tc3.h \
@@ -255,6 +256,8 @@ build/toy-train-config/production/_ext/1423632105/exceptions.o: \
 ../src/config/toy-train-config/peripheral/systick/plib_systick.h:
 
 ../src/config/toy-train-config/peripheral/dmac/plib_dmac.h:
+
+../src/config/toy-train-config/peripheral/wdt/plib_wdt.h:
 
 ../src/config/toy-train-config/peripheral/adc/plib_adc.h:
 

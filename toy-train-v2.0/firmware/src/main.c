@@ -88,11 +88,12 @@ int main ( void ){
     initMotorPeripheral();
     initBluetoothSerial();
     initAudioPeripheral();
-    
+    WDT_Enable();
     while ( true ) {
        //SYSTICK_DelayMs(1000);
+       WDT_Clear();
        switch(checkBlutoothCommand()){
-            SERCOM0_USART_Write("ble\n", 4);
+            //SERCOM0_USART_Write("ble\n", 4);
             case BL_COMMMAND_MOTOR_TASK:
                 switch(bluetooth.motorControl){
                     case(0):

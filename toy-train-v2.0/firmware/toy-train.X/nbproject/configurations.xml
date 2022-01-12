@@ -52,6 +52,9 @@
               <itemPath>../src/config/toy-train-config/peripheral/tcc/plib_tcc_common.h</itemPath>
               <itemPath>../src/config/toy-train-config/peripheral/tcc/plib_tcc0.h</itemPath>
             </logicalFolder>
+            <logicalFolder name="f13" displayName="wdt" projectFiles="true">
+              <itemPath>../src/config/toy-train-config/peripheral/wdt/plib_wdt.h</itemPath>
+            </logicalFolder>
           </logicalFolder>
           <itemPath>../src/config/toy-train-config/device_cache.h</itemPath>
           <itemPath>../src/config/toy-train-config/toolchain_specifics.h</itemPath>
@@ -228,6 +231,9 @@
               <itemPath>../src/config/toy-train-config/peripheral/tcc/plib_tcc2.c</itemPath>
               <itemPath>../src/config/toy-train-config/peripheral/tcc/plib_tcc0.c</itemPath>
             </logicalFolder>
+            <logicalFolder name="f13" displayName="wdt" projectFiles="true">
+              <itemPath>../src/config/toy-train-config/peripheral/wdt/plib_wdt.c</itemPath>
+            </logicalFolder>
           </logicalFolder>
           <logicalFolder name="f2" displayName="stdio" projectFiles="true">
             <itemPath>../../../../../gcc/src_gcc_toolchain/gcc_monitor.c</itemPath>
@@ -285,6 +291,7 @@
       </logicalFolder>
       <itemPath>Makefile</itemPath>
       <itemPath>../src/config/toy-train-config/harmony-manifest-success.yml</itemPath>
+      <itemPath>../src/config/toy-train-config/harmony-manifest-failure.yml</itemPath>
     </logicalFolder>
   </logicalFolder>
   <sourceRootList>

@@ -1,9 +1,6 @@
-build/toy-train-config/production/_ext/1423632105/interrupts.o: \
- ../src/config/toy-train-config/interrupts.c \
- ../src/config/toy-train-config/device_vectors.h \
- ../src/config/toy-train-config/interrupts.h \
- ../src/config/toy-train-config/definitions.h \
- ../src/config/toy-train-config/peripheral/nvmctrl/plib_nvmctrl.h \
+build/toy-train-config/production/_ext/1312465894/plib_wdt.o: \
+ ../src/config/toy-train-config/peripheral/wdt/plib_wdt.c \
+ ../src/config/toy-train-config/peripheral/wdt/plib_wdt.h \
  ../src/config/toy-train-config/device.h \
  /opt/microchip/mplabx/v6.00/packs/Microchip/SAMD21_DFP/3.5.132/samd21a/include/samd21g18a.h \
  /opt/microchip/mplabx/v6.00/packs/arm/CMSIS/5.4.0/CMSIS/Core/Include/core_cm0plus.h \
@@ -74,33 +71,9 @@ build/toy-train-config/production/_ext/1423632105/interrupts.o: \
  ../src/config/toy-train-config/device.h \
  ../src/config/toy-train-config/toolchain_specifics.h \
  /opt/microchip/mplabx/v6.00/packs/arm/CMSIS/5.4.0/CMSIS/Core/Include/cmsis_compiler.h \
- ../src/config/toy-train-config/peripheral/sercom/usart/plib_sercom2_usart.h \
- ../src/config/toy-train-config/peripheral/sercom/usart/plib_sercom_usart_common.h \
- ../src/config/toy-train-config/peripheral/evsys/plib_evsys.h \
- ../src/config/toy-train-config/peripheral/sercom/usart/plib_sercom0_usart.h \
- ../src/config/toy-train-config/peripheral/port/plib_port.h \
- ../src/config/toy-train-config/peripheral/clock/plib_clock.h \
- ../src/config/toy-train-config/peripheral/nvic/plib_nvic.h \
- ../src/config/toy-train-config/peripheral/systick/plib_systick.h \
- ../src/config/toy-train-config/peripheral/dmac/plib_dmac.h \
- ../src/config/toy-train-config/peripheral/wdt/plib_wdt.h \
- ../src/config/toy-train-config/peripheral/adc/plib_adc.h \
- ../src/config/toy-train-config/peripheral/adc/plib_adc_common.h \
- ../src/config/toy-train-config/peripheral/tc/plib_tc3.h \
- ../src/config/toy-train-config/peripheral/tc/plib_tc_common.h \
- ../src/config/toy-train-config/peripheral/dac/plib_dac.h \
- ../src/config/toy-train-config/peripheral/tc/plib_tc4.h \
- ../src/config/toy-train-config/peripheral/tcc/plib_tcc2.h \
- ../src/config/toy-train-config/peripheral/tcc/plib_tcc_common.h \
- ../src/config/toy-train-config/peripheral/tcc/plib_tcc0.h
+ ../src/config/toy-train-config/interrupts.h
 
-../src/config/toy-train-config/device_vectors.h:
-
-../src/config/toy-train-config/interrupts.h:
-
-../src/config/toy-train-config/definitions.h:
-
-../src/config/toy-train-config/peripheral/nvmctrl/plib_nvmctrl.h:
+../src/config/toy-train-config/peripheral/wdt/plib_wdt.h:
 
 ../src/config/toy-train-config/device.h:
 
@@ -242,40 +215,4 @@ build/toy-train-config/production/_ext/1423632105/interrupts.o: \
 
 /opt/microchip/mplabx/v6.00/packs/arm/CMSIS/5.4.0/CMSIS/Core/Include/cmsis_compiler.h:
 
-../src/config/toy-train-config/peripheral/sercom/usart/plib_sercom2_usart.h:
-
-../src/config/toy-train-config/peripheral/sercom/usart/plib_sercom_usart_common.h:
-
-../src/config/toy-train-config/peripheral/evsys/plib_evsys.h:
-
-../src/config/toy-train-config/peripheral/sercom/usart/plib_sercom0_usart.h:
-
-../src/config/toy-train-config/peripheral/port/plib_port.h:
-
-../src/config/toy-train-config/peripheral/clock/plib_clock.h:
-
-../src/config/toy-train-config/peripheral/nvic/plib_nvic.h:
-
-../src/config/toy-train-config/peripheral/systick/plib_systick.h:
-
-../src/config/toy-train-config/peripheral/dmac/plib_dmac.h:
-
-../src/config/toy-train-config/peripheral/wdt/plib_wdt.h:
-
-../src/config/toy-train-config/peripheral/adc/plib_adc.h:
-
-../src/config/toy-train-config/peripheral/adc/plib_adc_common.h:
-
-../src/config/toy-train-config/peripheral/tc/plib_tc3.h:
-
-../src/config/toy-train-config/peripheral/tc/plib_tc_common.h:
-
-../src/config/toy-train-config/peripheral/dac/plib_dac.h:
-
-../src/config/toy-train-config/peripheral/tc/plib_tc4.h:
-
-../src/config/toy-train-config/peripheral/tcc/plib_tcc2.h:
-
-../src/config/toy-train-config/peripheral/tcc/plib_tcc_common.h:
-
-../src/config/toy-train-config/peripheral/tcc/plib_tcc0.h:
+../src/config/toy-train-config/interrupts.h:
