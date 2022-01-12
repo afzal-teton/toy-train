@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="65">
+  <logicalFolder name="root" displayName="root" projectFiles="true">
+    <logicalFolder name="HeaderFiles"
+                   displayName="Header Files"
+                   projectFiles="true">
+      <logicalFolder name="f1" displayName="config" projectFiles="true">
+        <logicalFolder name="f1" displayName="toy-train-config" projectFiles="true">
+          <logicalFolder name="f1" displayName="peripheral" projectFiles="true">
+            <logicalFolder name="f9" displayName="adc" projectFiles="true">
+              <itemPath>../src/config/toy-train-config/peripheral/adc/plib_adc_common.h</itemPath>
+              <itemPath>../src/config/toy-train-config/peripheral/adc/plib_adc.h</itemPath>
+            </logicalFolder>
+            <logicalFolder name="f5" displayName="clock" projectFiles="true">
+              <itemPath>../src/config/toy-train-config/peripheral/clock/plib_clock.h</itemPath>
+            </logicalFolder>
+            <logicalFolder name="f11" displayName="dac" projectFiles="true">
+              <itemPath>../src/config/toy-train-config/peripheral/dac/plib_dac.h</itemPath>
+            </logicalFolder>
+            <logicalFolder name="f8" displayName="dmac" projectFiles="true">
+              <itemPath>../src/config/toy-train-config/peripheral/dmac/plib_dmac.h</itemPath>
+            </logicalFolder>
+            <logicalFolder name="f3" displayName="evsys" projectFiles="true">
+              <itemPath>../src/config/toy-train-config/peripheral/evsys/plib_evsys.h</itemPath>
+            </logicalFolder>
+            <logicalFolder name="f6" displayName="nvic" projectFiles="true">
+              <itemPath>../src/config/toy-train-config/peripheral/nvic/plib_nvic.h</itemPath>
+            </logicalFolder>
+            <logicalFolder name="f1" displayName="nvmctrl" projectFiles="true">
+              <itemPath>../src/config/toy-train-config/peripheral/nvmctrl/plib_nvmctrl.h</itemPath>
+            </logicalFolder>
+            <logicalFolder name="f4" displayName="port" projectFiles="true">
+              <itemPath>../src/config/toy-train-config/peripheral/port/plib_port.h</itemPath>
+            </logicalFolder>
+            <logicalFolder name="f2" displayName="sercom" projectFiles="true">
+              <logicalFolder name="f1" displayName="usart" projectFiles="true">
+                <itemPath>../src/config/toy-train-config/peripheral/sercom/usart/plib_sercom2_usart.h</itemPath>
+                <itemPath>../src/config/toy-train-config/peripheral/sercom/usart/plib_sercom_usart_common.h</itemPath>
+                <itemPath>../src/config/toy-train-config/peripheral/sercom/usart/plib_sercom0_usart.h</itemPath>
+              </logicalFolder>
+            </logicalFolder>
+            <logicalFolder name="f7" displayName="systick" projectFiles="true">
+              <itemPath>../src/config/toy-train-config/peripheral/systick/plib_systick.h</itemPath>
+            </logicalFolder>
+            <logicalFolder name="f10" displayName="tc" projectFiles="true">
+              <itemPath>../src/config/toy-train-config/peripheral/tc/plib_tc_common.h</itemPath>
+              <itemPath>../src/config/toy-train-config/peripheral/tc/plib_tc3.h</itemPath>
+              <itemPath>../src/config/toy-train-config/peripheral/tc/plib_tc4.h</itemPath>
+            </logicalFolder>
+            <logicalFolder name="f12" displayName="tcc" projectFiles="true">
+              <itemPath>../src/config/toy-train-config/peripheral/tcc/plib_tcc2.h</itemPath>
+              <itemPath>../src/config/toy-train-config/peripheral/tcc/plib_tcc_common.h</itemPath>
+              <itemPath>../src/config/toy-train-config/peripheral/tcc/plib_tcc0.h</itemPath>
+            </logicalFolder>
+          </logicalFolder>
+          <itemPath>../src/config/toy-train-config/device_cache.h</itemPath>
+          <itemPath>../src/config/toy-train-config/toolchain_specifics.h</itemPath>
+          <itemPath>../src/config/toy-train-config/definitions.h</itemPath>
+          <itemPath>../src/config/toy-train-config/interrupts.h</itemPath>
+          <itemPath>../src/config/toy-train-config/device_vectors.h</itemPath>
+          <itemPath>../src/config/toy-train-config/device.h</itemPath>
+        </logicalFolder>
+      </logicalFolder>
+      <logicalFolder name="f2" displayName="packs" projectFiles="true">
+        <logicalFolder name="f1" displayName="ATSAMD21G18A_DFP" projectFiles="true">
+          <logicalFolder name="f1" displayName="component" projectFiles="true">
+            <itemPath>../src/packs/ATSAMD21G18A_DFP/component/eic.h</itemPath>
+            <itemPath>../src/packs/ATSAMD21G18A_DFP/component/hmatrixb.h</itemPath>
+            <itemPath>../src/packs/ATSAMD21G18A_DFP/component/evsys.h</itemPath>
+            <itemPath>../src/packs/ATSAMD21G18A_DFP/component/i2s.h</itemPath>
+            <itemPath>../src/packs/ATSAMD21G18A_DFP/component/mtb.h</itemPath>
+            <itemPath>../src/packs/ATSAMD21G18A_DFP/component/dmac.h</itemPath>
+            <itemPath>../src/packs/ATSAMD21G18A_DFP/component/dac.h</itemPath>
+            <itemPath>../src/packs/ATSAMD21G18A_DFP/component/nvmctrl.h</itemPath>
+            <itemPath>../src/packs/ATSAMD21G18A_DFP/component/port.h</itemPath>
+            <itemPath>../src/packs/ATSAMD21G18A_DFP/component/usb.h</itemPath>
+            <itemPath>../src/packs/ATSAMD21G18A_DFP/component/gclk.h</itemPath>
+            <itemPath>../src/packs/ATSAMD21G18A_DFP/component/sysctrl.h</itemPath>
+            <itemPath>../src/packs/ATSAMD21G18A_DFP/component/ptc.h</itemPath>
+            <itemPath>../src/packs/ATSAMD21G18A_DFP/component/pac.h</itemPath>
+            <itemPath>../src/packs/ATSAMD21G18A_DFP/component/rtc.h</itemPath>
+            <itemPath>../src/packs/ATSAMD21G18A_DFP/component/adc.h</itemPath>
+            <itemPath>../src/packs/ATSAMD21G18A_DFP/component/ac.h</itemPath>
+            <itemPath>../src/packs/ATSAMD21G18A_DFP/component/sercom.h</itemPath>
+            <itemPath>../src/packs/ATSAMD21G18A_DFP/component/tc.h</itemPath>
+            <itemPath>../src/packs/ATSAMD21G18A_DFP/component/pm.h</itemPath>
+            <itemPath>../src/packs/ATSAMD21G18A_DFP/component/wdt.h</itemPath>
+            <itemPath>../src/packs/ATSAMD21G18A_DFP/component/dsu.h</itemPath>
+            <itemPath>../src/packs/ATSAMD21G18A_DFP/component/tcc.h</itemPath>
+          </logicalFolder>
+          <logicalFolder name="f2" displayName="instance" projectFiles="true">
+            <itemPath>../src/packs/ATSAMD21G18A_DFP/instance/tc6.h</itemPath>
+            <itemPath>../src/packs/ATSAMD21G18A_DFP/instance/eic.h</itemPath>
+            <itemPath>../src/packs/ATSAMD21G18A_DFP/instance/sercom5.h</itemPath>
+            <itemPath>../src/packs/ATSAMD21G18A_DFP/instance/evsys.h</itemPath>
+            <itemPath>../src/packs/ATSAMD21G18A_DFP/instance/i2s.h</itemPath>
+            <itemPath>../src/packs/ATSAMD21G18A_DFP/instance/tc4.h</itemPath>
+            <itemPath>../src/packs/ATSAMD21G18A_DFP/instance/mtb.h</itemPath>
+            <itemPath>../src/packs/ATSAMD21G18A_DFP/instance/dmac.h</itemPath>
+            <itemPath>../src/packs/ATSAMD21G18A_DFP/instance/dac.h</itemPath>
+            <itemPath>../src/packs/ATSAMD21G18A_DFP/instance/nvmctrl.h</itemPath>
+            <itemPath>../src/packs/ATSAMD21G18A_DFP/instance/port.h</itemPath>
+            <itemPath>../src/packs/ATSAMD21G18A_DFP/instance/tc5.h</itemPath>
+            <itemPath>../src/packs/ATSAMD21G18A_DFP/instance/usb.h</itemPath>
+            <itemPath>../src/packs/ATSAMD21G18A_DFP/instance/sercom4.h</itemPath>
+            <itemPath>../src/packs/ATSAMD21G18A_DFP/instance/sercom1.h</itemPath>
+            <itemPath>../src/packs/ATSAMD21G18A_DFP/instance/gclk.h</itemPath>
+            <itemPath>../src/packs/ATSAMD21G18A_DFP/instance/sysctrl.h</itemPath>
+            <itemPath>../src/packs/ATSAMD21G18A_DFP/instance/sercom0.h</itemPath>
+            <itemPath>../src/packs/ATSAMD21G18A_DFP/instance/ptc.h</itemPath>
+            <itemPath>../src/packs/ATSAMD21G18A_DFP/instance/pac1.h</itemPath>
+            <itemPath>../src/packs/ATSAMD21G18A_DFP/instance/pac0.h</itemPath>
+            <itemPath>../src/packs/ATSAMD21G18A_DFP/instance/sbmatrix.h</itemPath>
+            <itemPath>../src/packs/ATSAMD21G18A_DFP/instance/tcc2.h</itemPath>
+            <itemPath>../src/packs/ATSAMD21G18A_DFP/instance/sercom2.h</itemPath>
+            <itemPath>../src/packs/ATSAMD21G18A_DFP/instance/rtc.h</itemPath>
+            <itemPath>../src/packs/ATSAMD21G18A_DFP/instance/pac2.h</itemPath>
+            <itemPath>../src/packs/ATSAMD21G18A_DFP/instance/adc.h</itemPath>
+            <itemPath>../src/packs/ATSAMD21G18A_DFP/instance/ac.h</itemPath>
+            <itemPath>../src/packs/ATSAMD21G18A_DFP/instance/tc3.h</itemPath>
+            <itemPath>../src/packs/ATSAMD21G18A_DFP/instance/tc7.h</itemPath>
+            <itemPath>../src/packs/ATSAMD21G18A_DFP/instance/tcc0.h</itemPath>
+            <itemPath>../src/packs/ATSAMD21G18A_DFP/instance/pm.h</itemPath>
+            <itemPath>../src/packs/ATSAMD21G18A_DFP/instance/wdt.h</itemPath>
+            <itemPath>../src/packs/ATSAMD21G18A_DFP/instance/sercom3.h</itemPath>
+            <itemPath>../src/packs/ATSAMD21G18A_DFP/instance/dsu.h</itemPath>
+            <itemPath>../src/packs/ATSAMD21G18A_DFP/instance/tcc1.h</itemPath>
+          </logicalFolder>
+          <logicalFolder name="f3" displayName="pio" projectFiles="true">
+            <itemPath>../src/packs/ATSAMD21G18A_DFP/pio/samd21g18a.h</itemPath>
+          </logicalFolder>
+          <itemPath>../src/packs/ATSAMD21G18A_DFP/samd21g18a.h</itemPath>
+        </logicalFolder>
+        <logicalFolder name="f2" displayName="CMSIS" projectFiles="true">
+          <logicalFolder name="f1" displayName="CMSIS" projectFiles="true">
+            <logicalFolder name="f1" displayName="Core" projectFiles="true">
+              <logicalFolder name="f1" displayName="Include" projectFiles="true">
+                <itemPath>../src/packs/CMSIS/CMSIS/Core/Include/cmsis_version.h</itemPath>
+                <itemPath>../src/packs/CMSIS/CMSIS/Core/Include/cmsis_compiler.h</itemPath>
+                <itemPath>../src/packs/CMSIS/CMSIS/Core/Include/cmsis_iccarm.h</itemPath>
+                <itemPath>../src/packs/CMSIS/CMSIS/Core/Include/cmsis_gcc.h</itemPath>
+                <itemPath>../src/packs/CMSIS/CMSIS/Core/Include/cmsis_armcc.h</itemPath>
+                <itemPath>../src/packs/CMSIS/CMSIS/Core/Include/cmsis_armclang.h</itemPath>
+                <itemPath>../src/packs/CMSIS/CMSIS/Core/Include/cmsis_armclang_ltm.h</itemPath>
+                <itemPath>../src/packs/CMSIS/CMSIS/Core/Include/core_cm0plus.h</itemPath>
+                <itemPath>../src/packs/CMSIS/CMSIS/Core/Include/mpu_armv7.h</itemPath>
+                <itemPath>../src/packs/CMSIS/CMSIS/Core/Include/cachel1_armv7.h</itemPath>
+              </logicalFolder>
+            </logicalFolder>
+          </logicalFolder>
+        </logicalFolder>
+      </logicalFolder>
+      <logicalFolder name="f3" displayName="src-header" projectFiles="true">
+        <logicalFolder name="f1" displayName="music" projectFiles="true">
+          <itemPath>../src/music.h</itemPath>
+          <itemPath>../src/sampleMusicTwo.h</itemPath>
+          <itemPath>../src/sampleMusicOne.h</itemPath>
+          <itemPath>../src/powerOneMusic.h</itemPath>
+          <itemPath>../src/powerOffMusic.h</itemPath>
+          <itemPath>../src/hornMusic.h</itemPath>
+          <itemPath>../src/carWashMusic.h</itemPath>
+          <itemPath>../src/bleOnMusic.h</itemPath>
+          <itemPath>../src/bleOffMusic.h</itemPath>
+          <itemPath>../src/bellMusic.h</itemPath>
+        </logicalFolder>
+        <itemPath>../src/rgbLed.h</itemPath>
+        <itemPath>../src/motorControl.h</itemPath>
+        <itemPath>../src/hallSensor.h</itemPath>
+        <itemPath>../src/colorDetect.h</itemPath>
+        <itemPath>../src/bluetooth.h</itemPath>
+        <itemPath>../src/audio.h</itemPath>
+        <itemPath>../src/AppGlobals.h</itemPath>
+      </logicalFolder>
+    </logicalFolder>
+    <logicalFolder name="LinkerScript"
+                   displayName="Linker Files"
+                   projectFiles="true">
+      <logicalFolder name="f1" displayName="config" projectFiles="true">
+        <logicalFolder name="f1" displayName="toy-train-config" projectFiles="true">
+          <itemPath>../src/config/toy-train-config/ATSAMD21G18A.ld</itemPath>
+        </logicalFolder>
+      </logicalFolder>
+    </logicalFolder>
+    <logicalFolder name="SourceFiles"
+                   displayName="Source Files"
+                   projectFiles="true">
+      <logicalFolder name="f1" displayName="config" projectFiles="true">
+        <logicalFolder name="f1" displayName="toy-train-config" projectFiles="true">
+          <logicalFolder name="f1" displayName="peripheral" projectFiles="true">
+            <logicalFolder name="f9" displayName="adc" projectFiles="true">
+              <itemPath>../src/config/toy-train-config/peripheral/adc/plib_adc.c</itemPath>
+            </logicalFolder>
+            <logicalFolder name="f5" displayName="clock" projectFiles="true">
+              <itemPath>../src/config/toy-train-config/peripheral/clock/plib_clock.c</itemPath>
+            </logicalFolder>
+            <logicalFolder name="f11" displayName="dac" projectFiles="true">
+              <itemPath>../src/config/toy-train-config/peripheral/dac/plib_dac.c</itemPath>
+            </logicalFolder>
+            <logicalFolder name="f8" displayName="dmac" projectFiles="true">
+              <itemPath>../src/config/toy-train-config/peripheral/dmac/plib_dmac.c</itemPath>
+            </logicalFolder>
+            <logicalFolder name="f3" displayName="evsys" projectFiles="true">
+              <itemPath>../src/config/toy-train-config/peripheral/evsys/plib_evsys.c</itemPath>
+            </logicalFolder>
+            <logicalFolder name="f6" displayName="nvic" projectFiles="true">
+              <itemPath>../src/config/toy-train-config/peripheral/nvic/plib_nvic.c</itemPath>
+            </logicalFolder>
+            <logicalFolder name="f1" displayName="nvmctrl" projectFiles="true">
+              <itemPath>../src/config/toy-train-config/peripheral/nvmctrl/plib_nvmctrl.c</itemPath>
+            </logicalFolder>
+            <logicalFolder name="f4" displayName="port" projectFiles="true">
+              <itemPath>../src/config/toy-train-config/peripheral/port/plib_port.c</itemPath>
+            </logicalFolder>
+            <logicalFolder name="f2" displayName="sercom" projectFiles="true">
+              <logicalFolder name="f1" displayName="usart" projectFiles="true">
+                <itemPath>../src/config/toy-train-config/peripheral/sercom/usart/plib_sercom2_usart.c</itemPath>
+                <itemPath>../src/config/toy-train-config/peripheral/sercom/usart/plib_sercom0_usart.c</itemPath>
+              </logicalFolder>
+            </logicalFolder>
+            <logicalFolder name="f7" displayName="systick" projectFiles="true">
+              <itemPath>../src/config/toy-train-config/peripheral/systick/plib_systick.c</itemPath>
+            </logicalFolder>
+            <logicalFolder name="f10" displayName="tc" projectFiles="true">
+              <itemPath>../src/config/toy-train-config/peripheral/tc/plib_tc3.c</itemPath>
+              <itemPath>../src/config/toy-train-config/peripheral/tc/plib_tc4.c</itemPath>
+            </logicalFolder>
+            <logicalFolder name="f12" displayName="tcc" projectFiles="true">
+              <itemPath>../src/config/toy-train-config/peripheral/tcc/plib_tcc2.c</itemPath>
+              <itemPath>../src/config/toy-train-config/peripheral/tcc/plib_tcc0.c</itemPath>
+            </logicalFolder>
+          </logicalFolder>
+          <logicalFolder name="f2" displayName="stdio" projectFiles="true">
+            <itemPath>../../../../../gcc/src_gcc_toolchain/gcc_monitor.c</itemPath>
+          </logicalFolder>
+          <itemPath>../src/config/toy-train-config/initialization.c</itemPath>
+          <itemPath>../src/config/toy-train-config/interrupts.c</itemPath>
+          <itemPath>../src/config/toy-train-config/exceptions.c</itemPath>
+          <itemPath>../../../../../gcc/src_gcc_toolchain/libc_syscalls.c</itemPath>
+          <itemPath>../../../../../gcc/src_gcc_toolchain/startup_gcc.c</itemPath>
+        </logicalFolder>
+      </logicalFolder>
+      <logicalFolder name="f2" displayName="src" projectFiles="true">
+        <logicalFolder name="f1" displayName="music" projectFiles="true">
+          <itemPath>../src/sampleMusicTwo.c</itemPath>
+          <itemPath>../src/sampleMusicOne.c</itemPath>
+          <itemPath>../src/powerOnMusic.c</itemPath>
+          <itemPath>../src/powerOffMusic.c</itemPath>
+          <itemPath>../src/hornMusic.c</itemPath>
+          <itemPath>../src/carWashMusic.c</itemPath>
+          <itemPath>../src/bleOnMusic.c</itemPath>
+          <itemPath>../src/bleOffMusic.c</itemPath>
+          <itemPath>../src/bellMusic.c</itemPath>
+          <itemPath>../src/music.c</itemPath>
+        </logicalFolder>
+        <itemPath>../src/rgbLed.c</itemPath>
+        <itemPath>../src/motorControl.c</itemPath>
+        <itemPath>../src/main.c</itemPath>
+        <itemPath>../src/hallSensor.c</itemPath>
+        <itemPath>../src/colorDetect.c</itemPath>
+        <itemPath>../src/bluetooth.c</itemPath>
+        <itemPath>../src/audio.c</itemPath>
+        <itemPath>../src/AppGlobals.c</itemPath>
+      </logicalFolder>
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false">
+      <logicalFolder name="f1" displayName="toy-train-config.mhc" projectFiles="true">
+        <itemPath>../src/config/toy-train-config/toy-train-config.mhc/tc3.yml</itemPath>
+        <itemPath>../src/config/toy-train-config/toy-train-config.mhc/settings.yml</itemPath>
+        <itemPath>../src/config/toy-train-config/toy-train-config.mhc/core.yml</itemPath>
+        <itemPath>../src/config/toy-train-config/toy-train-config.mhc/adc.yml</itemPath>
+        <itemPath>../src/config/toy-train-config/toy-train-config.mhc/sercom2.yml</itemPath>
+        <itemPath>../src/config/toy-train-config/toy-train-config.mhc/sercom0.yml</itemPath>
+        <itemPath>../src/config/toy-train-config/toy-train-config.mhc/dfp.yml</itemPath>
+        <itemPath>../src/config/toy-train-config/toy-train-config.mhc/nvmctrl.yml</itemPath>
+        <itemPath>../src/config/toy-train-config/toy-train-config.mhc/tcc2.yml</itemPath>
+        <itemPath>../src/config/toy-train-config/toy-train-config.mhc/cmsis.yml</itemPath>
+        <itemPath>../src/config/toy-train-config/toy-train-config.mhc/dac.yml</itemPath>
+        <itemPath>../src/config/toy-train-config/toy-train-config.mhc/evsys.yml</itemPath>
+        <itemPath>../src/config/toy-train-config/toy-train-config.mhc/tc4.yml</itemPath>
+        <itemPath>../src/config/toy-train-config/toy-train-config.mhc/GraphSettings.yml</itemPath>
+        <itemPath>../src/config/toy-train-config/toy-train-config.mhc/tcc0.yml</itemPath>
+        <itemPath>../src/config/toy-train-config/toy-train-config.mhc/project.yml</itemPath>
+      </logicalFolder>
+      <itemPath>Makefile</itemPath>
+      <itemPath>../src/config/toy-train-config/harmony-manifest-success.yml</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <sourceRootList>
+    <Elem>../src</Elem>
+    <Elem>../../../../../gcc/src_gcc_toolchain</Elem>
+  </sourceRootList>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="toy-train-config" type="2">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <targetDevice>ATSAMD21G18A</targetDevice>
+        <targetHeader></targetHeader>
+        <targetPluginBoard></targetPluginBoard>
+        <platformTool>noID</platformTool>
+        <languageToolchain>ARM</languageToolchain>
+        <languageToolchainVersion>6.3.1</languageToolchainVersion>
+        <platform>2</platform>
+      </toolsSet>
+      <packs>
+        <pack name="SAMD21_DFP" vendor="Microchip" version="3.5.132"/>
+        <pack name="CMSIS" vendor="ARM" version="5.4.0"/>
+      </packs>
+      <ScriptingSettings>
+      </ScriptingSettings>
+      <compileType>
+        <linkerTool>
+          <linkerLibItems>
+          </linkerLibItems>
+        </linkerTool>
+        <archiverTool>
+        </archiverTool>
+        <loading>
+          <useAlternateLoadableFile>false</useAlternateLoadableFile>
+          <parseOnProdLoad>false</parseOnProdLoad>
+          <alternateLoadableFile></alternateLoadableFile>
+        </loading>
+        <subordinates>
+        </subordinates>
+      </compileType>
+      <makeCustomizationType>
+        <makeCustomizationPreStepEnabled>false</makeCustomizationPreStepEnabled>
+        <makeUseCleanTarget>false</makeUseCleanTarget>
+        <makeCustomizationPreStep></makeCustomizationPreStep>
+        <makeCustomizationPostStepEnabled>false</makeCustomizationPostStepEnabled>
+        <makeCustomizationPostStep></makeCustomizationPostStep>
+        <makeCustomizationPutChecksumInUserID>false</makeCustomizationPutChecksumInUserID>
+        <makeCustomizationEnableLongLines>false</makeCustomizationEnableLongLines>
+        <makeCustomizationNormalizeHexFile>false</makeCustomizationNormalizeHexFile>
+      </makeCustomizationType>
+      <ARM-AR>
+        <property key="archiver-flags" value="-r"/>
+      </ARM-AR>
+      <ARM-AS>
+        <property key="announce-version" value="false"/>
+        <property key="include-paths" value=""/>
+        <property key="suppress-warnings" value="false"/>
+      </ARM-AS>
+      <ARM-AS-PRE>
+        <property key="announce-version" value="false"/>
+        <property key="include-paths" value=""/>
+        <property key="preprocessor-macros" value=""/>
+        <property key="preprocessor-macros-undefined" value=""/>
+        <property key="suppress-warnings" value="false"/>
+      </ARM-AS-PRE>
+      <ARM-CPP>
+        <property key="additional-warnings" value="true"/>
+        <property key="called-functions-located" value="true"/>
+        <property key="default-bitfield-type" value="false"/>
+        <property key="default-char-type" value="false"/>
+        <property key="disable-extra-code-exception" value="true"/>
+        <property key="disable-extra-code-generation" value="true"/>
+        <property key="extra-include-directories" value=""/>
+        <property key="extra-warnings" value="false"/>
+        <property key="fast-math" value="false"/>
+        <property key="garbage-collect-data" value="false"/>
+        <property key="garbage-collect-functions" value="true"/>
+        <property key="inhibit-all" value="false"/>
+        <property key="make-warnings-into-errors" value="false"/>
+        <property key="no-system-directories" value="false"/>
+        <property key="optimization-level" value="-Os"/>
+        <property key="position-independent" value="false"/>
+        <property key="preprocess-only" value="false"/>
+        <property key="preprocessor-macros" value=""/>
+        <property key="preprocessor-macros-undefined" value=""/>
+        <property key="strict-ansi" value="false"/>
+        <property key="strict-ansi-errors" value="false"/>
+        <property key="syntax-only" value="false"/>
+        <property key="undefined-identifier" value="false"/>
+        <property key="unsafe-math" value="false"/>
+        <property key="use-rodata" value="false"/>
+        <property key="verbose" value="false"/>
+      </ARM-CPP>
+      <ARM-GCC>
+        <property key="additional-warnings" value="true"/>
+        <property key="called-functions-located" value="true"/>
+        <property key="default-bitfield-type" value="false"/>
+        <property key="default-char-type" value="false"/>
+        <property key="extra-include-directories"
+                  value="../src/config/toy-train-config;../src/packs/ATSAMD21G18A_DFP"/>
+        <property key="extra-warnings" value="false"/>
+        <property key="fast-math" value="false"/>
+        <property key="garbage-collect-data" value="false"/>
+        <property key="garbage-collect-functions" value="true"/>
+        <property key="inhibit-all" value="false"/>
+        <property key="make-warnings-into-errors" value="false"/>
+        <property key="no-system-directories" value="false"/>
+        <property key="optimization-level" value="-Os"/>
+        <property key="position-independent" value="false"/>
+        <property key="preprocessor-macros" value=""/>
+        <property key="preprocessor-macros-undefined" value=""/>
+        <property key="strict-ansi" value="false"/>
+        <property key="strict-ansi-errors" value="false"/>
+        <property key="support-ansi" value="false"/>
+        <property key="syntax-only" value="false"/>
+        <property key="undefined-identifier" value="false"/>
+        <property key="unsafe-math" value="false"/>
+        <property key="verbose" value="false"/>
+      </ARM-GCC>
+      <ARM-Global>
+        <property key="bin" value="false"/>
+        <property key="common-include-directories" value=""/>
+        <property key="eep" value="false"/>
+        <property key="hex" value="true"/>
+        <property key="lss" value="false"/>
+        <property key="omit-pack-options" value="false"/>
+        <property key="processor-mode" value="-mthumb"/>
+        <property key="srec" value="false"/>
+        <property key="user-pack-include" value=""/>
+      </ARM-Global>
+      <ARM-LD>
+        <property key="additional-specs" value="--specs=nosys.specs"/>
+        <property key="exclude-standard-libraries" value="false"/>
+        <property key="extra-lib-directories" value=""/>
+        <property key="fast-math" value="false"/>
+        <property key="flash-segment" value=""/>
+        <property key="generate-map-file" value="true"/>
+        <property key="input-libraries" value=""/>
+        <property key="no-default-libs" value="false"/>
+        <property key="no-shared-libraries" value="false"/>
+        <property key="no-startup-files" value="false"/>
+        <property key="omit-symbol-information" value="false"/>
+        <property key="other-options" value=""/>
+        <property key="position-independent" value="false"/>
+        <property key="remove-unused-sections" value="true"/>
+        <property key="size-optimized-library" value="false"/>
+        <property key="sram-segment" value=""/>
+        <property key="unsafe-math" value="false"/>
+      </ARM-LD>
+    </conf>
+  </confs>
+</configurationDescriptor>

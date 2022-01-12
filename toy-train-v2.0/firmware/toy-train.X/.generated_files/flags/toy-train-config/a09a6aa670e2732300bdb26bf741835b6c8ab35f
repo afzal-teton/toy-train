@@ -1,0 +1,1 @@
+ $(MP_EXTRA_CC_PRE) -mcpu=cortex-m0plus  -x c -c -D__$(MP_PROCESSOR_OPTION)__  -mthumb ${PACK_COMMON_OPTIONS}  -Os -ffunction-sections -mlong-calls -I "../src/config/toy-train-config" -I "../src/packs/ATSAMD21G18A_DFP" -Wall -DXPRJ_toy-train-config=$(CND_CONF)  $(COMPARISON_BUILD) /home/babu/work-zone/firmware/microchip/samd21/project/toy-train-v2.0/firmware/src/bluetooth.c
